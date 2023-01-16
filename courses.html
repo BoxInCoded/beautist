@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./dist/css/app.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Courses</title>
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-nav__block">
+            <div class="footer__content-nav__block-title">Menu</div>
+            <div class="footer__content-nav__block-nav">
+              <ul class="footer__content-nav__block-nav-footer__nav">
+                <li class="footer__content-nav__block-nav-footer__nav-list">
+                  <a
+                    class="footer__content-nav__block-nav-footer__nav-list-link"
+                    href="/index.html"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="footer__content-nav__block-nav-footer__nav-list">
+                  <a
+                    class="footer__content-nav__block-nav-footer__nav-list-link"
+                    href="./courses.html"
+                  >
+                    Courses
+                  </a>
+                </li>
+                <li class="footer__content-nav__block-nav-footer__nav-list">
+                  <a
+                    class="footer__content-nav__block-nav-footer__nav-list-link"
+                    href="/questionnaire.html"
+                  >
+                    Test
+                  </a>
+                </li>
+                <li class="footer__content-nav__block-nav-footer__nav-list">
+                  <a
+                    class="footer__content-nav__block-nav-footer__nav-list-link"
+                    href="/contact.html"
+                  >
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__content-socials__block">
+            <div class="footer__content-socials__block-title">Socials</div>
+            <div class="footer__content-socials__block-links">
+              <a href="#" class="social-fb" target="_blank">
+                <img src=".../../img/fb.svg" alt="fb" />
+              </a>
+              <a href="#" class="social-insta" target="_blank">
+                <img src=".../../img/insta.svg" alt="instagram" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__content-funds__block">
+            <img src=".../../img/union_logo.png" alt="funds" class="funds__logo" />
+          </div>
+          <div class="footer__content-terms__block">
+            <div class="footer__content-terms__block-inner">
+              <div class="footer__content-terms__block-inner-logo">
+                <img src=".../../img/logo.png" alt="logo" class="footer__logo" />
+              </div>
+              <div class="footer__content-terms__block-inner-terms__nav">
+                <div class="footer__content-terms__block-inner-terms__nav-copyright">
+                  © Beautist
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                </div>
+
+                <div class="footer__content-terms__block-inner-terms__nav-main__nav">
+                  <ul
+                    class="footer__content-terms__block-inner-terms__nav-main__nav-nav"
+                  >
+                    <li
+                      class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list"
+                    >
+                      <a
+                        href="#"
+                        class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links"
+                      >
+                        Terms and Conditions
+                      </a>
+                    </li>
+                    <li
+                      class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list"
+                    >
+                      <a
+                        href="#"
+                        class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links"
+                      >
+                        Privacy Policy
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      const swiper1 = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper1-button-next",
+          prevEl: ".swiper1-button-prev",
+        },
+        loop: !0,
+      });
+      const swiper2 = new Swiper(".swiper1", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper2-button-next",
+          prevEl: ".swiper2-button-prev",
+        },
+      });
+      const swiper3 = new Swiper(".swiper2", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        grabCursor: true,
+        loop: !0,
+        navigation: {
+          nextEl: ".swiper2-button-prev",
+          prevEl: ".swiper2-button-next",
+        },
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".home-content-main_content-faq__block-inner").click(function () {
+          var currentAnswer = $(this).find(
+            ".home-content-main_content-faq__block-inner-answer"
+          );
+          $(".home-content-main_content-faq__block-inner-answer")
+            .not(currentAnswer)
+            .slideUp();
+          currentAnswer.slideToggle();
+          $(".home-content-main_content-faq__block-inner-question").removeClass(
+            "active"
+          );
+          $(this)
+            .find(".home-content-main_content-faq__block-inner-question")
+            .toggleClass("active");
+          $(this).find(".faq-btn").toggleClass("btn__plus btn__minus");
+          $(".faq-btn")
+            .not($(this).find(".faq-btn"))
+            .removeClass("btn__minus")
+            .addClass("btn__plus");
+        });
+      });
+    </script>
+  </body>
+</html>
