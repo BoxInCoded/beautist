@@ -755,7 +755,7 @@ body {
                 padding: 48px 20px 60px;
                 text-align: center;
                 background: rgba(220, 220, 250, .5);
-                background-image: url('../../img/favoriteBg.png');
+                background-image: url('.../../img/favoriteBg.png');
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: 50% calc(100% + 270px);
@@ -1366,7 +1366,7 @@ body {
                 }
 
                 &-favorite {
-                    background-image: url('../../img/favoriteBg-pc.png');
+                    background-image: url('.../../img/favoriteBg-pc.png');
                     padding: 100px 500px;
                     background-position: 50% -160%;
 
