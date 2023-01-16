@@ -1,0 +1,1399 @@
+body {
+    background-color: $body;
+    margin: 0;
+
+    .main {
+        .home__block {
+            &-header {
+                background: rgba(220, 220, 250, 0.5);
+
+                .home__content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+
+                    &-image {
+                        width: 100%;
+                        position: relative;
+
+                        &-gradient {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background: linear-gradient(180deg, rgba(39, 35, 225, .6) 5.91%, rgba(220, 220, 250, .18) 100%);
+                            mix-blend-mode: screen;
+                            height: 100%;
+                            width: 100%;
+                        }
+
+                        &-home__image {
+                            background-image: url('../../img/header-mobile.jpg');
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                padding-bottom: 100%;
+                            }
+                        }
+                    }
+
+                    &-block {
+                        width: 100%;
+                        text-align: center;
+
+                        .main__title {
+                            @include montserrat;
+                            font-weight: $fw-smaller;
+                            font-size: 2.000em;
+                            line-height: 108%;
+                            text-align: center;
+                            color: $text__color;
+                            margin: 25px 22px 7.5px 18px;
+                        }
+
+                        .main_intro {
+                            display: block;
+                            margin: 16px 24px 15px;
+                            @include lorna;
+                            font-weight: $fw-normal;
+                            font-size: 16px;
+                            line-height: 130%;
+                            text-align: center;
+                            color: $black_text__color;
+                        }
+
+                        .set_level {
+                            @include lorna;
+                            font-weight: $fw-bold_1;
+                            font-size: 1.0989em;
+                            line-height: 150%;
+                            color: $text__color;
+                            margin: 7.5px 20px 20px;
+                        }
+
+                        .questioner__button {
+                            margin: 27px 0 19px;
+
+                            .btn {
+                                @include montserrat;
+                                font-weight: $fw-bold_1;
+                                font-size: 1.189em;
+                                line-height: 20px;
+                                text-align: center;
+                                color: #FFFFFF;
+                                padding: 13px 30px;
+                                width: 200px;
+                                background: #2723E1;
+                                border-radius: 88px;
+                            }
+                        }
+
+                        .certificate {
+                            padding-bottom: 51.53px;
+
+                            &-icon {
+                                width: 40px;
+                                height: 45.64px;
+                                background-image: url('../../img/certificate-home.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                display: inline-block;
+                                vertical-align: bottom;
+                            }
+
+                            &-text {
+                                @include lorna;
+                                font-weight: $fw-bold_1;
+                                font-size: 15.9px;
+                                line-height: 120%;
+                                color: $text__color;
+                                margin-left: 21px;
+                                width: 98px;
+                                display: inline-block;
+                                text-align: left;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-courses {
+                .container {
+                    @include container;
+
+                    .home-content {
+                        &-main_title {
+                            @include montserrat;
+                            font-weight: $fw-smaller;
+                            font-size: 2.000em;
+                            line-height: 108%;
+                            text-align: center;
+                            color: $text__color;
+                            margin: 50px 0;
+
+                        }
+
+                        &-slider {
+                            .swiper {
+                                margin-left: 20px !important;
+                                overflow: hidden;
+
+                                .swiper-wrapper {
+                                    .swiper-slide {
+                                        width: 261px !important;
+                                        margin-right: 18px;
+                                        border: 1px solid $nav__btn;
+                                        filter: drop-shadow(0px 7.34667px 33.06px rgba(39, 35, 225, 0.25));
+                                        border-radius: 20px;
+
+                                        .swiper-image {
+                                            width: 100%;
+                                            height: 173.84px;
+                                            border-radius: 20px;
+                                        }
+
+                                        &-content__block {
+                                            padding: 17px 20px 16px 20px;
+
+                                            &-title {
+                                                @include lorna;
+                                                font-weight: $fw-bold_1;
+                                                font-size: 15px;
+                                                line-height: 150%;
+                                                display: flex;
+                                                align-items: center;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                margin-bottom: -3px;
+                                                margin-left: -1px;
+                                                color: $nav__btn;
+                                            }
+
+                                            &-subtitle {
+                                                @include lorna;
+                                                font-weight: $fw-bold_1;
+                                                font-size: 9.5px;
+                                                line-height: 150%;
+                                                color: $text__color;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                margin-left: -1px;
+                                            }
+
+                                            &-main__block {
+                                                @include lorna;
+                                                font-weight: $fw-normal;
+                                                font-size: 14px;
+                                                line-height: 130%;
+                                                display: flex;
+                                                align-items: center;
+                                                color: $black_text__color;
+                                                height: 73px;
+                                                overflow: hidden;
+                                            }
+
+                                            &-btn__more {
+                                                @include montserrat;
+                                                font-weight: $fw-bold_1;
+                                                font-size: 12px;
+                                                line-height: 15px;
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 3px;
+                                                margin-top: 1px;
+                                                cursor: pointer;
+                                                color: $nav__btn;
+
+                                                img {
+                                                    vertical-align: middle;
+                                                    margin-left: 9px;
+                                                    width: 25px;
+                                                }
+                                            }
+                                        }
+
+                                        &-content__certificated {
+                                            position: absolute;
+                                            top: 0px;
+                                            right: 0px;
+                                            padding: 9px 14px;
+                                            background: $nav__btn;
+                                            border-radius: 20px;
+                                            text-align: center;
+                                            @include montserrat;
+                                            font-weight: $fw-bold_1;
+                                            font-size: 12.4px;
+                                            line-height: 15px;
+                                            color: #FFFFFF;
+
+                                            img {
+                                                vertical-align: middle;
+                                                margin-right: 8px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &-navigation__block {
+                                    display: none;
+                                    margin-top: 50px;
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-artist {
+                padding-top: 50px;
+
+                .container {
+                    @include container;
+
+                    .home-content {
+                        &-main_content {
+                            padding: 0 20px 38px;
+
+                            &-main__title {
+                                @include montserrat;
+                                font-weight: $fw-smaller;
+                                font-size: 2.000em;
+                                line-height: 108%;
+                                text-align: center;
+                                color: $text__color;
+                                margin-bottom: 25px;
+                            }
+
+                            &-main__description {
+                                @include lorna;
+                                font-weight: $fw-normal;
+                                font-size: 16.5px;
+                                line-height: 126%;
+                                text-align: center;
+                                color: $black_text__color;
+                            }
+
+                            &-main__btn {
+                                display: none;
+                                @include montserrat;
+                                font-weight: $fw-bold_1;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #FFFFFF;
+                                background: $nav__btn;
+                                border-radius: 88px;
+                                padding: 12px 25px;
+                            }
+                        }
+
+                        .swiper1 {
+                            margin-left: 20px !important;
+                            overflow: hidden;
+
+                            .swiper-wrapper {
+                                width: 203px !important;
+
+                                .swiper-slide {
+                                    margin-right: 20px;
+
+                                    &-artist__img {
+                                        border-radius: 20px;
+                                        width: 203px;
+                                        height: 241px;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                    }
+
+                                    &-artist__content {
+                                        padding-top: 20px;
+
+                                        &-block__title {
+                                            @include lorna;
+                                            font-weight: $fw-bold;
+                                            font-size: 14px;
+                                            line-height: 150%;
+                                            text-transform: uppercase;
+                                            color: $nav__btn;
+                                        }
+
+                                        &-block__subtitle {
+                                            @include lorna;
+                                            font-weight: $fw-normal;
+                                            font-size: 16.5px;
+                                            line-height: 150%;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                        }
+
+                                        &-block__content {
+                                            @include lorna;
+                                            font-weight: $fw-normal;
+                                            font-size: 16.5px;
+                                            line-height: 108%;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &-navigation__block {
+                                display: none;
+                            }
+                        }
+
+                        &-bottom_content {
+                            padding: 44px 0px 50px;
+                            text-align: center;
+
+                            .choose_course__button {
+                                @include montserrat;
+                                font-weight: $fw-bold_1;
+                                font-size: 16.5px;
+                                line-height: 20px;
+                                color: #FFFFFF;
+                                background: #2723E1;
+                                border-radius: 88px;
+                                padding: 13px 30px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-about {
+                background: rgba(220, 220, 250, 0.5);
+
+                .container {
+                    @include container;
+
+                    .home-content {
+
+                        &-main_content {
+                            &-inner {
+                                padding: 58px 20px 46px 20px;
+
+                                &-content {
+                                    &-icon {
+                                        width: 34px;
+                                    }
+
+                                    &-title {
+                                        @include montserrat;
+                                        font-weight: $fw-smaller;
+                                        font-size: 28px;
+                                        line-height: 108%;
+                                        color: $text__color;
+                                        margin: 11px -2px 18px;
+
+                                        &:last-child {}
+                                    }
+
+                                    &-description {
+                                        @include lorna;
+                                        font-weight: $fw-normal;
+                                        font-size: 17px;
+                                        line-height: 129%;
+                                        color: $black_text__color;
+                                        width: 93vw;
+                                        margin: 0px 0px 27px 0px;
+                                    }
+                                }
+
+                                &-img {
+                                    width: 100%;
+                                }
+
+                                &:last-child {
+                                    padding: 0 20px 46px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-testimonial {
+                padding: 50px 0;
+
+                .container {
+                    @include container;
+
+                    .home-content {
+                        &-main_content {
+                            &-title {
+                                @include montserrat;
+                                font-weight: $fw-smaller;
+                                font-size: 28px;
+                                line-height: 108%;
+                                color: $text__color;
+                                margin: 5px 19px 49px;
+                                padding: 0;
+                            }
+                        }
+
+                        &-slider {
+                            .swiper2 {
+                                margin-left: 20px !important;
+                                overflow: hidden;
+
+                                .swiper-wrapper {
+                                    .swiper-slide {
+                                        width: 259px !important;
+                                        margin-right: 18px;
+                                        border: 1px solid #2723E1;
+                                        filter: drop-shadow(0px 7.34667px 33.06px rgba(39, 35, 225, 0.25));
+                                        border-radius: 20px;
+
+                                        &-images__block {
+                                            display: flex;
+
+                                            img {
+                                                border-radius: 20px;
+                                                width: 100%;
+                                                height: 174px;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+
+
+                                        &-content__block {
+                                            padding: 15px 19px 6px;
+
+                                            &-main__title {
+                                                @include montserrat;
+                                                font-weight: $fw-smaller;
+                                                font-size: 48px;
+                                                line-height: 108%;
+                                                color: $text__color;
+                                                display: none;
+                                            }
+
+                                            &-title {
+                                                @include montserrat;
+                                                font-weight: $fw-bold_1;
+                                                font-size: 14.5px;
+                                                line-height: 150%;
+                                                color: $text__color;
+                                                margin: 7px 0;
+                                            }
+
+                                            &-content {
+                                                @include lorna;
+                                                font-weight: $fw-normal;
+                                                font-size: 14px;
+                                                line-height: 126%;
+                                                color: #000000;
+                                                width: 60vw;
+                                            }
+
+                                            &-author {
+                                                margin: 14px 0;
+
+                                                &-block {
+                                                    display: flex;
+                                                    gap: 14px;
+                                                    align-items: center;
+
+                                                    img {
+                                                        border-radius: 50%;
+                                                        display: inline-block;
+                                                        vertical-align: middle;
+                                                        width: 40px;
+                                                        height: 40px;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        background-size: cover;
+                                                    }
+
+                                                    &-block_content {
+                                                        margin: 6px 0px;
+
+                                                        &-title {
+                                                            @include lorna;
+                                                            font-weight: $fw-bold;
+                                                            font-size: 10px;
+                                                            line-height: 150%;
+                                                            text-transform: uppercase;
+                                                            color: $nav__btn;
+                                                        }
+
+                                                        &-position {
+                                                            @include lorna;
+                                                            font-weight: $fw-normal;
+                                                            font-size: 11.4px;
+                                                            line-height: 150%;
+                                                            color: $black_text__color;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            &-navigation__block {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &-navigation__block {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-raiting {
+                width: 100%;
+                background: rgba(220, 220, 250, .5);
+                background-image: url('../../img/raitings_bg.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding: 46px 20px;
+
+                .container {
+                    @include container;
+
+                    .home-content {
+                        &-main_content {
+                            &-main__title {
+                                @include montserrat;
+                                font-weight: $fw-smaller;
+                                font-size: 28px;
+                                line-height: 108%;
+                                text-align: center;
+                                color: $text__color;
+                                margin-bottom: 25px;
+                            }
+
+                            &-main__description {
+                                @include lorna;
+                                font-weight: $fw-normal;
+                                font-size: 16.5px;
+                                line-height: 128%;
+                                text-align: center;
+                                width: 89vw;
+                                color: $black_text__color;
+                            }
+
+                            &-raitings__block {
+                                margin-top: 75px;
+
+                                &-title {
+                                    @include lorna;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 26.5px;
+                                    line-height: 95%;
+                                    text-align: center;
+                                    color: $text__color;
+                                }
+
+                                &-content {
+                                    &-raiting {
+                                        margin-top: 30px;
+                                        text-align: center;
+
+                                        .raiting__content {
+                                            .raiting {
+                                                @include lorna;
+                                                font-weight: $fw-bold_1;
+                                                font-size: 40px;
+                                                line-height: 108%;
+                                                text-align: center;
+                                                color: $text__color;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            .label {
+                                                @include lorna;
+                                                font-weight: $fw-normal;
+                                                font-size: 14px;
+                                                line-height: 150%;
+                                                text-align: center;
+                                                color: $black_text__color;
+                                                margin-bottom: 18px;
+
+                                            }
+                                        }
+
+                                        .border {
+                                            width: 134px;
+                                            display: inline-block;
+                                            border: 1px solid $nav__btn;
+                                        }
+
+                                        &:last-child {
+                                            .border {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &-bottom__block {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                &-courses__title {
+                                    @include lorna;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 17px;
+                                    line-height: 150%;
+                                    color: $black_text__color;
+                                    margin: 29px 0 11px;
+                                }
+
+                                &-courses__btn {
+                                    @include montserrat;
+                                    background: $nav__btn;
+                                    border-radius: 88px;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: #FFFFFF;
+                                    padding: 10px 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-faq {
+                .container {
+                    @include container;
+
+                    .home-content {
+                        width: 100%;
+                        padding: 55px 18px 40px;
+
+                        &-main_content {
+                            &-main__title {
+                                @include montserrat;
+                                font-weight: $fw-smaller;
+                                font-size: 28px;
+                                line-height: 108%;
+                                text-align: center;
+                                color: $text__color;
+                                margin-bottom: 48px;
+                            }
+
+                            &-faq__block {
+                                width: 100%;
+                                border-top: 1px solid $nav__btn;
+                                padding: 36.5px 0;
+                                cursor: pointer;
+
+                                &-inner {
+                                    &-question {
+                                        @include lorna;
+                                        font-weight: $fw-normal;
+                                        font-size: 23.3px;
+                                        line-height: 118%;
+                                        color: #29216B;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        .faq-btn {
+                                            width: 16px;
+                                            height: 16px;
+                                            cursor: pointer;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                        }
+
+                                        .btn__plus {
+                                            background-image: url('../../img/plus.svg');
+                                        }
+
+                                        .btn__minus {
+                                            background-image: url('../../img/minus.svg');
+                                        }
+                                    }
+
+                                    &-answer {
+                                        @include lorna;
+                                        font-weight: $fw-normal;
+                                        font-size: 19px;
+                                        line-height: 117%;
+                                        color: $black_text__color;
+                                        margin-top: 36px;
+                                        display: none;
+                                    }
+                                }
+
+                                &:last-child {
+                                    border-bottom: 1px solid $nav__btn;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            &-favorite {
+                width: 100%;
+                padding: 48px 20px 60px;
+                text-align: center;
+                background: rgba(220, 220, 250, .5);
+                background-image: url('.../../img/favoriteBg.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: 50% calc(100% + 270px);
+
+                .container {
+                    @include container;
+
+                    .home-content {
+
+                        &-main_content {
+                            &-main__title {
+                                @include montserrat;
+                                font-weight: $fw-smaller;
+                                font-size: 28px;
+                                line-height: 108%;
+                                text-align: center;
+                                color: $text__color;
+                                padding: 0 20px;
+                                margin: 0 0 25px;
+                            }
+
+                            &-main__description {
+                                @include lorna;
+                                font-weight: $fw-normal;
+                                font-size: 17px;
+                                line-height: 120%;
+                                text-align: center;
+                                color: $black_text__color;
+                                margin: 0 0 38px;
+
+                            }
+
+                            .get__started {
+                                @include montserrat;
+                                font-weight: $fw-bold_1;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #FFFFFF;
+                                background: #2723E1;
+                                border: 0.661957px solid #2723E1;
+                                border-radius: 58.2522px;
+                                padding: 12px 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .main {
+            .home__block {
+                &-header {
+                    .home__content {
+                        flex-direction: row;
+
+                        &-block {
+                            order: 1;
+                            flex: 0 0 50%;
+                            text-align: left;
+                            margin: 0;
+                            padding: 103px 140px 0px 98px;
+                            box-sizing: border-box;
+                        }
+
+                        &-image {
+                            order: 2;
+                            flex: 0 50%;
+
+                            &-gradient {}
+
+                            &-home__image {
+                                background-image: url('../../img/header-pc.jpg');
+                                width: 100%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    padding-bottom: 100%;
+                                }
+                            }
+                        }
+
+                        .main__title {
+                            font-size: 3.429em;
+                            margin: 0 0 25px;
+                            text-align: left;
+                            line-height: 110%;
+                        }
+
+                        .main_intro {
+                            margin: 0 2px 27px;
+                            font-size: 20.5px;
+                            text-align: left;
+                            line-height: 119%;
+                            word-spacing: 1px;
+                        }
+
+                        .set_level {
+                            font-size: 20.2px;
+                            margin: 0 0 20px;
+                        }
+
+                        .questioner__button {
+                            margin: 0 0 21px;
+                            padding: 13px 7px;
+
+                            .btn {
+                                font-size: 20px;
+                                line-height: 22px;
+                                padding: 12px 30px;
+                            }
+                        }
+
+                        .certificate {
+                            text-align: left;
+
+                            &-text {
+                                width: 95px;
+                                margin-left: 24px;
+                                line-height: 123%;
+                            }
+                        }
+                    }
+                }
+
+                &-courses {
+                    .container {
+                        .home-content {
+                            &-main_title {
+                                font-size: 3.458em;
+                                line-height: 100%;
+                                margin: 84px 0 70px;
+                                word-spacing: -3px;
+
+                            }
+
+                            &-slider {
+                                .swiper {
+                                    margin-left: 100px !important;
+                                    overflow: hidden;
+
+                                    .swiper-wrapper {
+                                        .swiper-slide {
+                                            width: 365px !important;
+                                            margin-right: 20px;
+
+                                            .swiper-image {
+                                                height: 243.66px;
+                                            }
+
+                                            &-content__block {
+                                                padding: 20px 55px 23px 22px;
+
+                                                &-title {
+                                                    font-size: 19.5px;
+                                                    line-height: 158%;
+                                                }
+
+                                                &-subtitle {
+                                                    font-size: 10.8px;
+                                                    line-height: 155%;
+                                                }
+
+                                                &-main__block {
+                                                    margin: 13px 0;
+                                                    font-size: 16.1px;
+                                                    line-height: 131%;
+                                                }
+
+                                                &-btn__more {
+                                                    font-size: 14.5px;
+                                                    line-height: 15px;
+                                                    gap: 7px;
+
+                                                    img {
+                                                        vertical-align: middle;
+                                                        margin-left: 9px;
+                                                        width: 25px;
+                                                    }
+                                                }
+                                            }
+
+                                            &-content__certificated {
+                                                padding: 8px 15px;
+                                                font-size: 13.5px;
+                                                line-height: 19px;
+
+                                                img {
+                                                    vertical-align: middle;
+                                                    margin-right: 8px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &-navigation__block {
+                                        display: flex;
+                                        gap: 37px;
+
+                                        &-view_all_courses_btn {
+                                            vertical-align: top;
+                                            position: absolute;
+                                            top: calc(50% - 0px);
+                                            left: calc(50% - 50px);
+                                            transform: translate(-50%, -50%);
+                                            padding: 12px 25px;
+                                            font-size: 22px;
+                                            line-height: 22px;
+                                            font-weight: 600;
+                                            color: #FFFFFF;
+                                            border: 1px solid #2723E1;
+                                            background: #2723E1;
+                                            border-radius: 88px;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                &-artist {
+                    padding-top: 100px;
+                    width: 100%;
+
+                    .container {
+                        .home-content {
+                            display: flex;
+
+                            &-main_content {
+                                padding: 0 86px 0 100px;
+                                width: 720px;
+                                vertical-align: top;
+
+                                &-main__title {
+                                    margin-bottom: 26px;
+                                    margin-left: 0px;
+                                    text-align: left;
+                                    margin: 0 0 25px -3px;
+                                    font-size: 48px;
+                                }
+
+                                &-main__description {
+                                    font-size: 25px;
+                                    line-height: 112%;
+                                    text-align: left;
+                                    margin-bottom: 47px;
+                                }
+
+                                &-main__btn {
+                                    display: block;
+                                    width: 46%;
+                                }
+                            }
+
+                            .swiper1 {
+                                width: calc(100% - 720px);
+                                height: calc(100% - 720px);
+                                vertical-align: top;
+                                margin-left: 0px !important;
+
+                                .swiper-wrapper {
+                                    width: 291px !important;
+
+                                    .swiper-slide {
+                                        margin-right: 25px;
+
+                                        &-artist__img {
+                                            width: 291px;
+                                            height: 360px;
+                                        }
+
+                                        &-artist__content {
+                                            padding-top: 20px;
+
+                                            &-block__title {
+                                                font-size: 18px;
+                                                line-height: 140%;
+                                            }
+
+                                            &-block__subtitle {
+                                                font-size: 20.5px;
+                                                line-height: 130%;
+                                            }
+
+                                            &-block__content {
+                                                font-size: 21.5px;
+                                                line-height: 120%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &-navigation__block {
+                                    display: flex;
+                                    gap: 35px;
+                                    margin-top: 20.4px;
+                                    margin-bottom: 100px;
+                                }
+                            }
+
+                            &-bottom_content {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                &-about {
+                    .container {
+                        padding: 100px 100px 37px;
+
+                        .home-content {
+                            &-main_content {
+                                &-inner {
+                                    padding: 0 0 60px;
+                                    display: flex;
+                                    gap: 12.5%;
+
+                                    &:last-child {
+                                        padding: 0;
+                                    }
+
+                                    &-content {
+                                        flex: 0 0 43.548387%;
+                                        width: 50%;
+                                        order: 2;
+
+                                        &.last-child {
+                                            order: 1;
+                                        }
+
+                                        &-icon {
+                                            img {
+                                                width: 48px;
+                                            }
+                                        }
+
+                                        &-title {
+                                            font-size: 48px;
+                                            margin: 25px 0px 28px;
+                                        }
+
+                                        &-description {
+                                            font-size: 20px;
+                                            line-height: 138%;
+                                            width: 82%;
+
+                                            &.last-child {
+                                                font-size: 20px;
+                                                line-height: 127%;
+                                                width: 97%;
+                                            }
+                                        }
+                                    }
+
+                                    &-img {
+                                        flex: 0 0 43.548387%;
+                                        order: 1;
+
+                                        &.last-child {
+                                            order: 2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-testimonial {
+                    padding: 100px 0;
+
+                    .container {
+                        .home-content {
+                            &-main_content {
+
+                                &-title {
+                                    margin: 0;
+                                    display: none;
+                                }
+                            }
+
+                            &-slider {
+                                .swiper2 {
+                                    margin-left: 0 !important;
+
+                                    .swiper-wrapper {
+                                        padding: 0 100px;
+
+                                        .swiper-slide {
+                                            width: 100% !important;
+                                            margin-right: 0px;
+                                            border: none;
+                                            filter: none;
+                                            display: flex;
+
+                                            &-images__block {
+                                                order: 1;
+
+                                                img {
+                                                    border-radius: 0px 45px 45px 0px;
+                                                    width: 320px;
+                                                    height: 575px;
+                                                    padding: 0 7px;
+                                                    object-fit: cover;
+                                                    object-position: center;
+                                                }
+                                            }
+
+                                            &-content__block {
+                                                order: 2;
+                                                padding: 0 0 0 60px;
+                                                vertical-align: top;
+                                                width: 50%;
+
+                                                &-main__title {
+                                                    display: block;
+                                                    margin-bottom: 51px;
+                                                }
+
+                                                &-title {
+                                                    font-size: 22px;
+                                                    margin: 7px 0 14px;
+                                                }
+
+                                                &-content {
+                                                    width: 75%;
+                                                    font-size: 21px;
+                                                }
+
+                                                img {
+                                                    width: 51px;
+                                                    margin-bottom: 15px;
+                                                }
+
+                                                &-author {
+                                                    margin: 33px 0 28px;
+
+                                                    &-block {
+                                                        gap: 33px;
+
+                                                        img {
+                                                            width: 80px;
+                                                            height: 80px;
+                                                        }
+
+                                                        &-block_content {
+
+                                                            &-title {
+                                                                font-size: 18px;
+                                                                line-height: 108%;
+                                                            }
+
+                                                            &-position {
+                                                                font-size: 20px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                &-navigation__block {
+                                                    display: flex;
+                                                    gap: 28px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-raiting {
+                    padding: 100px 0;
+                    background-image: url('../../img/raitings_bg-pc.png');
+
+                    .container {
+
+                        .home-content {
+                            &-main_content {
+                                &-main__title {
+                                    font-size: 48px;
+                                    padding: 0px 8em;
+                                    margin: -14px 0 40px;
+                                }
+
+                                &-main__description {
+                                    padding: 0 11.79em;
+                                    width: 100%;
+                                    font-size: 21px;
+                                    line-height: 128%;
+                                }
+
+                                &-raitings__block {
+                                    margin-top: 8em;
+
+                                    &-title {
+                                        font-size: 40px;
+                                        line-height: 138%;
+                                    }
+
+                                    &-content {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        margin: 45px 0;
+
+                                        &-raiting {
+                                            &:first-child {
+                                                flex: 0 0 36%;
+                                            }
+
+                                            &:nth-child(2) {
+                                                flex: 0 0 27%;
+                                            }
+
+                                            &:last-child {
+                                                flex: 0 0 35%;
+                                            }
+
+                                            .raiting__content {
+                                                .raiting {
+                                                    font-size: 60px;
+                                                }
+
+                                                .label {
+                                                    font-size: 22px;
+                                                    padding-left: 14px;
+                                                }
+                                            }
+
+                                            .border {}
+
+                                            &:last-child {
+                                                .border {}
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &-bottom__block {
+
+                                    &-courses__title {
+                                        font-size: 19px;
+                                        margin: -19px 0 23px;
+                                    }
+
+                                    &-courses__btn {
+                                        font-size: 19px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-faq {
+                    width: 100%;
+                    padding: 100px 180px;
+
+                    .container {
+
+                        .home-content {
+                            padding: 0;
+
+                            &-main_content {
+                                &-main__title {
+                                    font-size: 48px;
+                                    margin-bottom: 75px;
+                                }
+
+                                &-faq__block {
+                                    padding: 38px 0;
+
+                                    &-inner {
+                                        &-question {
+                                            font-size: 28px;
+
+                                            .faq-btn {}
+
+                                            .btn__plus {}
+
+                                            .btn__minus {}
+                                        }
+
+                                        &-answer {
+                                            font-size: 21px;
+                                            width: 82%;
+
+                                        }
+                                    }
+
+                                    &:last-child {}
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+                &-favorite {
+                    background-image: url('.../../img/favoriteBg-pc.png');
+                    padding: 100px 500px;
+                    background-position: 50% -160%;
+
+                    .container {
+
+                        .home-content {
+
+                            &-main_content {
+                                &-main__title {
+                                    font-size: 48px;
+                                    margin: 0 0 22px;
+                                }
+
+                                &-main__description {
+                                    font-size: 21px;
+                                    margin: 0 0 87px;
+                                }
+
+                                .get__started {
+                                    font-size: 19px;
+                                    padding: 12px 39px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

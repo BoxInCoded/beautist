@@ -1,0 +1,197 @@
+.footer {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px -5px 30px rgba(39, 35, 225, 0.2);
+
+    .container {
+        @include container;
+        padding: 40px 20px;
+
+        .footer__content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            &-nav__block {
+                order: 1;
+                flex: 0 0 44%;
+
+                &-title {
+                    @include lorna;
+                    font-weight: $fw-bold;
+                    font-size: 15px;
+                    line-height: 130%;
+                    color: $text__color;
+                    margin-bottom: 20px;
+                }
+
+                &-nav {
+                    &-footer__nav {
+                        &-list {
+                            margin-bottom: 10px;
+
+                            &-link {
+                                @include lorna;
+                                font-weight: $fw-normal;
+                                font-size: 16px;
+                                line-height: 94%;
+                                color: $text__color;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &-socials__block {
+                order: 2;
+                text-align: center;
+                flex: 0 0 50%;
+
+                &-title {
+                    @include lorna;
+                    font-weight: $fw-bold;
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: $text__color;
+                    margin-bottom: 18px;
+                }
+
+                &-links {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                }
+            }
+
+            &-funds__block {
+                order: 3;
+                margin: 28px 0;
+            }
+
+            &-terms__block {
+                order: 4;
+                flex: 0 0 100%;
+                text-align: center;
+                padding: 12px 0px;
+
+                &-inner {
+                    &-terms__nav {
+                        &-copyright {
+                            @include lorna;
+                            font-weight: $fw-bold;
+                            font-size: 16px;
+                            line-height: 150%;
+                            text-align: center;
+                            color: $text__color;
+                            margin-top: 20px;
+                        }
+
+                        &-main__nav {
+                            &-nav {
+                                &-nav__list {
+                                    margin-top: 3px;
+
+                                    &-nav__links {
+                                        @include lorna;
+                                        font-weight: $fw-normal;
+                                        font-size: 16.5px;
+                                        line-height: 150%;
+                                        text-align: center;
+                                        color: $text__color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+
+        .container {
+            padding: 67px 180px 30px;
+
+            .footer__content {
+
+                &-nav__block {
+                    flex: 0 0 20%;
+
+                    &-title {}
+
+                    &-nav {
+                        &-footer__nav {
+                            &-list {
+
+                                &-link {}
+                            }
+                        }
+                    }
+
+                }
+
+                &-socials__block {
+                    text-align: left;
+                    flex: 0 0 38%;
+
+                    &-links {
+                        justify-content: flex-start;
+                    }
+                }
+
+                &-funds__block {
+                    flex: 0 0 42%;
+                    margin: 5px 0;
+                    text-align: right;
+
+                }
+
+                &-terms__block {
+                    padding: 45px 0px;
+
+                    &-inner {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+
+                        &-logo {
+                            order: 2;
+                            flex: 0 0 40%;
+                            text-align: right;
+                            margin-top: -15px;
+                        }
+
+                        &-terms__nav {
+                            order: 1;
+                            flex: 0 0 60%;
+                            text-align: left;
+                            display: flex;
+                            gap: 25px;
+
+                            &-copyright {
+                                margin-top: -5px;
+                            }
+
+                            &-main__nav {
+                                &-nav {
+                                    display: flex;
+                                    gap: 22px;
+
+                                    &-nav__list {
+                                        margin-top: -5px;
+
+                                        &-nav__links {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
