@@ -33,7 +33,7 @@ body {
 
                         &-product__image {
                             width: 100%;
-                            background-image: url('../../img/courses_header-mobile.png');
+                            background-image: url('.../../img/courses_header-mobile.png');
                             background-repeat: no-repeat;
                             background-size: cover;
 
@@ -58,7 +58,7 @@ body {
                             margin-bottom: 5px;
 
                             &-icon {
-                                background-image: url('../../img/certificate-home.svg');
+                                background-image: url('.../../img/certificate-home.svg');
                                 width: 26px;
                                 height: 26px;
                                 background-repeat: no-repeat;
@@ -401,7 +401,7 @@ body {
 
                                         .play-button {
                                             position: absolute;
-                                            background-image: url('../../img/play_button-mobile.svg');
+                                            background-image: url('.../../img/play_button-mobile.svg');
                                             background-position: center;
                                             background-repeat: no-repeat;
                                             top: 50%;
@@ -484,11 +484,11 @@ body {
                                                     }
 
                                                     .btn__plus {
-                                                        background-image: url('../../img/plus.svg');
+                                                        background-image: url('.../../img/plus.svg');
                                                     }
 
                                                     .btn__minus {
-                                                        background-image: url('../../img/minus.svg');
+                                                        background-image: url('.../../img/minus.svg');
                                                     }
                                                 }
 
@@ -1059,11 +1059,11 @@ body {
                                         }
 
                                         .btn__plus {
-                                            background-image: url('../../img/plus.svg');
+                                            background-image: url('.../../img/plus.svg');
                                         }
 
                                         .btn__minus {
-                                            background-image: url('../../img/minus.svg');
+                                            background-image: url('.../../img/minus.svg');
                                         }
                                     }
 
@@ -1094,7 +1094,7 @@ body {
                 padding: 60px 20px;
                 text-align: center;
                 background: #F8F8FF;
-                background-image: url('../../img/favoriteBg-mobile.png');
+                background-image: url('.../../img/favoriteBg-mobile.png');
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: 100%;
@@ -1557,7 +1557,7 @@ body {
                             &-gradient {}
 
                             &-product__image {
-                                background-image: url('../../img/courses_header-pc.png');
+                                background-image: url('.../../img/courses_header-pc.png');
                                 width: 100%;
                                 background-repeat: no-repeat;
                                 background-size: cover;
@@ -1611,7 +1611,7 @@ body {
 
                                             .play-button {
                                                 position: absolute;
-                                                background-image: url('../../img/play_button.svg');
+                                                background-image: url('.../../img/play_button.svg');
                                                 background-position: center;
                                                 background-repeat: no-repeat;
                                                 top: 50%;
@@ -1694,11 +1694,11 @@ body {
                                                         }
 
                                                         .btn__plus {
-                                                            background-image: url('../../img/plus.svg');
+                                                            background-image: url('.../../img/plus.svg');
                                                         }
 
                                                         .btn__minus {
-                                                            background-image: url('../../img/minus.svg');
+                                                            background-image: url('.../../img/minus.svg');
                                                         }
                                                     }
 
@@ -2247,7 +2247,7 @@ body {
                 }
 
                 &-favorite {
-                    background-image: url('../../img/favoriteBg-pc.png');
+                    background-image: url('.../../img/favoriteBg-pc.png');
                     padding: 100px 500px 109px;
                     background-position: 50% -160%;
 
