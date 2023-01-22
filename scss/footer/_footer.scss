@@ -17,7 +17,7 @@
                 flex: 0 0 44%;
 
                 &-title {
-                    @include lorna;
+                    @include lora;
                     font-weight: $fw-bold;
                     font-size: 15px;
                     line-height: 130%;
@@ -31,10 +31,10 @@
                             margin-bottom: 10px;
 
                             &-link {
-                                @include lorna;
+                                @include lora;
                                 font-weight: $fw-normal;
-                                font-size: 16px;
-                                line-height: 94%;
+                                font-size: 14px;
+                                line-height: 95%;
                                 color: $text__color;
                             }
                         }
@@ -49,7 +49,7 @@
                 flex: 0 0 50%;
 
                 &-title {
-                    @include lorna;
+                    @include lora;
                     font-weight: $fw-bold;
                     font-size: 16px;
                     line-height: 130%;
@@ -78,7 +78,7 @@
                 &-inner {
                     &-terms__nav {
                         &-copyright {
-                            @include lorna;
+                            @include lora;
                             font-weight: $fw-bold;
                             font-size: 16px;
                             line-height: 150%;
@@ -93,9 +93,9 @@
                                     margin-top: 3px;
 
                                     &-nav__links {
-                                        @include lorna;
+                                        @include lora;
                                         font-weight: $fw-normal;
-                                        font-size: 16.5px;
+                                        font-size: 13px;
                                         line-height: 150%;
                                         text-align: center;
                                         color: $text__color;

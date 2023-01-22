@@ -57,16 +57,16 @@ body {
                         .main_intro {
                             display: block;
                             margin: 16px 24px 15px;
-                            @include lorna;
+                            @include lora;
                             font-weight: $fw-normal;
                             font-size: 16px;
-                            line-height: 130%;
+                            line-height: 140%;
                             text-align: center;
                             color: $black_text__color;
                         }
 
                         .set_level {
-                            @include lorna;
+                            @include lora;
                             font-weight: $fw-bold_1;
                             font-size: 1.0989em;
                             line-height: 150%;
@@ -105,9 +105,9 @@ body {
                             }
 
                             &-text {
-                                @include lorna;
+                                @include lora;
                                 font-weight: $fw-bold_1;
-                                font-size: 15.9px;
+                                font-size: 15px;
                                 line-height: 120%;
                                 color: $text__color;
                                 margin-left: 21px;
@@ -161,7 +161,7 @@ body {
                                             padding: 17px 20px 16px 20px;
 
                                             &-title {
-                                                @include lorna;
+                                                @include lora;
                                                 font-weight: $fw-bold_1;
                                                 font-size: 15px;
                                                 line-height: 150%;
@@ -176,7 +176,7 @@ body {
                                             }
 
                                             &-subtitle {
-                                                @include lorna;
+                                                @include lora;
                                                 font-weight: $fw-bold_1;
                                                 font-size: 9.5px;
                                                 line-height: 150%;
@@ -188,10 +188,10 @@ body {
                                             }
 
                                             &-main__block {
-                                                @include lorna;
+                                                @include lora;
                                                 font-weight: $fw-normal;
                                                 font-size: 14px;
-                                                line-height: 130%;
+                                                line-height: 150%;
                                                 display: flex;
                                                 align-items: center;
                                                 color: $black_text__color;
@@ -273,7 +273,7 @@ body {
                             }
 
                             &-main__description {
-                                @include lorna;
+                                @include lora;
                                 font-weight: $fw-normal;
                                 font-size: 16.5px;
                                 line-height: 126%;
@@ -316,7 +316,7 @@ body {
                                         padding-top: 20px;
 
                                         &-block__title {
-                                            @include lorna;
+                                            @include lora;
                                             font-weight: $fw-bold;
                                             font-size: 14px;
                                             line-height: 150%;
@@ -325,7 +325,7 @@ body {
                                         }
 
                                         &-block__subtitle {
-                                            @include lorna;
+                                            @include lora;
                                             font-weight: $fw-normal;
                                             font-size: 16.5px;
                                             line-height: 150%;
@@ -335,7 +335,7 @@ body {
                                         }
 
                                         &-block__content {
-                                            @include lorna;
+                                            @include lora;
                                             font-weight: $fw-normal;
                                             font-size: 16.5px;
                                             line-height: 108%;
@@ -400,7 +400,7 @@ body {
                                     }
 
                                     &-description {
-                                        @include lorna;
+                                        @include lora;
                                         font-weight: $fw-normal;
                                         font-size: 17px;
                                         line-height: 129%;
@@ -490,10 +490,10 @@ body {
                                             }
 
                                             &-content {
-                                                @include lorna;
+                                                @include lora;
                                                 font-weight: $fw-normal;
                                                 font-size: 14px;
-                                                line-height: 126%;
+                                                line-height: 150%;
                                                 color: #000000;
                                                 width: 60vw;
                                             }
@@ -521,7 +521,7 @@ body {
                                                         margin: 6px 0px;
 
                                                         &-title {
-                                                            @include lorna;
+                                                            @include lora;
                                                             font-weight: $fw-bold;
                                                             font-size: 10px;
                                                             line-height: 150%;
@@ -530,7 +530,7 @@ body {
                                                         }
 
                                                         &-position {
-                                                            @include lorna;
+                                                            @include lora;
                                                             font-weight: $fw-normal;
                                                             font-size: 11.4px;
                                                             line-height: 150%;
@@ -580,7 +580,7 @@ body {
                             }
 
                             &-main__description {
-                                @include lorna;
+                                @include lora;
                                 font-weight: $fw-normal;
                                 font-size: 16.5px;
                                 line-height: 128%;
@@ -593,7 +593,7 @@ body {
                                 margin-top: 75px;
 
                                 &-title {
-                                    @include lorna;
+                                    @include lora;
                                     font-weight: $fw-bold_1;
                                     font-size: 26.5px;
                                     line-height: 95%;
@@ -608,7 +608,7 @@ body {
 
                                         .raiting__content {
                                             .raiting {
-                                                @include lorna;
+                                                @include lora;
                                                 font-weight: $fw-bold_1;
                                                 font-size: 40px;
                                                 line-height: 108%;
@@ -618,7 +618,7 @@ body {
                                             }
 
                                             .label {
-                                                @include lorna;
+                                                @include lora;
                                                 font-weight: $fw-normal;
                                                 font-size: 14px;
                                                 line-height: 150%;
@@ -651,7 +651,7 @@ body {
                                 align-items: center;
 
                                 &-courses__title {
-                                    @include lorna;
+                                    @include lora;
                                     font-weight: $fw-bold_1;
                                     font-size: 17px;
                                     line-height: 150%;
@@ -703,7 +703,7 @@ body {
 
                                 &-inner {
                                     &-question {
-                                        @include lorna;
+                                        @include lora;
                                         font-weight: $fw-normal;
                                         font-size: 23.3px;
                                         line-height: 118%;
@@ -730,12 +730,12 @@ body {
                                     }
 
                                     &-answer {
-                                        @include lorna;
+                                        @include lora;
                                         font-weight: $fw-normal;
                                         font-size: 19px;
-                                        line-height: 117%;
+                                        line-height: 150%;
                                         color: $black_text__color;
-                                        margin-top: 36px;
+                                        margin-top: 43px;
                                         display: none;
                                     }
                                 }
@@ -779,10 +779,10 @@ body {
                             }
 
                             &-main__description {
-                                @include lorna;
+                                @include lora;
                                 font-weight: $fw-normal;
                                 font-size: 17px;
-                                line-height: 120%;
+                                line-height: 150%;
                                 text-align: center;
                                 color: $black_text__color;
                                 margin: 0 0 38px;
@@ -852,14 +852,13 @@ body {
 
                         .main_intro {
                             margin: 0 2px 27px;
-                            font-size: 20.5px;
+                            font-size: 18px;
                             text-align: left;
-                            line-height: 119%;
                             word-spacing: 1px;
                         }
 
                         .set_level {
-                            font-size: 20.2px;
+                            font-size: 19px;
                             margin: 0 0 20px;
                         }
 
@@ -878,9 +877,8 @@ body {
                             text-align: left;
 
                             &-text {
-                                width: 95px;
                                 margin-left: 24px;
-                                line-height: 123%;
+                                line-height: 144%;
                             }
                         }
                     }
@@ -915,8 +913,8 @@ body {
                                                 padding: 20px 55px 23px 22px;
 
                                                 &-title {
-                                                    font-size: 19.5px;
-                                                    line-height: 158%;
+                                                    font-size: 18px;
+                                                    line-height: 149%;
                                                 }
 
                                                 &-subtitle {
@@ -926,8 +924,6 @@ body {
 
                                                 &-main__block {
                                                     margin: 13px 0;
-                                                    font-size: 16.1px;
-                                                    line-height: 131%;
                                                 }
 
                                                 &-btn__more {
@@ -1006,15 +1002,15 @@ body {
                                 }
 
                                 &-main__description {
-                                    font-size: 25px;
-                                    line-height: 112%;
+                                    font-size: 18px;
+                                    line-height: 167%;
                                     text-align: left;
                                     margin-bottom: 47px;
                                 }
 
                                 &-main__btn {
                                     display: block;
-                                    width: 46%;
+                                    width: 43%;
                                 }
                             }
 
@@ -1044,13 +1040,13 @@ body {
                                             }
 
                                             &-block__subtitle {
-                                                font-size: 20.5px;
-                                                line-height: 130%;
+                                                font-size: 18px;
+                                                line-height: 162%;
                                             }
 
                                             &-block__content {
-                                                font-size: 21.5px;
-                                                line-height: 120%;
+                                                font-size: 18px;
+                                                line-height: 130%;
                                             }
                                         }
                                     }
@@ -1059,7 +1055,7 @@ body {
                                 &-navigation__block {
                                     display: flex;
                                     gap: 35px;
-                                    margin-top: 20.4px;
+                                    margin-top: 26px;
                                     margin-bottom: 100px;
                                 }
                             }
@@ -1073,7 +1069,7 @@ body {
 
                 &-about {
                     .container {
-                        padding: 100px 100px 37px;
+                        padding: 100px 100px 70px;
 
                         .home-content {
                             &-main_content {
@@ -1103,17 +1099,17 @@ body {
 
                                         &-title {
                                             font-size: 48px;
-                                            margin: 25px 0px 28px;
+                                            margin: 23px 0px 28px;
                                         }
 
                                         &-description {
-                                            font-size: 20px;
-                                            line-height: 138%;
+                                            font-size: 17.4px;
+                                            line-height: 151%;
                                             width: 82%;
 
                                             &.last-child {
-                                                font-size: 20px;
-                                                line-height: 127%;
+                                                font-size: 17px;
+                                                line-height: 152%;
                                                 width: 97%;
                                             }
                                         }
@@ -1186,17 +1182,17 @@ body {
 
                                                 &-title {
                                                     font-size: 22px;
-                                                    margin: 7px 0 14px;
+                                                    margin: 10px 0 14px;
                                                 }
 
                                                 &-content {
                                                     width: 75%;
-                                                    font-size: 21px;
+                                                    font-size: 19px;
                                                 }
 
                                                 img {
                                                     width: 51px;
-                                                    margin-bottom: 15px;
+                                                    margin-bottom: 12px;
                                                 }
 
                                                 &-author {
@@ -1214,11 +1210,11 @@ body {
 
                                                             &-title {
                                                                 font-size: 18px;
-                                                                line-height: 108%;
+                                                                line-height: 80%;
                                                             }
 
                                                             &-position {
-                                                                font-size: 20px;
+                                                                font-size: 18px;
                                                             }
                                                         }
                                                     }
@@ -1252,17 +1248,17 @@ body {
                                 }
 
                                 &-main__description {
-                                    padding: 0 11.79em;
+                                    padding: 0 12.79em;
                                     width: 100%;
-                                    font-size: 21px;
-                                    line-height: 128%;
+                                    font-size: 19px;
+                                    line-height: 143%;
                                 }
 
                                 &-raitings__block {
                                     margin-top: 8em;
 
                                     &-title {
-                                        font-size: 40px;
+                                        font-size: 37px;
                                         line-height: 138%;
                                     }
 
@@ -1291,7 +1287,7 @@ body {
                                                 }
 
                                                 .label {
-                                                    font-size: 22px;
+                                                    font-size: 18px;
                                                     padding-left: 14px;
                                                 }
                                             }
@@ -1309,7 +1305,7 @@ body {
 
                                     &-courses__title {
                                         font-size: 19px;
-                                        margin: -19px 0 23px;
+                                        margin: -13px 0 23px;
                                     }
 
                                     &-courses__btn {
@@ -1341,7 +1337,7 @@ body {
 
                                     &-inner {
                                         &-question {
-                                            font-size: 28px;
+                                            font-size: 24px;
 
                                             .faq-btn {}
 
@@ -1351,7 +1347,7 @@ body {
                                         }
 
                                         &-answer {
-                                            font-size: 21px;
+                                            font-size: 18px;
                                             width: 82%;
 
                                         }
@@ -1368,7 +1364,7 @@ body {
 
                 &-favorite {
                     background-image: url('../../img/favoriteBg-pc.png');
-                    padding: 100px 500px;
+                    padding: 105px 500px;
                     background-position: 50% -160%;
 
                     .container {
@@ -1378,12 +1374,12 @@ body {
                             &-main_content {
                                 &-main__title {
                                     font-size: 48px;
-                                    margin: 0 0 22px;
+                                    margin: 0 0 29px;
                                 }
 
                                 &-main__description {
-                                    font-size: 21px;
-                                    margin: 0 0 87px;
+                                    font-size: 18px;
+                                    margin: 0 0 84px;
                                 }
 
                                 .get__started {

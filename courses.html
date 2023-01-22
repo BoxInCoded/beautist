@@ -1,799 +1,966 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./dist/css/app.min.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <title>Courses</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="main__header">
-          <nav class="main__nav">
-            <a href="./index.html" class="logo">
-              <img src="..../../img/logo.png" alt="beautist" />
-            </a>
-            <ul class="nav__list">
-              <li class="nav__list-item">
-                <a href="./index.html" class="nav__link">Home</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./courses.html" class="nav__link">Courses</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./product.html" class="nav__link">Test</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./contact.html" class="nav__link">Contact Us</a>
-              </li>
-            </ul>
-            <div class="cart__login">
-              <div class="cart">
-                <img src="..../../img/add-to-cart.svg" alt="cart" />
-              </div>
-              <div class="login">
-                <a href="./login.html" class="login__button">Sign in</a>
-              </div>
-              <div class="register">
-                <a href="./register.html" class="register__button">Register</a>
-              </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./dist/css/app.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>Courses</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="main__header">
+        <nav class="main__nav">
+          <a href="./index.html" class="logo">
+            <img src="..../../img/logo.png" alt="beautist" />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./courses.html" class="nav__link">Courses</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./product.html" class="nav__link">Test</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./contact.html" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+          <div class="cart__login">
+            <div class="cart">
+              <img src="..../../img/add-to-cart.svg" alt="cart" />
             </div>
-          </nav>
-        </div>
-      </div>
-      <div class="mobile__header">
-        <a href="./index.html" class="logo-mobile">
-          <img src="..../../img/logo.png" alt="beautist" />
-        </a>
-        <nav class="mobile__nav">
-          <div class="header__mobile__nav">
-            <ul class="nav__list-mobile">
-              <li class="nav__list-item">
-                <a href="./index.html" class="default__btn signin__button"
-                  >Sign in</a
-                >
-              </li>
-              <li class="nav__list-item">
-                <a href="./index.html" class="nav__link">Home</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./courses.html" class="nav__link">Courses</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./product.html" class="nav__link">Test</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./contact.html" class="nav__link">Contacts</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./register.html" class="nav__link">Register</a>
-              </li>
-              <div class="social__button">
-                <a href="#" class="nav__link"
-                  ><img src="..../../img/fb.svg" alt="facebook"
-                /></a>
-                <a href="#" class="nav__link"
-                  ><img src="..../../img/insta.svg" alt="instagram"
-                /></a>
-              </div>
-            </ul>
+            <div class="login">
+              <a href="./login.html" class="login__button">Sign in</a>
+            </div>
+            <div class="register">
+              <a href="./register.html" class="register__button">Register</a>
+            </div>
           </div>
         </nav>
-        <div class="mobile__cart">
-          <img src="..../../img/add-to-cart.svg" alt="cart" />
+      </div>
+    </div>
+    <div class="mobile__header">
+      <a href="./index.html" class="logo-mobile">
+        <img src="..../../img/logo.png" alt="beautist" />
+      </a>
+      <nav class="mobile__nav">
+        <div class="header__mobile__nav">
+          <ul class="nav__list-mobile">
+            <li class="nav__list-item">
+              <a href="./index.html" class="default__btn signin__button">Sign in</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./index.html" class="nav__link">product</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./courses.html" class="nav__link">Courses</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./product.html" class="nav__link">Test</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./contact.html" class="nav__link">Contacts</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./register.html" class="nav__link">Register</a>
+            </li>
+            <div class="social__button">
+              <a href="#" class="nav__link"><img src="..../../img/fb.svg" alt="facebook" /></a>
+              <a href="#" class="nav__link"><img src="..../../img/insta.svg" alt="instagram" /></a>
+            </div>
+          </ul>
         </div>
-        <div class="mobile__menu-icon">
-          <div id="hamburger" onclick="toggleMenu()">
-            <svg width="100" height="100" viewBox="0 0 100 100">
-              <path
-                class="line line1"
-                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-              />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path
-                class="line line3"
-                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-              />
-            </svg>
+      </nav>
+      <div class="mobile__cart">
+        <img src="..../../img/add-to-cart.svg" alt="cart" />
+      </div>
+      <div class="mobile__menu-icon">
+        <div id="hamburger" onclick="toggleMenu()">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main__courses">
+    <div class="product__block-header">
+      <div class="product__content">
+        <div class="product__content-image">
+          <div class="product__content-image-gradient"></div>
+          <div class="product__content-image-product__image"></div>
+        </div>
+        <div class="product__content-block">
+          <div class="certificate__block">
+            <div class="certificate__block-icon"></div>
+            <div class="certificate__block-text">Sertifikuotas</div>
+          </div>
+          <h1 class="main__title">Makiažo kursai sau</h1>
+          <div class="set__level">
+            <div class="set__level-inner">
+              <img src=".../../img/level.svg" alt="level" class="set__level-inner-icon" />
+              <div class="set__level-inner-name">Lygis:</div>
+              <div class="set__level-inner-text">PRO</div>
+            </div>
+            <div class="set__level-inner">
+              <img src=".../../img/duration.svg" alt="duration" class="set__level-inner-icon" />
+              <div class="set__level-inner-name">Trukmė:</div>
+              <div class="set__level-inner-text">3ak.val</div>
+            </div>
+          </div>
+          <p class="main_intro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus
+            malesuada in pretium, tincidunt leo quis orci sagittis. Urna neque
+            amet cursus integer.
+          </p>
+          <div class="form__block">
+            <div class="form__block-inner">
+              <input type="radio" name="buy" value="buy" />
+              <label for="buy">
+                Pilna kaina
+                <span class="price">99 €</span>
+              </label>
+            </div>
+            <div class="form__block-inner">
+              <input type="radio" name="buy" value="buy" checked />
+              <label for="buy">
+                Išsimokėtinai 3 įmokos
+                <span class="price">33 €/mėn</span>
+              </label>
+            </div>
+            <div class="form__block-product__box">
+              <input name="extra_items" type="checkbox" value="1" />
+              <span class="checkmark"></span>
+              <div class="form__block-product__box-block">
+                <img src=".../../img/box.svg" alt="" class="box" />
+                <div class="info">
+                  <div class="info-title">Makiažo dėžutė</div>
+                  <div class="info-subtitle">Lorem ipsum dolor sit amet</div>
+                </div>
+                <div class="price">
+                  <span class="price-old__price">129 €</span>
+                  <span class="price-new__price">1 €</span>
+                </div>
+              </div>
+            </div>
+            <button class="form__block-add_to_cart">Pirkti kursus</button>
+          </div>
+          <div class="product__content-block-extra__info">
+            <div class="product__content-block-extra__info-title">
+              Su kursais gausite:
+            </div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Aliquam ultricies dapibus aliquam</li>
+            </ul>
           </div>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <div class="home__block-about">
+      <div class="product__block-about__courses">
         <div class="container">
-          <div class="home-content">
-            <div class="home-content-main_content">
-              <div class="home-content-main_content-inner">
-                <div class="home-content-main_content-inner-content">
-                  <div class="home-content-main_content-inner-content-icon">
-                    <img src=".../../img/home-about-icon.svg" alt="home-icon" />
+          <div class="product-content">
+            <div class="product-content-main_content">
+              <h2 class="product-content-main_content-title">
+                Kas laukia kursuose?
+              </h2>
+              <div class="product-content-main_content-inner">
+                <div class="product-content-main_content-inner-video">
+                  <div class="video__block">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset=".../../img/videoBg.png">
+                      <img src=".../../img/videoBg-mobile.png" alt="Video Background">
+                    </picture>
+                    <div class="play-button"></div>
                   </div>
-                  <h3 class="home-content-main_content-inner-content-title">
-                    Sertifikuoti kursai, pateikti aiškiai ir suprantamai
-                  </h3>
-                  <p
-                    class="home-content-main_content-inner-content-description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                    hendrerit sit amet neque quis, dignissim fringilla orci.
-                    Vestibulum ac vulputate eros.
+                </div>
+                <div class="product-content-main_content-inner-video__content">
+                  <h3>Atraskite kursų planą</h3>
+                  <div class="faq_block-2">
+                    <div class="faq_block-2-inner">
+                      <div class="faq__block">
+                        <div class="faq__block-question">
+                          <span class="question__number">1. </span>
+                          <div class="title">Pristatymas</div>
+                          <div id="faq-question-1" class="faq-btn btn__plus"></div>
+                        </div>
+                        <div id="faq-answer-1" class="faq__block-answer">
+                          <div class="time">06:08</div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
+                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
+                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
+                        </div>
+                      </div>
+                      <div class="faq__block">
+                        <div class="faq__block-question">
+                          <span class="question__number">2. </span>
+                          <div class="title">Konturavimas</div>
+                          <div id="faq-question-2" class="faq-btn btn__plus"></div>
+                        </div>
+                        <div id="faq-answer-2" class="faq__block-answer">
+                          <div class="time">06:08</div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
+                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
+                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
+                        </div>
+                      </div>
+                      <div class="faq__block">
+                        <div class="faq__block-question">
+                          <span class="question__number">3. </span>
+                          <div class="title">Inspiration</div>
+                          <div id="faq-question-3" class="faq-btn btn__plus"></div>
+                        </div>
+                        <div id="faq-answer-3" class="faq__block-answer">
+                          <div class="time">06:08</div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
+                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
+                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
+                        </div>
+                      </div>
+                      <div class="faq__block">
+                        <div class="faq__block-question">
+                          <span class="question__number">4. </span>
+                          <div class="title">Vestuvių make-up</div>
+                          <div id="faq-question-4" class="faq-btn btn__plus"></div>
+                        </div>
+                        <div id="faq-answer-4" class="faq__block-answer">
+                          <div class="time">06:08</div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
+                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
+                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
+                        </div>
+                      </div>
+                      <div class="faq__block">
+                        <div class="faq__block-question">
+                          <span class="question__number">5. </span>
+                          <div class="title">Šešėliai</div>
+                          <div id="faq-question-5" class="faq-btn btn__plus"></div>
+                        </div>
+                        <div id="faq-answer-5" class="faq__block-answer">
+                          <div class="time">06:08</div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
+                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
+                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
+                        </div>
+                      </div>
+                      <img src=".../../img/down-pc.svg" alt="arrow-down" class="scroll__down" />
+                      <img src=".../../img/up-pc.svg" alt="arraow-up" class="scroll__up" />
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content-main_content-inner-courses__level">
+                  <div class="product-content-main_content-inner-courses__level-inner">
+                    <div class="level">
+                      <img src=".../../img/level_star.svg" alt="" class="icon">
+                      <div class="name">PRO</div>
+                    </div>
+                    <div class="duration">
+                      <img src=".../../img/duration.svg" alt="" class="icon">
+                      <div class="name">20 videos (8 a.v.)</div>
+                    </div>
+                    <div class="certificate">
+                      <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                      <div class="name">Sertifikatas</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content-main_content-inner-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio non pellentesque augue et. Tempor eget
+                    sem posuere pharetra gravida elit. Senectus semper quis fusce felis dignissim tristique mauris non.
+                    Sed vitae urna, lectus condimentum. Vulputate tellus feugiat at lobortis risus neque sed sit.
+                    Laoreet quam leo tincidunt laoreet vulputate in. Quisque sollicitudin consectetur sit et tincidunt
+                    vel id. Vitae duis in mattis fames proin nisl fusce. Maecenas phasellus sit velit diam sit. Commodo
+                    ultrices varius aliquet sollicitudin mi mauris sapien viverra. In pellentesque vitae ac ultricies
+                    sed. Eu sodales a egestas a, semper habitasse. Orci sapien rhoncus, odio a. Odio lectus vitae,
+                    ornare metus.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio non pellentesque augue et. Tempor eget
+                    sem posuere pharetra gravida elit. Senectus semper quis fusce felis dignissim tristique mauris non.
+                    Sed vitae urna, lectus condimentum. Vulputate tellus feugiat at lobortis risus neque sed sit.
+                    Laoreet quam leo tincidunt laoreet vulputate in. Quisque sollicitudin consectetur sit et tincidunt
+                    vel id. Vitae duis in mattis fames proin nisl fusce.
+                  </p>
+                  <p>
+                    Maecenas phasellus sit velit diam sit. Commodo ultrices varius aliquet sollicitudin mi mauris sapien
+                    viverra. In pellentesque vitae ac ultricies sed. Eu sodales a egestas a, semper habitasse. Orci
+                    sapien rhoncus, odio a. Odio lectus vitae, ornare metus.
+
                   </p>
                 </div>
-                <div class="home-content-main_content-inner-img">
-                  <img
-                    src=".../../img/home-img-1.png"
-                    alt="home-img"
-                    width="100%"
-                  />
-                </div>
-              </div>
-              <div class="home-content-main_content-inner">
-                <div class="home-content-main_content-inner-content last-child">
-                  <div class="home-content-main_content-inner-content-icon">
-                    <img src=".../../img/home-about-box.svg" alt="home-icon" />
+                <div class="product-content-main_content-inner-instructor__card">
+                  <h5>Instructor</h5>
+                  <div class="instructor">
+                    <img src=".../../img/instructor.svg" alt="gravitar" class="instructor-gravitar">
+                    <div class="instructor-details">
+                      <div class="name">Jack Johnson</div>
+                      <div class="position">Teaches Make-up 101</div>
+                    </div>
                   </div>
-                  <h3 class="home-content-main_content-inner-content-title">
-                    Teorija nuotoliu -
-                    <br />
-                    Mes pasirūpinsime įrankiais praktikai
-                  </h3>
-                  <p
-                    class="home-content-main_content-inner-content-description"
-                  >
-                    Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                    hendrerit sit amet neque quis, dignissim fringilla orci.
-                    Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                    amet viverra diam. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
+                  <p class="about__instructor">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis elit lectus diam egestas
+                    diam. Turpis id egestas lacus, vitae diam accumsan.
                   </p>
                 </div>
-                <div class="home-content-main_content-inner-img last-child">
-                  <img
-                    src=".../../img/home-img-2.png"
-                    alt="home-img"
-                    width="100%"
-                  />
+                <div class="product-content-main_content-inner-tags">
+                  <h5>Skills you will gain:</h5>
+                  <div class="tag">Make up</div>
+                  <div class="tag">Wedding make up</div>
+                  <div class="tag">Beauty tricks</div>
+                  <div class="tag">Hair styles</div>
+                  <div class="tag">Organizing skills</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="home__block-professional"></div>
-      <div class="home__block-testimonial">
-        <div class="container">
-          <div class="home-content">
-            <div class="home-content-main_content">
-              <h2 class="home-content-main_content-title">
-                Ką kalba mūsų bendruomenė
-              </h2>
-              <div class="home-content-slider">
-                <!-- Slider main container -->
-                <div class="swiper2">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <div class="swiper-slide-images__block">
-                        <img
-                          src=".../../img/testimonial1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                        <img
-                          src=".../../img/testimonial1-1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                      </div>
-                      <div class="swiper-slide-content__block">
-                        <h2 class="swiper-slide-content__block-main__title">
-                          Ką kalba mūsų bendruomenė
-                        </h2>
-                        <img src=".../../img/quates.svg" alt="quates" />
-                        <div class="swiper-slide-content__block-title">
-                          Beautist changed my life
-                        </div>
-                        <div class="swiper-slide-content__block-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                          enim, hendrerit sit amet neque quis, dignissim
-                          fringilla orci. Vestibulum ac vulputate eros.
-                        </div>
-                        <div class="swiper-slide-content__block-author">
-                          <div class="swiper-slide-content__block-author-block">
-                            <img
-                              src=".../../img/testimonial-author.png"
-                              alt="testimonial-author"
-                            />
-                            <div
-                              class="swiper-slide-content__block-author-block-block_content"
-                            >
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-title"
-                              >
-                                Sophie
-                              </div>
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-position"
-                              >
-                                Make-up artist 101
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide-content__block-navigation__block"
-                        >
-                          <div class="swiper2-button-prev">
-                            <img
-                              src=".../../img/prev.svg"
-                              alt="swiper-prev"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                          <div class="swiper2-button-next">
-                            <img
-                              src=".../../img/next.svg"
-                              alt="swiper-next"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-slide-images__block">
-                        <img
-                          src=".../../img/testimonial1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                        <img
-                          src=".../../img/testimonial1-1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                      </div>
-                      <div class="swiper-slide-content__block">
-                        <h2 class="swiper-slide-content__block-main__title">
-                          Ką kalba mūsų bendruomenė
-                        </h2>
-                        <img src=".../../img/quates.svg" alt="quates" />
-                        <div class="swiper-slide-content__block-title">
-                          Beautist changed my life
-                        </div>
-                        <div class="swiper-slide-content__block-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                          enim, hendrerit sit amet neque quis, dignissim
-                          fringilla orci. Vestibulum ac vulputate eros.
-                        </div>
-                        <div class="swiper-slide-content__block-author">
-                          <div class="swiper-slide-content__block-author-block">
-                            <img
-                              src=".../../img/testimonial-author.png"
-                              alt="testimonial-author"
-                            />
-                            <div
-                              class="swiper-slide-content__block-author-block-block_content"
-                            >
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-title"
-                              >
-                                Sophie
-                              </div>
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-position"
-                              >
-                                Make-up artist 101
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide-content__block-navigation__block"
-                        >
-                          <div class="swiper2-button-prev">
-                            <img
-                              src=".../../img/prev.svg"
-                              alt="swiper-prev"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                          <div class="swiper2-button-next">
-                            <img
-                              src=".../../img/next.svg"
-                              alt="swiper-next"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-slide-images__block">
-                        <img
-                          src=".../../img/testimonial1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                        <img
-                          src=".../../img/testimonial1-1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                      </div>
-                      <div class="swiper-slide-content__block">
-                        <h2 class="swiper-slide-content__block-main__title">
-                          Ką kalba mūsų bendruomenė
-                        </h2>
-                        <img src=".../../img/quates.svg" alt="quates" />
-                        <div class="swiper-slide-content__block-title">
-                          Beautist changed my life
-                        </div>
-                        <div class="swiper-slide-content__block-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                          enim, hendrerit sit amet neque quis, dignissim
-                          fringilla orci. Vestibulum ac vulputate eros.
-                        </div>
-                        <div class="swiper-slide-content__block-author">
-                          <div class="swiper-slide-content__block-author-block">
-                            <img
-                              src=".../../img/testimonial-author.png"
-                              alt="testimonial-author"
-                            />
-                            <div
-                              class="swiper-slide-content__block-author-block-block_content"
-                            >
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-title"
-                              >
-                                Sophie
-                              </div>
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-position"
-                              >
-                                Make-up artist 101
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide-content__block-navigation__block"
-                        >
-                          <div class="swiper2-button-prev">
-                            <img
-                              src=".../../img/prev.svg"
-                              alt="swiper-prev"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                          <div class="swiper2-button-next">
-                            <img
-                              src=".../../img/next.svg"
-                              alt="swiper-next"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-slide-images__block">
-                        <img
-                          src=".../../img/testimonial1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                        <img
-                          src=".../../img/testimonial1-1.png"
-                          alt="testimonial"
-                          class="swiper-image"
-                        />
-                      </div>
-                      <div class="swiper-slide-content__block">
-                        <h2 class="swiper-slide-content__block-main__title">
-                          Ką kalba mūsų bendruomenė
-                        </h2>
-                        <img src=".../../img/quates.svg" alt="quates" />
-                        <div class="swiper-slide-content__block-title">
-                          Beautist changed my life
-                        </div>
-                        <div class="swiper-slide-content__block-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                          enim, hendrerit sit amet neque quis, dignissim
-                          fringilla orci. Vestibulum ac vulputate eros.
-                        </div>
-                        <div class="swiper-slide-content__block-author">
-                          <div class="swiper-slide-content__block-author-block">
-                            <img
-                              src=".../../img/testimonial-author.png"
-                              alt="testimonial-author"
-                            />
-                            <div
-                              class="swiper-slide-content__block-author-block-block_content"
-                            >
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-title"
-                              >
-                                Sophie
-                              </div>
-                              <div
-                                class="swiper-slide-content__block-author-block-block_content-position"
-                              >
-                                Make-up artist 101
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide-content__block-navigation__block"
-                        >
-                          <div class="swiper2-button-prev">
-                            <img
-                              src=".../../img/prev.svg"
-                              alt="swiper-prev"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                          <div class="swiper2-button-next">
-                            <img
-                              src=".../../img/next.svg"
-                              alt="swiper-next"
-                              width="45"
-                              height="45"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper2-navigation__block">
-                    <div class="swiper2-button-prev">
-                      <img
-                        src=".../../img/prev.svg"
-                        alt="swiper-prev"
-                        width="45"
-                        height="45"
-                      />
-                    </div>
-                    <div class="swiper2-button-next">
-                      <img
-                        src=".../../img/next.svg"
-                        alt="swiper-next"
-                        width="45"
-                        height="45"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="home__block-faq">
-        <div class="container">
-          <div class="home-content">
-            <div class="home-content-main_content">
-              <h2 class="home-content-main_content-main__title">
-                Dažniausiai Užduodami Klausimai
-              </h2>
-              <div class="home-content-main_content-faq__block">
-                <div class="home-content-main_content-faq__block-inner">
-                  <div
-                    class="home-content-main_content-faq__block-inner-question"
-                  >
-                    Lorem ipsum dolor sit amet?
-                    <div id="faq-question-1" class="faq-btn btn__plus"></div>
-                  </div>
-                  <div
-                    id="faq-answer-1"
-                    class="home-content-main_content-faq__block-inner-answer"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                    hendrerit sit amet neque quis, dignissim fringilla orci.
-                    Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                    amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                    consectetur at eros.
-                  </div>
-                </div>
-              </div>
-              <div class="home-content-main_content-faq__block">
-                <div class="home-content-main_content-faq__block-inner">
-                  <div
-                    class="home-content-main_content-faq__block-inner-question"
-                  >
-                    Consectetur adipiscing elit aliquam?
-                    <div id="faq-question-2" class="faq-btn btn__plus"></div>
-                  </div>
-                  <div
-                    id="faq-answer-2"
-                    class="home-content-main_content-faq__block-inner-answer"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                    hendrerit sit amet neque quis, dignissim fringilla orci.
-                    Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                    amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                    consectetur at eros.
-                  </div>
-                </div>
-              </div>
-              <div class="home-content-main_content-faq__block">
-                <div class="home-content-main_content-faq__block-inner">
-                  <div
-                    class="home-content-main_content-faq__block-inner-question"
-                  >
-                    Quisque odio enim, hendrerit sit amet?
-                    <div id="faq-question-3" class="faq-btn btn__plus"></div>
-                  </div>
-                  <div
-                    id="faq-answer-3"
-                    class="home-content-main_content-faq__block-inner-answer"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                    hendrerit sit amet neque quis, dignissim fringilla orci.
-                    Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                    amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                    consectetur at eros.
-                  </div>
-                </div>
-              </div>
-              <div class="home-content-main_content-faq__block">
-                <div class="home-content-main_content-faq__block-inner">
-                  <div
-                    class="home-content-main_content-faq__block-inner-question"
-                  >
-                    Lorem ipsum dolor sit amet quisque odio?
-                    <div id="faq-question-4" class="faq-btn btn__plus"></div>
-                  </div>
-                  <div
-                    id="faq-answer-4"
-                    class="home-content-main_content-faq__block-inner-answer"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                    hendrerit sit amet neque quis, dignissim fringilla orci.
-                    Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                    amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                    consectetur at eros.
-                  </div>
-                </div>
-              </div>
-              <div class="home-content-main_content-faq__block">
-                <div class="home-content-main_content-faq__block-inner">
-                  <div
-                    class="home-content-main_content-faq__block-inner-question"
-                  >
-                    Aliquam consequat faucibus augue?
-                    <div id="faq-question-5" class="faq-btn btn__plus"></div>
-                  </div>
-                  <div
-                    id="faq-answer-5"
-                    class="home-content-main_content-faq__block-inner-answer"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                    hendrerit sit amet neque quis, dignissim fringilla orci.
-                    Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                    amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                    consectetur at eros.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="home__block-favorite">
-        <div class="container">
-          <div class="home-content">
-            <div class="home-content-main_content">
-              <h2 class="home-content-main_content-main__title">
-                Choose your favourite course
-              </h2>
-              <p class="home-content-main_content-main__description">
-                With number of courses available we promise you best learning
-                experience. Learn and improve online.
-              </p>
-              <a href="./courses.html" class="btn get__started">Get started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
+    </div>
+    <div class="product__block-about">
       <div class="container">
-        <div class="footer__content">
-          <div class="footer__content-nav__block">
-            <div class="footer__content-nav__block-title">Menu</div>
-            <div class="footer__content-nav__block-nav">
-              <ul class="footer__content-nav__block-nav-footer__nav">
-                <li class="footer__content-nav__block-nav-footer__nav-list">
-                  <a
-                    class="footer__content-nav__block-nav-footer__nav-list-link"
-                    href="./index.html"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li class="footer__content-nav__block-nav-footer__nav-list">
-                  <a
-                    class="footer__content-nav__block-nav-footer__nav-list-link"
-                    href="./courses.html"
-                  >
-                    Courses
-                  </a>
-                </li>
-                <li class="footer__content-nav__block-nav-footer__nav-list">
-                  <a
-                    class="footer__content-nav__block-nav-footer__nav-list-link"
-                    href="./questionnaire.html"
-                  >
-                    Test
-                  </a>
-                </li>
-                <li class="footer__content-nav__block-nav-footer__nav-list">
-                  <a
-                    class="footer__content-nav__block-nav-footer__nav-list-link"
-                    href="./contact.html"
-                  >
-                    Contacts
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__content-socials__block">
-            <div class="footer__content-socials__block-title">Socials</div>
-            <div class="footer__content-socials__block-links">
-              <a href="#" class="social-fb" target="_blank">
-                <img src=".../../img/fb.svg" alt="fb" />
-              </a>
-              <a href="#" class="social-insta" target="_blank">
-                <img src=".../../img/insta.svg" alt="instagram" />
-              </a>
-            </div>
-          </div>
-          <div class="footer__content-funds__block">
-            <img
-              src=".../../img/union_logo.png"
-              alt="funds"
-              class="funds__logo"
-            />
-          </div>
-          <div class="footer__content-terms__block">
-            <div class="footer__content-terms__block-inner">
-              <div class="footer__content-terms__block-inner-logo">
-                <img
-                  src=".../../img/logo.png"
-                  alt="logo"
-                  class="footer__logo"
-                />
-              </div>
-              <div class="footer__content-terms__block-inner-terms__nav">
-                <div
-                  class="footer__content-terms__block-inner-terms__nav-copyright"
-                >
-                  © Beautist
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
+        <div class="product-content">
+          <div class="product-content-main_content">
+            <div class="product-content-main_content-inner">
+              <div class="product-content-main_content-inner-content">
+                <div class="product-content-main_content-inner-content-icon">
+                  <img src=".../../img/home-about-icon.svg" alt="product-icon" />
                 </div>
-
-                <div
-                  class="footer__content-terms__block-inner-terms__nav-main__nav"
-                >
-                  <ul
-                    class="footer__content-terms__block-inner-terms__nav-main__nav-nav"
-                  >
-                    <li
-                      class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list"
-                    >
-                      <a
-                        href="#"
-                        class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links"
-                      >
-                        Terms and Conditions
-                      </a>
-                    </li>
-                    <li
-                      class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list"
-                    >
-                      <a
-                        href="#"
-                        class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                  </ul>
+                <h3 class="product-content-main_content-inner-content-title">
+                  Sertifikuotas kursas
+                </h3>
+                <p class="product-content-main_content-inner-content-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam. Quisque
+                  odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac vulputate eros.
+                </p>
+              </div>
+              <div class="product-content-main_content-inner-img">
+                <img src=".../../img/home-img-1.png" alt="product-img" />
+              </div>
+            </div>
+            <div class="product-content-main_content-inner">
+              <div class="product-content-main_content-inner-content last-child">
+                <div class="product-content-main_content-inner-content-icon">
+                  <img src=".../../img/home-about-box.svg" alt="product-icon" />
+                </div>
+                <h3 class="product-content-main_content-inner-content-title">
+                  Dėžutė makiažui kurti
+                </h3>
+                <p class="product-content-main_content-inner-content-description last-child">
+                  Aliquam ultricies dapibus aliquam. Quisque odio enim, hendrerit sit amet neque quis, dignissim
+                  fringilla orci. Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit amet viverra diam. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <div class="product-content-main_content-inner-img last-child">
+                <img src=".../../img/home-img-2.png" alt="product-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__block-professional">
+      <div class="container">
+        <div class="content">
+          <div class="content-img">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/professional.png">
+              <img src="/img/professional-mobile.png" alt="Image">
+            </picture>
+          </div>
+          <div class="content-professional__content">
+            <h2>Šiame kurse jūsų laukia žinios įgytos iš profesionalų</h2>
+            <div class="content-professional__content-list">
+              <div class="content-professional__content-list-single">
+                <img src="/img/duration.svg" alt="duration" class="icon">
+                <div class="text">8 ak.val</div>
+              </div>
+              <div class="content-professional__content-list-single">
+                <img src="/img/box.svg" alt="box" class="icon">
+                <div class="text">Grožio dėžutė</div>
+              </div>
+              <div class="content-professional__content-list-single">
+                <img src="/img/certificate-home.svg" alt="certificate" class="icon">
+                <div class="text">Sertifikatas</div>
+              </div>
+              <div class="content-professional__content-list-single">
+                <img src="/img/message.svg" alt="Message" class="icon">
+                <div class="text">Bendravimas su mokytoja</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__block-slider">
+      <div class="container">
+        <h2>Net 7 atskiros pamokos</h2>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src=".../../img/teacher1.png" alt="teacher" class="swiper-slide-artist__img" />
+              <div class="swiper-slide-artist__content">
+                <div class="swiper-slide-artist__content-block__title">
+                  Johnny Johnson
+                </div>
+                <div class="swiper-slide-artist__content-block__subtitle">
+                  Make-up artist
+                </div>
+                <div class="swiper-slide-artist__content-block__content">
+                  3 courses
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src=".../../img/teacher2.png" alt="teacher" class="swiper-slide-artist__img" />
+              <div class="swiper-slide-artist__content">
+                <div class="swiper-slide-artist__content-block__title">
+                  Johnny Johnson
+                </div>
+                <div class="swiper-slide-artist__content-block__subtitle">
+                  Make-up artist
+                </div>
+                <div class="swiper-slide-artist__content-block__content">
+                  3 courses
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src=".../../img/teacher3.png" alt="teacher" class="swiper-slide-artist__img" />
+              <div class="swiper-slide-artist__content">
+                <div class="swiper-slide-artist__content-block__title">
+                  Johnny Johnson
+                </div>
+                <div class="swiper-slide-artist__content-block__subtitle">
+                  Make-up artist
+                </div>
+                <div class="swiper-slide-artist__content-block__content">
+                  3 courses
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src=".../../img/teacher4.png" alt="teacher" class="swiper-slide-artist__img" />
+              <div class="swiper-slide-artist__content">
+                <div class="swiper-slide-artist__content-block__title">
+                  Johnny Johnson
+                </div>
+                <div class="swiper-slide-artist__content-block__subtitle">
+                  Make-up artist
+                </div>
+                <div class="swiper-slide-artist__content-block__content">
+                  3 courses
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-navigation__block">
+            <div class="swiper1-button-prev">
+              <img src=".../../img/prev.svg" alt="swiper-prev" />
+            </div>
+            <div class="swiper1-button-next">
+              <img src=".../../img/next.svg" alt="swiper-next" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__block-testimonial">
+      <div class="container">
+        <div class="product-content">
+          <div class="product-content-main_content">
+            <h2 class="product-content-main_content-title">
+              Net 7 atskiros pamokos
+            </h2>
+            <div class="product-content-slider">
+              <!-- Slider main container -->
+              <div class="swiper2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-images__block">
+                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
+                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
+                    </div>
+                    <div class="swiper-slide-content__block">
+                      <h2 class="swiper-slide-content__block-main__title">
+                        Ką sako mokiniai
+                      </h2>
+                      <img src=".../../img/quates.svg" alt="quates" />
+                      <div class="swiper-slide-content__block-title">
+                        Beautist changed my life
+                      </div>
+                      <div class="swiper-slide-content__block-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
+                        enim, hendrerit sit amet neque quis, dignissim
+                        fringilla orci. Vestibulum ac vulputate eros.
+                      </div>
+                      <div class="swiper-slide-content__block-author">
+                        <div class="swiper-slide-content__block-author-block">
+                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
+                          <div class="swiper-slide-content__block-author-block-block_content">
+                            <div class="swiper-slide-content__block-author-block-block_content-title">
+                              Sophie
+                            </div>
+                            <div class="swiper-slide-content__block-author-block-block_content-position">
+                              Make-up artist 101
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide-content__block-navigation__block">
+                        <div class="swiper2-button-prev">
+                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
+                        </div>
+                        <div class="swiper2-button-next">
+                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-images__block">
+                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
+                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
+                    </div>
+                    <div class="swiper-slide-content__block">
+                      <h2 class="swiper-slide-content__block-main__title">
+                        Ką sako mokiniai
+                      </h2>
+                      <img src=".../../img/quates.svg" alt="quates" />
+                      <div class="swiper-slide-content__block-title">
+                        Beautist changed my life
+                      </div>
+                      <div class="swiper-slide-content__block-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
+                        enim, hendrerit sit amet neque quis, dignissim
+                        fringilla orci. Vestibulum ac vulputate eros.
+                      </div>
+                      <div class="swiper-slide-content__block-author">
+                        <div class="swiper-slide-content__block-author-block">
+                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
+                          <div class="swiper-slide-content__block-author-block-block_content">
+                            <div class="swiper-slide-content__block-author-block-block_content-title">
+                              Sophie
+                            </div>
+                            <div class="swiper-slide-content__block-author-block-block_content-position">
+                              Make-up artist 101
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide-content__block-navigation__block">
+                        <div class="swiper2-button-prev">
+                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
+                        </div>
+                        <div class="swiper2-button-next">
+                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-images__block">
+                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
+                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
+                    </div>
+                    <div class="swiper-slide-content__block">
+                      <h2 class="swiper-slide-content__block-main__title">
+                        Ką sako mokiniai
+                      </h2>
+                      <img src=".../../img/quates.svg" alt="quates" />
+                      <div class="swiper-slide-content__block-title">
+                        Beautist changed my life
+                      </div>
+                      <div class="swiper-slide-content__block-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
+                        enim, hendrerit sit amet neque quis, dignissim
+                        fringilla orci. Vestibulum ac vulputate eros.
+                      </div>
+                      <div class="swiper-slide-content__block-author">
+                        <div class="swiper-slide-content__block-author-block">
+                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
+                          <div class="swiper-slide-content__block-author-block-block_content">
+                            <div class="swiper-slide-content__block-author-block-block_content-title">
+                              Sophie
+                            </div>
+                            <div class="swiper-slide-content__block-author-block-block_content-position">
+                              Make-up artist 101
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide-content__block-navigation__block">
+                        <div class="swiper2-button-prev">
+                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
+                        </div>
+                        <div class="swiper2-button-next">
+                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-images__block">
+                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
+                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
+                    </div>
+                    <div class="swiper-slide-content__block">
+                      <h2 class="swiper-slide-content__block-main__title">
+                        Ką sako mokiniai
+                      </h2>
+                      <img src=".../../img/quates.svg" alt="quates" />
+                      <div class="swiper-slide-content__block-title">
+                        Beautist changed my life
+                      </div>
+                      <div class="swiper-slide-content__block-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
+                        enim, hendrerit sit amet neque quis, dignissim
+                        fringilla orci. Vestibulum ac vulputate eros.
+                      </div>
+                      <div class="swiper-slide-content__block-author">
+                        <div class="swiper-slide-content__block-author-block">
+                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
+                          <div class="swiper-slide-content__block-author-block-block_content">
+                            <div class="swiper-slide-content__block-author-block-block_content-title">
+                              Sophie
+                            </div>
+                            <div class="swiper-slide-content__block-author-block-block_content-position">
+                              Make-up artist 101
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide-content__block-navigation__block">
+                        <div class="swiper2-button-prev">
+                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
+                        </div>
+                        <div class="swiper2-button-next">
+                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper2-navigation__block">
+                  <div class="swiper2-button-prev">
+                    <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
+                  </div>
+                  <div class="swiper2-button-next">
+                    <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="./dist/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script type="module">
-      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+    </div>
+    <div class="product__block-faq">
+      <div class="container">
+        <div class="product-content">
+          <div class="product-content-main_content">
+            <h2 class="product-content-main_content-main__title">
+              Dažniausiai Užduodami Klausimai
+            </h2>
+            <div class="product-content-main_content-faq__block">
+              <div class="product-content-main_content-faq__block-inner">
+                <div class="product-content-main_content-faq__block-inner-question">
+                  Lorem ipsum dolor sit amet?
+                  <div id="faq-question-1" class="faq-btn btn__plus"></div>
+                </div>
+                <div id="faq-answer-1" class="product-content-main_content-faq__block-inner-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
+                  hendrerit sit amet neque quis, dignissim fringilla orci.
+                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
+                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
+                  consectetur at eros.
+                </div>
+              </div>
+            </div>
+            <div class="product-content-main_content-faq__block">
+              <div class="product-content-main_content-faq__block-inner">
+                <div class="product-content-main_content-faq__block-inner-question">
+                  Consectetur adipiscing elit aliquam?
+                  <div id="faq-question-2" class="faq-btn btn__plus"></div>
+                </div>
+                <div id="faq-answer-2" class="product-content-main_content-faq__block-inner-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
+                  hendrerit sit amet neque quis, dignissim fringilla orci.
+                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
+                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
+                  consectetur at eros.
+                </div>
+              </div>
+            </div>
+            <div class="product-content-main_content-faq__block">
+              <div class="product-content-main_content-faq__block-inner">
+                <div class="product-content-main_content-faq__block-inner-question">
+                  Quisque odio enim, hendrerit sit amet?
+                  <div id="faq-question-3" class="faq-btn btn__plus"></div>
+                </div>
+                <div id="faq-answer-3" class="product-content-main_content-faq__block-inner-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
+                  hendrerit sit amet neque quis, dignissim fringilla orci.
+                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
+                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
+                  consectetur at eros.
+                </div>
+              </div>
+            </div>
+            <div class="product-content-main_content-faq__block">
+              <div class="product-content-main_content-faq__block-inner">
+                <div class="product-content-main_content-faq__block-inner-question">
+                  Lorem ipsum dolor sit amet quisque odio?
+                  <div id="faq-question-4" class="faq-btn btn__plus"></div>
+                </div>
+                <div id="faq-answer-4" class="product-content-main_content-faq__block-inner-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
+                  hendrerit sit amet neque quis, dignissim fringilla orci.
+                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
+                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
+                  consectetur at eros.
+                </div>
+              </div>
+            </div>
+            <div class="product-content-main_content-faq__block">
+              <div class="product-content-main_content-faq__block-inner">
+                <div class="product-content-main_content-faq__block-inner-question">
+                  Aliquam consequat faucibus augue?
+                  <div id="faq-question-5" class="faq-btn btn__plus"></div>
+                </div>
+                <div id="faq-answer-5" class="product-content-main_content-faq__block-inner-answer">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
+                  hendrerit sit amet neque quis, dignissim fringilla orci.
+                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
+                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
+                  consectetur at eros.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__block-favorite">
+      <div class="container">
+        <div class="product-content">
+          <div class="product-content-main_content">
+            <h2 class="product-content-main_content-main__title">
+              Choose your favourite course
+            </h2>
+            <p class="product-content-main_content-main__description">
+              With number of courses available we promise you best learning
+              experience. Learn and improve online.
+            </p>
+            <a href="./courses.html" class="btn get__started">Get started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="floating__block" style="display: none;">
+      <div class="name">Makiažo kursai sau</div>
+      <div class="floating__block-content">
+        <div class="form__block">
+          <span class="price mobile">99 €</span>
+          <div class="form__block-inner">
+            <input type="radio" name="buy" value="buy" />
+            <label for="buy">
+              Pilna kaina
+              <span class="price">99 €</span>
+            </label>
+          </div>
+          <div class="form__block-inner">
+            <input type="radio" name="buy" value="buy" checked />
+            <label for="buy">
+              Iš. 3 įmokos
+              <span class="price">33 €/mėn</span>
+            </label>
+          </div>
+          <button class="form__block-add_to_cart">Pirkti kursus</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__content-nav__block">
+          <div class="footer__content-nav__block-title">Menu</div>
+          <div class="footer__content-nav__block-nav">
+            <ul class="footer__content-nav__block-nav-footer__nav">
+              <li class="footer__content-nav__block-nav-footer__nav-list">
+                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./index.html">
+                  product
+                </a>
+              </li>
+              <li class="footer__content-nav__block-nav-footer__nav-list">
+                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./courses.html">
+                  Courses
+                </a>
+              </li>
+              <li class="footer__content-nav__block-nav-footer__nav-list">
+                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./questionnaire.html">
+                  Test
+                </a>
+              </li>
+              <li class="footer__content-nav__block-nav-footer__nav-list">
+                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./contact.html">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__content-socials__block">
+          <div class="footer__content-socials__block-title">Socials</div>
+          <div class="footer__content-socials__block-links">
+            <a href="#" class="social-fb" target="_blank">
+              <img src=".../../img/fb.svg" alt="fb" />
+            </a>
+            <a href="#" class="social-insta" target="_blank">
+              <img src=".../../img/insta.svg" alt="instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__content-funds__block">
+          <img src=".../../img/union_logo.png" alt="funds" class="funds__logo" />
+        </div>
+        <div class="footer__content-terms__block">
+          <div class="footer__content-terms__block-inner">
+            <div class="footer__content-terms__block-inner-logo">
+              <img src=".../../img/logo.png" alt="logo" class="footer__logo" />
+            </div>
+            <div class="footer__content-terms__block-inner-terms__nav">
+              <div class="footer__content-terms__block-inner-terms__nav-copyright">
+                © Beautist
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </div>
 
-      const swiper1 = new Swiper(".swiper", {
-        slidesPerView: "auto",
-        spaceBetween: 0,
-        grabCursor: true,
-        navigation: {
-          nextEl: ".swiper1-button-next",
-          prevEl: ".swiper1-button-prev",
-        },
-        loop: !0,
+              <div class="footer__content-terms__block-inner-terms__nav-main__nav">
+                <ul class="footer__content-terms__block-inner-terms__nav-main__nav-nav">
+                  <li class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list">
+                    <a href="#"
+                      class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links">
+                      Terms and Conditions
+                    </a>
+                  </li>
+                  <li class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list">
+                    <a href="#"
+                      class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links">
+                      Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./dist/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 0,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper1-button-next",
+        prevEl: ".swiper1-button-prev",
+      },
+      loop: !0,
+    });
+    const swiper2 = new Swiper(".swiper2", {
+      slidesPerView: "auto",
+      spaceBetween: 0,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper2-button-next",
+        prevEl: ".swiper2-button-prev",
+      },
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".product-content-main_content-faq__block-inner").click(function () {
+        var currentAnswer = $(this).find(
+          ".product-content-main_content-faq__block-inner-answer"
+        );
+        $(".product-content-main_content-faq__block-inner-answer")
+          .not(currentAnswer)
+          .slideUp();
+        currentAnswer.slideToggle();
+        $(
+          ".product-content-main_content-faq__block-inner-question"
+        ).removeClass("active");
+        $(this)
+          .find(".product-content-main_content-faq__block-inner-question")
+          .toggleClass("active");
+        $(this).find(".faq-btn").toggleClass("btn__plus btn__minus");
+        $(".faq-btn")
+          .not($(this).find(".faq-btn"))
+          .removeClass("btn__minus")
+          .addClass("btn__plus");
       });
-      const swiper2 = new Swiper(".swiper1", {
-        slidesPerView: "auto",
-        spaceBetween: 0,
-        grabCursor: true,
-        navigation: {
-          nextEl: ".swiper2-button-next",
-          prevEl: ".swiper2-button-prev",
-        },
+      $(".faq__block").click(function () {
+        var currentAnswer = $(this).find(".faq__block-answer");
+        $(".faq__block-answer").not(currentAnswer).slideUp();
+        currentAnswer.slideToggle();
+        $(".faq__block-question").removeClass("active");
+        $(this).find(".faq__block-question").toggleClass("active");
+        $(this).find(".faq-btn").toggleClass("btn__plus btn__minus");
+        $(".faq-btn")
+          .not($(this).find(".faq-btn"))
+          .removeClass("btn__minus")
+          .addClass("btn__plus");
       });
-      const swiper3 = new Swiper(".swiper2", {
-        slidesPerView: "auto",
-        spaceBetween: 0,
-        grabCursor: true,
-        loop: !0,
-        navigation: {
-          nextEl: ".swiper2-button-prev",
-          prevEl: ".swiper2-button-next",
-        },
+
+      var block = $(".floating__block");
+      var height = 1200;
+
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= height) {
+          block.show();
+        } else {
+          block.hide();
+        }
       });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".home-content-main_content-faq__block-inner").click(function () {
-          var currentAnswer = $(this).find(
-            ".home-content-main_content-faq__block-inner-answer"
-          );
-          $(".home-content-main_content-faq__block-inner-answer")
-            .not(currentAnswer)
-            .slideUp();
-          currentAnswer.slideToggle();
-          $(".home-content-main_content-faq__block-inner-question").removeClass(
-            "active"
-          );
-          $(this)
-            .find(".home-content-main_content-faq__block-inner-question")
-            .toggleClass("active");
-          $(this).find(".faq-btn").toggleClass("btn__plus btn__minus");
-          $(".faq-btn")
-            .not($(this).find(".faq-btn"))
-            .removeClass("btn__minus")
-            .addClass("btn__plus");
-        });
-      });
-    </script>
-  </body>
+
+    });
+
+  </script>
+</body>
+
 </html>

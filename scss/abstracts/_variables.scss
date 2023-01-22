@@ -13,3 +13,18 @@ $container: 1440px;
 $breakpoint-mobile: 480px;
 $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+
+:root {
+    --main-color: #2723E1;
+    --main-hover-color: #4946e5;
+    --secondary-color: #39228A;
+    --secondary-hover-color: #6a68e6;
+    --third-color: #000000;
+    --fourth-color: #f8f8ff;
+    --fifth-color: #ffffff;
+    --sixth-color: #29216B;
+    --seventh-color: #d70f5d;
+    --eight-color: #EAEAFC;
+    --ninth-color: #e9e9fc;
+    --opacity-hover: 0.7;
+}
