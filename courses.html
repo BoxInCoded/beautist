@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="./dist/css/app.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <title>Courses</title>
+  <title>Products</title>
 </head>
 
 <body>
@@ -16,17 +16,17 @@
       <div class="main__header">
         <nav class="main__nav">
           <a href="./index.html" class="logo">
-            <img src="..../../img/logo.png" alt="beautist" />
+            <img src=".../../img/logo.png" alt="beautist" />
           </a>
           <ul class="nav__list">
             <li class="nav__list-item">
               <a href="./index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__list-item">
-              <a href="./courses.html" class="nav__link">Courses</a>
+              <a href="./product.html" class="nav__link">Courses</a>
             </li>
             <li class="nav__list-item">
-              <a href="./product.html" class="nav__link">Test</a>
+              <a href="./questionnaire.html" class="nav__link">Test</a>
             </li>
             <li class="nav__list-item">
               <a href="./contact.html" class="nav__link">Contact Us</a>
@@ -34,7 +34,7 @@
           </ul>
           <div class="cart__login">
             <div class="cart">
-              <img src="..../../img/add-to-cart.svg" alt="cart" />
+              <img src=".../../img/add-to-cart.svg" alt="cart" />
             </div>
             <div class="login">
               <a href="./login.html" class="login__button">Sign in</a>
@@ -48,7 +48,7 @@
     </div>
     <div class="mobile__header">
       <a href="./index.html" class="logo-mobile">
-        <img src="..../../img/logo.png" alt="beautist" />
+        <img src=".../../img/logo.png" alt="beautist" />
       </a>
       <nav class="mobile__nav">
         <div class="header__mobile__nav">
@@ -57,13 +57,13 @@
               <a href="./index.html" class="default__btn signin__button">Sign in</a>
             </li>
             <li class="nav__list-item">
-              <a href="./index.html" class="nav__link">product</a>
+              <a href="./index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__list-item">
-              <a href="./courses.html" class="nav__link">Courses</a>
+              <a href="./product.html" class="nav__link">Courses</a>
             </li>
             <li class="nav__list-item">
-              <a href="./product.html" class="nav__link">Test</a>
+              <a href="./questionnaire.html" class="nav__link">Test</a>
             </li>
             <li class="nav__list-item">
               <a href="./contact.html" class="nav__link">Contacts</a>
@@ -72,14 +72,14 @@
               <a href="./register.html" class="nav__link">Register</a>
             </li>
             <div class="social__button">
-              <a href="#" class="nav__link"><img src="..../../img/fb.svg" alt="facebook" /></a>
-              <a href="#" class="nav__link"><img src="..../../img/insta.svg" alt="instagram" /></a>
+              <a href="#" class="nav__link"><img src=".../../img/fb.svg" alt="facebook" /></a>
+              <a href="#" class="nav__link"><img src=".../../img/insta.svg" alt="instagram" /></a>
             </div>
           </ul>
         </div>
       </nav>
       <div class="mobile__cart">
-        <img src="..../../img/add-to-cart.svg" alt="cart" />
+        <img src=".../../img/add-to-cart.svg" alt="cart" />
       </div>
       <div class="mobile__menu-icon">
         <div id="hamburger" onclick="toggleMenu()">
@@ -94,579 +94,410 @@
       </div>
     </div>
   </header>
-  <main class="main__courses">
-    <div class="product__block-header">
-      <div class="product__content">
-        <div class="product__content-image">
-          <div class="product__content-image-gradient"></div>
-          <div class="product__content-image-product__image"></div>
+  <main class="main__products">
+    <div class="choose__course">
+      <div class="choose__course-name">Mes galime parinkti jums kursą</div>
+      <a class="choose__course-start__btn" href="./questionnaire.html">Pradėti</a>
+    </div>
+    <div class="products__list">
+      <div class="container">
+        <h2>Kursai</h2>
+        <div class="access__block">
+          To get full access you need 
+          <span class="break">
+            to <a href="./login.html">Sign In</a> or
+            <a href="./register.html">Register</a> .
+          </span> 
         </div>
-        <div class="product__content-block">
-          <div class="certificate__block">
-            <div class="certificate__block-icon"></div>
-            <div class="certificate__block-text">Sertifikuotas</div>
-          </div>
-          <h1 class="main__title">Makiažo kursai sau</h1>
-          <div class="set__level">
-            <div class="set__level-inner">
-              <img src=".../../img/level.svg" alt="level" class="set__level-inner-icon" />
-              <div class="set__level-inner-name">Lygis:</div>
-              <div class="set__level-inner-text">PRO</div>
-            </div>
-            <div class="set__level-inner">
-              <img src=".../../img/duration.svg" alt="duration" class="set__level-inner-icon" />
-              <div class="set__level-inner-name">Trukmė:</div>
-              <div class="set__level-inner-text">3ak.val</div>
-            </div>
-          </div>
-          <p class="main_intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus
-            malesuada in pretium, tincidunt leo quis orci sagittis. Urna neque
-            amet cursus integer.
-          </p>
-          <div class="form__block">
-            <div class="form__block-inner">
-              <input type="radio" name="buy" value="buy" />
-              <label for="buy">
-                Pilna kaina
-                <span class="price">99 €</span>
-              </label>
-            </div>
-            <div class="form__block-inner">
-              <input type="radio" name="buy" value="buy" checked />
-              <label for="buy">
-                Išsimokėtinai 3 įmokos
-                <span class="price">33 €/mėn</span>
-              </label>
-            </div>
-            <div class="form__block-product__box">
-              <input name="extra_items" type="checkbox" value="1" />
-              <span class="checkmark"></span>
-              <div class="form__block-product__box-block">
-                <img src=".../../img/box.svg" alt="" class="box" />
-                <div class="info">
-                  <div class="info-title">Makiažo dėžutė</div>
-                  <div class="info-subtitle">Lorem ipsum dolor sit amet</div>
-                </div>
-                <div class="price">
-                  <span class="price-old__price">129 €</span>
-                  <span class="price-new__price">1 €</span>
-                </div>
-              </div>
-            </div>
-            <button class="form__block-add_to_cart">Pirkti kursus</button>
-          </div>
-          <div class="product__content-block-extra__info">
-            <div class="product__content-block-extra__info-title">
-              Su kursais gausite:
-            </div>
-            <ul>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Aliquam ultricies dapibus aliquam</li>
+        <div class="products__list-filter">
+          <div class="tabs-filter">
+            <ul class="tabs-filter__nav">
+              <li class="tabs-filter__nav-item active" data-filter="all">
+                Visi
+              </li>
+              <li class="tabs-filter__nav-item" data-filter="self">Sau</li>
+              <li class="tabs-filter__nav-item" data-filter="pro">Pro</li>
+              <li class="tabs-filter__nav-item" data-filter="basic">Basic</li>
             </ul>
-          </div>
-        </div>
-      </div>
-      <div class="product__block-about__courses">
-        <div class="container">
-          <div class="product-content">
-            <div class="product-content-main_content">
-              <h2 class="product-content-main_content-title">
-                Kas laukia kursuose?
-              </h2>
-              <div class="product-content-main_content-inner">
-                <div class="product-content-main_content-inner-video">
-                  <div class="video__block">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset=".../../img/videoBg.png">
-                      <img src=".../../img/videoBg-mobile.png" alt="Video Background">
-                    </picture>
-                    <div class="play-button"></div>
+            <div class="tabs-filter__content">
+              <div class="tabs-filter__item active" data-level="self">
+                <div class="courses-inner">
+                  <img src=".../../img/courses1.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Sau</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
                   </div>
                 </div>
-                <div class="product-content-main_content-inner-video__content">
-                  <h3>Atraskite kursų planą</h3>
-                  <div class="faq_block-2">
-                    <div class="faq_block-2-inner">
-                      <div class="faq__block">
-                        <div class="faq__block-question">
-                          <span class="question__number">1. </span>
-                          <div class="title">Pristatymas</div>
-                          <div id="faq-question-1" class="faq-btn btn__plus"></div>
-                        </div>
-                        <div id="faq-answer-1" class="faq__block-answer">
-                          <div class="time">06:08</div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
-                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
-                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
-                        </div>
+                <div class="courses-inner">
+                  <img src=".../../img/courses2.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Sau</div>
                       </div>
-                      <div class="faq__block">
-                        <div class="faq__block-question">
-                          <span class="question__number">2. </span>
-                          <div class="title">Konturavimas</div>
-                          <div id="faq-question-2" class="faq-btn btn__plus"></div>
-                        </div>
-                        <div id="faq-answer-2" class="faq__block-answer">
-                          <div class="time">06:08</div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
-                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
-                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
-                        </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
                       </div>
-                      <div class="faq__block">
-                        <div class="faq__block-question">
-                          <span class="question__number">3. </span>
-                          <div class="title">Inspiration</div>
-                          <div id="faq-question-3" class="faq-btn btn__plus"></div>
-                        </div>
-                        <div id="faq-answer-3" class="faq__block-answer">
-                          <div class="time">06:08</div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
-                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
-                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
-                        </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
                       </div>
-                      <div class="faq__block">
-                        <div class="faq__block-question">
-                          <span class="question__number">4. </span>
-                          <div class="title">Vestuvių make-up</div>
-                          <div id="faq-question-4" class="faq-btn btn__plus"></div>
-                        </div>
-                        <div id="faq-answer-4" class="faq__block-answer">
-                          <div class="time">06:08</div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
-                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
-                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
-                        </div>
-                      </div>
-                      <div class="faq__block">
-                        <div class="faq__block-question">
-                          <span class="question__number">5. </span>
-                          <div class="title">Šešėliai</div>
-                          <div id="faq-question-5" class="faq-btn btn__plus"></div>
-                        </div>
-                        <div id="faq-answer-5" class="faq__block-answer">
-                          <div class="time">06:08</div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam.
-                          Quisque odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac
-                          vulputate eros. Cras sed tincidunt libero, sit amet viverra.
-                        </div>
-                      </div>
-                      <img src=".../../img/down-pc.svg" alt="arrow-down" class="scroll__down" />
-                      <img src=".../../img/up-pc.svg" alt="arraow-up" class="scroll__up" />
                     </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
                   </div>
                 </div>
-                <div class="product-content-main_content-inner-courses__level">
-                  <div class="product-content-main_content-inner-courses__level-inner">
-                    <div class="level">
-                      <img src=".../../img/level_star.svg" alt="" class="icon">
-                      <div class="name">PRO</div>
+                <div class="courses-inner">
+                  <img src=".../../img/courses3.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Sau</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
                     </div>
-                    <div class="duration">
-                      <img src=".../../img/duration.svg" alt="" class="icon">
-                      <div class="name">20 videos (8 a.v.)</div>
-                    </div>
-                    <div class="certificate">
-                      <img src=".../../img/product_certificate.svg" alt="" class="icon">
-                      <div class="name">Sertifikatas</div>
-                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
                   </div>
                 </div>
-                <div class="product-content-main_content-inner-description">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio non pellentesque augue et. Tempor eget
-                    sem posuere pharetra gravida elit. Senectus semper quis fusce felis dignissim tristique mauris non.
-                    Sed vitae urna, lectus condimentum. Vulputate tellus feugiat at lobortis risus neque sed sit.
-                    Laoreet quam leo tincidunt laoreet vulputate in. Quisque sollicitudin consectetur sit et tincidunt
-                    vel id. Vitae duis in mattis fames proin nisl fusce. Maecenas phasellus sit velit diam sit. Commodo
-                    ultrices varius aliquet sollicitudin mi mauris sapien viverra. In pellentesque vitae ac ultricies
-                    sed. Eu sodales a egestas a, semper habitasse. Orci sapien rhoncus, odio a. Odio lectus vitae,
-                    ornare metus.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio non pellentesque augue et. Tempor eget
-                    sem posuere pharetra gravida elit. Senectus semper quis fusce felis dignissim tristique mauris non.
-                    Sed vitae urna, lectus condimentum. Vulputate tellus feugiat at lobortis risus neque sed sit.
-                    Laoreet quam leo tincidunt laoreet vulputate in. Quisque sollicitudin consectetur sit et tincidunt
-                    vel id. Vitae duis in mattis fames proin nisl fusce.
-                  </p>
-                  <p>
-                    Maecenas phasellus sit velit diam sit. Commodo ultrices varius aliquet sollicitudin mi mauris sapien
-                    viverra. In pellentesque vitae ac ultricies sed. Eu sodales a egestas a, semper habitasse. Orci
-                    sapien rhoncus, odio a. Odio lectus vitae, ornare metus.
-
-                  </p>
-                </div>
-                <div class="product-content-main_content-inner-instructor__card">
-                  <h5>Instructor</h5>
-                  <div class="instructor">
-                    <img src=".../../img/instructor.svg" alt="gravitar" class="instructor-gravitar">
-                    <div class="instructor-details">
-                      <div class="name">Jack Johnson</div>
-                      <div class="position">Teaches Make-up 101</div>
-                    </div>
-                  </div>
-                  <p class="about__instructor">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis elit lectus diam egestas
-                    diam. Turpis id egestas lacus, vitae diam accumsan.
-                  </p>
-                </div>
-                <div class="product-content-main_content-inner-tags">
-                  <h5>Skills you will gain:</h5>
-                  <div class="tag">Make up</div>
-                  <div class="tag">Wedding make up</div>
-                  <div class="tag">Beauty tricks</div>
-                  <div class="tag">Hair styles</div>
-                  <div class="tag">Organizing skills</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="product__block-about">
-      <div class="container">
-        <div class="product-content">
-          <div class="product-content-main_content">
-            <div class="product-content-main_content-inner">
-              <div class="product-content-main_content-inner-content">
-                <div class="product-content-main_content-inner-content-icon">
-                  <img src=".../../img/home-about-icon.svg" alt="product-icon" />
-                </div>
-                <h3 class="product-content-main_content-inner-content-title">
-                  Sertifikuotas kursas
-                </h3>
-                <p class="product-content-main_content-inner-content-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies dapibus aliquam. Quisque
-                  odio enim, hendrerit sit amet neque quis, dignissim fringilla orci. Vestibulum ac vulputate eros.
-                </p>
-              </div>
-              <div class="product-content-main_content-inner-img">
-                <img src=".../../img/home-img-1.png" alt="product-img" />
-              </div>
-            </div>
-            <div class="product-content-main_content-inner">
-              <div class="product-content-main_content-inner-content last-child">
-                <div class="product-content-main_content-inner-content-icon">
-                  <img src=".../../img/home-about-box.svg" alt="product-icon" />
-                </div>
-                <h3 class="product-content-main_content-inner-content-title">
-                  Dėžutė makiažui kurti
-                </h3>
-                <p class="product-content-main_content-inner-content-description last-child">
-                  Aliquam ultricies dapibus aliquam. Quisque odio enim, hendrerit sit amet neque quis, dignissim
-                  fringilla orci. Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit amet viverra diam. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div class="product-content-main_content-inner-img last-child">
-                <img src=".../../img/home-img-2.png" alt="product-img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="product__block-professional">
-      <div class="container">
-        <div class="content">
-          <div class="content-img">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="/img/professional.png">
-              <img src="/img/professional-mobile.png" alt="Image">
-            </picture>
-          </div>
-          <div class="content-professional__content">
-            <h2>Šiame kurse jūsų laukia žinios įgytos iš profesionalų</h2>
-            <div class="content-professional__content-list">
-              <div class="content-professional__content-list-single">
-                <img src="/img/duration.svg" alt="duration" class="icon">
-                <div class="text">8 ak.val</div>
-              </div>
-              <div class="content-professional__content-list-single">
-                <img src="/img/box.svg" alt="box" class="icon">
-                <div class="text">Grožio dėžutė</div>
-              </div>
-              <div class="content-professional__content-list-single">
-                <img src="/img/certificate-home.svg" alt="certificate" class="icon">
-                <div class="text">Sertifikatas</div>
-              </div>
-              <div class="content-professional__content-list-single">
-                <img src="/img/message.svg" alt="Message" class="icon">
-                <div class="text">Bendravimas su mokytoja</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="product__block-slider">
-      <div class="container">
-        <h2>Net 7 atskiros pamokos</h2>
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src=".../../img/teacher1.png" alt="teacher" class="swiper-slide-artist__img" />
-              <div class="swiper-slide-artist__content">
-                <div class="swiper-slide-artist__content-block__title">
-                  Johnny Johnson
-                </div>
-                <div class="swiper-slide-artist__content-block__subtitle">
-                  Make-up artist
-                </div>
-                <div class="swiper-slide-artist__content-block__content">
-                  3 courses
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src=".../../img/teacher2.png" alt="teacher" class="swiper-slide-artist__img" />
-              <div class="swiper-slide-artist__content">
-                <div class="swiper-slide-artist__content-block__title">
-                  Johnny Johnson
-                </div>
-                <div class="swiper-slide-artist__content-block__subtitle">
-                  Make-up artist
-                </div>
-                <div class="swiper-slide-artist__content-block__content">
-                  3 courses
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src=".../../img/teacher3.png" alt="teacher" class="swiper-slide-artist__img" />
-              <div class="swiper-slide-artist__content">
-                <div class="swiper-slide-artist__content-block__title">
-                  Johnny Johnson
-                </div>
-                <div class="swiper-slide-artist__content-block__subtitle">
-                  Make-up artist
-                </div>
-                <div class="swiper-slide-artist__content-block__content">
-                  3 courses
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src=".../../img/teacher4.png" alt="teacher" class="swiper-slide-artist__img" />
-              <div class="swiper-slide-artist__content">
-                <div class="swiper-slide-artist__content-block__title">
-                  Johnny Johnson
-                </div>
-                <div class="swiper-slide-artist__content-block__subtitle">
-                  Make-up artist
-                </div>
-                <div class="swiper-slide-artist__content-block__content">
-                  3 courses
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-navigation__block">
-            <div class="swiper1-button-prev">
-              <img src=".../../img/prev.svg" alt="swiper-prev" />
-            </div>
-            <div class="swiper1-button-next">
-              <img src=".../../img/next.svg" alt="swiper-next" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="product__block-testimonial">
-      <div class="container">
-        <div class="product-content">
-          <div class="product-content-main_content">
-            <h2 class="product-content-main_content-title">
-              Net 7 atskiros pamokos
-            </h2>
-            <div class="product-content-slider">
-              <!-- Slider main container -->
-              <div class="swiper2">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="swiper-slide-images__block">
-                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
-                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
-                    </div>
-                    <div class="swiper-slide-content__block">
-                      <h2 class="swiper-slide-content__block-main__title">
-                        Ką sako mokiniai
-                      </h2>
-                      <img src=".../../img/quates.svg" alt="quates" />
-                      <div class="swiper-slide-content__block-title">
-                        Beautist changed my life
+                <div class="courses-inner">
+                  <img src=".../../img/courses4.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Sau</div>
                       </div>
-                      <div class="swiper-slide-content__block-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                        enim, hendrerit sit amet neque quis, dignissim
-                        fringilla orci. Vestibulum ac vulputate eros.
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
                       </div>
-                      <div class="swiper-slide-content__block-author">
-                        <div class="swiper-slide-content__block-author-block">
-                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
-                          <div class="swiper-slide-content__block-author-block-block_content">
-                            <div class="swiper-slide-content__block-author-block-block_content-title">
-                              Sophie
-                            </div>
-                            <div class="swiper-slide-content__block-author-block-block_content-position">
-                              Make-up artist 101
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide-content__block-navigation__block">
-                        <div class="swiper2-button-prev">
-                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
-                        </div>
-                        <div class="swiper2-button-next">
-                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
-                        </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide-images__block">
-                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
-                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
-                    </div>
-                    <div class="swiper-slide-content__block">
-                      <h2 class="swiper-slide-content__block-main__title">
-                        Ką sako mokiniai
-                      </h2>
-                      <img src=".../../img/quates.svg" alt="quates" />
-                      <div class="swiper-slide-content__block-title">
-                        Beautist changed my life
-                      </div>
-                      <div class="swiper-slide-content__block-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                        enim, hendrerit sit amet neque quis, dignissim
-                        fringilla orci. Vestibulum ac vulputate eros.
-                      </div>
-                      <div class="swiper-slide-content__block-author">
-                        <div class="swiper-slide-content__block-author-block">
-                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
-                          <div class="swiper-slide-content__block-author-block-block_content">
-                            <div class="swiper-slide-content__block-author-block-block_content-title">
-                              Sophie
-                            </div>
-                            <div class="swiper-slide-content__block-author-block-block_content-position">
-                              Make-up artist 101
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide-content__block-navigation__block">
-                        <div class="swiper2-button-prev">
-                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
-                        </div>
-                        <div class="swiper2-button-next">
-                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide-images__block">
-                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
-                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
-                    </div>
-                    <div class="swiper-slide-content__block">
-                      <h2 class="swiper-slide-content__block-main__title">
-                        Ką sako mokiniai
-                      </h2>
-                      <img src=".../../img/quates.svg" alt="quates" />
-                      <div class="swiper-slide-content__block-title">
-                        Beautist changed my life
-                      </div>
-                      <div class="swiper-slide-content__block-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                        enim, hendrerit sit amet neque quis, dignissim
-                        fringilla orci. Vestibulum ac vulputate eros.
-                      </div>
-                      <div class="swiper-slide-content__block-author">
-                        <div class="swiper-slide-content__block-author-block">
-                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
-                          <div class="swiper-slide-content__block-author-block-block_content">
-                            <div class="swiper-slide-content__block-author-block-block_content-title">
-                              Sophie
-                            </div>
-                            <div class="swiper-slide-content__block-author-block-block_content-position">
-                              Make-up artist 101
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide-content__block-navigation__block">
-                        <div class="swiper2-button-prev">
-                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
-                        </div>
-                        <div class="swiper2-button-next">
-                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide-images__block">
-                      <img src=".../../img/testimonial1.png" alt="testimonial" class="swiper-image" />
-                      <img src=".../../img/testimonial1-1.png" alt="testimonial" class="swiper-image" />
-                    </div>
-                    <div class="swiper-slide-content__block">
-                      <h2 class="swiper-slide-content__block-main__title">
-                        Ką sako mokiniai
-                      </h2>
-                      <img src=".../../img/quates.svg" alt="quates" />
-                      <div class="swiper-slide-content__block-title">
-                        Beautist changed my life
-                      </div>
-                      <div class="swiper-slide-content__block-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aliquam ultricies dapibus aliquam. Quisque odio
-                        enim, hendrerit sit amet neque quis, dignissim
-                        fringilla orci. Vestibulum ac vulputate eros.
-                      </div>
-                      <div class="swiper-slide-content__block-author">
-                        <div class="swiper-slide-content__block-author-block">
-                          <img src=".../../img/testimonial-author.png" alt="testimonial-author" />
-                          <div class="swiper-slide-content__block-author-block-block_content">
-                            <div class="swiper-slide-content__block-author-block-block_content-title">
-                              Sophie
-                            </div>
-                            <div class="swiper-slide-content__block-author-block-block_content-position">
-                              Make-up artist 101
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide-content__block-navigation__block">
-                        <div class="swiper2-button-prev">
-                          <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
-                        </div>
-                        <div class="swiper2-button-next">
-                          <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
-                        </div>
-                      </div>
-                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
                   </div>
                 </div>
-                <div class="swiper2-navigation__block">
-                  <div class="swiper2-button-prev">
-                    <img src=".../../img/prev.svg" alt="swiper-prev" width="45" height="45" />
+                <div class="courses-inner">
+                  <img src=".../../img/courses5.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Sau</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
                   </div>
-                  <div class="swiper2-button-next">
-                    <img src=".../../img/next.svg" alt="swiper-next" width="45" height="45" />
+                </div>
+              </div>
+              <div class="tabs-filter__item active" data-level="pro">
+                <div class="courses-inner">
+                  <img src=".../../img/courses1.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">PRO</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src=".../../img/courses2.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">PRO</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src=".../../img/courses3.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">PRO</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src=".../../img/courses4.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">PRO</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src=".../../img/courses5.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">PRO</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-filter__item active" data-level="basic">
+                <div class="courses-inner">
+                  <img src=".../../img/courses1.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Basic</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src=".../../img/courses2.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Basic</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src="/img/courses3.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Basic</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src="/img/courses4.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Basic</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src="/img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
+                  </div>
+                </div>
+                <div class="courses-inner">
+                  <img src="/img/courses5.png" alt="" class="courses-inner-image">
+                  <div class="courses-inner-content">
+                    <h5 class="title">Vestuvinio makiažo profesionali</h5>
+                    <h6 class="author">by Johnny Johnson</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero massa
+                      tristique in gravida mollis. Non eget et eget lectus purus nisl, consequat sit.</p>
+                    <div class="info">
+                      <div class="info-level">
+                        <img src=".../../img/level_star.svg" alt="" class="icon">
+                        <div class="name">Basic</div>
+                      </div>
+                      <div class="info-duration">
+                        <img src=".../../img/duration.svg" alt="" class="icon">
+                        <div class="name">8 a.v.</div>
+                      </div>
+                      <div class="info-certificate">
+                        <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                        <div class="name">Sertifikatas</div>
+                      </div>
+                    </div>
+                    <a href="./product.html" class="courses__btn">Žiūrėti kursą <img src=".../../img/more__button.svg"
+                        alt="" class="more"></a>
                   </div>
                 </div>
               </div>
@@ -675,135 +506,9 @@
         </div>
       </div>
     </div>
-    <div class="product__block-faq">
-      <div class="container">
-        <div class="product-content">
-          <div class="product-content-main_content">
-            <h2 class="product-content-main_content-main__title">
-              Dažniausiai Užduodami Klausimai
-            </h2>
-            <div class="product-content-main_content-faq__block">
-              <div class="product-content-main_content-faq__block-inner">
-                <div class="product-content-main_content-faq__block-inner-question">
-                  Lorem ipsum dolor sit amet?
-                  <div id="faq-question-1" class="faq-btn btn__plus"></div>
-                </div>
-                <div id="faq-answer-1" class="product-content-main_content-faq__block-inner-answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                  hendrerit sit amet neque quis, dignissim fringilla orci.
-                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                  consectetur at eros.
-                </div>
-              </div>
-            </div>
-            <div class="product-content-main_content-faq__block">
-              <div class="product-content-main_content-faq__block-inner">
-                <div class="product-content-main_content-faq__block-inner-question">
-                  Consectetur adipiscing elit aliquam?
-                  <div id="faq-question-2" class="faq-btn btn__plus"></div>
-                </div>
-                <div id="faq-answer-2" class="product-content-main_content-faq__block-inner-answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                  hendrerit sit amet neque quis, dignissim fringilla orci.
-                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                  consectetur at eros.
-                </div>
-              </div>
-            </div>
-            <div class="product-content-main_content-faq__block">
-              <div class="product-content-main_content-faq__block-inner">
-                <div class="product-content-main_content-faq__block-inner-question">
-                  Quisque odio enim, hendrerit sit amet?
-                  <div id="faq-question-3" class="faq-btn btn__plus"></div>
-                </div>
-                <div id="faq-answer-3" class="product-content-main_content-faq__block-inner-answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                  hendrerit sit amet neque quis, dignissim fringilla orci.
-                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                  consectetur at eros.
-                </div>
-              </div>
-            </div>
-            <div class="product-content-main_content-faq__block">
-              <div class="product-content-main_content-faq__block-inner">
-                <div class="product-content-main_content-faq__block-inner-question">
-                  Lorem ipsum dolor sit amet quisque odio?
-                  <div id="faq-question-4" class="faq-btn btn__plus"></div>
-                </div>
-                <div id="faq-answer-4" class="product-content-main_content-faq__block-inner-answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                  hendrerit sit amet neque quis, dignissim fringilla orci.
-                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                  consectetur at eros.
-                </div>
-              </div>
-            </div>
-            <div class="product-content-main_content-faq__block">
-              <div class="product-content-main_content-faq__block-inner">
-                <div class="product-content-main_content-faq__block-inner-question">
-                  Aliquam consequat faucibus augue?
-                  <div id="faq-question-5" class="faq-btn btn__plus"></div>
-                </div>
-                <div id="faq-answer-5" class="product-content-main_content-faq__block-inner-answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ultricies dapibus aliquam. Quisque odio enim,
-                  hendrerit sit amet neque quis, dignissim fringilla orci.
-                  Vestibulum ac vulputate eros. Cras sed tincidunt libero, sit
-                  amet viverra diam. Cras diam nisl, tempor vel pulvinar nec,
-                  consectetur at eros.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="product__block-favorite">
-      <div class="container">
-        <div class="product-content">
-          <div class="product-content-main_content">
-            <h2 class="product-content-main_content-main__title">
-              Choose your favourite course
-            </h2>
-            <p class="product-content-main_content-main__description">
-              With number of courses available we promise you best learning
-              experience. Learn and improve online.
-            </p>
-            <a href="./courses.html" class="btn get__started">Get started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="floating__block" style="display: none;">
-      <div class="name">Makiažo kursai sau</div>
-      <div class="floating__block-content">
-        <div class="form__block">
-          <span class="price mobile">99 €</span>
-          <div class="form__block-inner">
-            <input type="radio" name="buy" value="buy" />
-            <label for="buy">
-              Pilna kaina
-              <span class="price">99 €</span>
-            </label>
-          </div>
-          <div class="form__block-inner">
-            <input type="radio" name="buy" value="buy" checked />
-            <label for="buy">
-              Iš. 3 įmokos
-              <span class="price">33 €/mėn</span>
-            </label>
-          </div>
-          <button class="form__block-add_to_cart">Pirkti kursus</button>
-        </div>
-      </div>
+    <div class="courses__help">
+      <div class="courses__help-name">Mes galime parinkti jums kursą</div>
+      <a class="courses__help-start__btn" href="./questionnaire.html">Pradėti</a>
     </div>
   </main>
   <footer class="footer">
@@ -815,11 +520,11 @@
             <ul class="footer__content-nav__block-nav-footer__nav">
               <li class="footer__content-nav__block-nav-footer__nav-list">
                 <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./index.html">
-                  product
+                  Home
                 </a>
               </li>
               <li class="footer__content-nav__block-nav-footer__nav-list">
-                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./courses.html">
+                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./product.html">
                   Courses
                 </a>
               </li>
@@ -887,79 +592,32 @@
   </footer>
   <script src="./dist/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script type="module">
-    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
-    const swiper = new Swiper(".swiper", {
-      slidesPerView: "auto",
-      spaceBetween: 0,
-      grabCursor: true,
-      navigation: {
-        nextEl: ".swiper1-button-next",
-        prevEl: ".swiper1-button-prev",
-      },
-      loop: !0,
-    });
-    const swiper2 = new Swiper(".swiper2", {
-      slidesPerView: "auto",
-      spaceBetween: 0,
-      grabCursor: true,
-      navigation: {
-        nextEl: ".swiper2-button-next",
-        prevEl: ".swiper2-button-prev",
-      },
-    });
-  </script>
   <script>
     $(document).ready(function () {
-      $(".product-content-main_content-faq__block-inner").click(function () {
-        var currentAnswer = $(this).find(
-          ".product-content-main_content-faq__block-inner-answer"
-        );
-        $(".product-content-main_content-faq__block-inner-answer")
-          .not(currentAnswer)
-          .slideUp();
-        currentAnswer.slideToggle();
-        $(
-          ".product-content-main_content-faq__block-inner-question"
-        ).removeClass("active");
-        $(this)
-          .find(".product-content-main_content-faq__block-inner-question")
-          .toggleClass("active");
-        $(this).find(".faq-btn").toggleClass("btn__plus btn__minus");
-        $(".faq-btn")
-          .not($(this).find(".faq-btn"))
-          .removeClass("btn__minus")
-          .addClass("btn__plus");
-      });
-      $(".faq__block").click(function () {
-        var currentAnswer = $(this).find(".faq__block-answer");
-        $(".faq__block-answer").not(currentAnswer).slideUp();
-        currentAnswer.slideToggle();
-        $(".faq__block-question").removeClass("active");
-        $(this).find(".faq__block-question").toggleClass("active");
-        $(this).find(".faq-btn").toggleClass("btn__plus btn__minus");
-        $(".faq-btn")
-          .not($(this).find(".faq-btn"))
-          .removeClass("btn__minus")
-          .addClass("btn__plus");
-      });
+      const $tabsFilterNav = $(".tabs-filter__nav-item");
+      const $tabsFilterItems = $(".tabs-filter__item");
+      const $allTab = $tabsFilterNav.filter('[data-filter="all"]');
 
-      var block = $(".floating__block");
-      var height = 1200;
+      $allTab.trigger("click"); // trigger click event on the "All" tab element when the page loads.
 
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
+      $tabsFilterNav.on("click", function () {
+        const filter = $(this).data("filter");
+        // remove "active" class from other tabs
+        $tabsFilterNav.not(this).removeClass("active");
+        // add "active" class to clicked tab
+        $(this).addClass("active");
 
-        if (scroll >= height) {
-          block.show();
+        if (filter === "all") {
+          $tabsFilterItems.addClass("active");
         } else {
-          block.hide();
+          $tabsFilterItems
+            .removeClass("active")
+            .filter(`[data-level=${filter}]`)
+            .addClass("active");
         }
       });
-
     });
-
   </script>
 </body>
 
