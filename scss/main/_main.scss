@@ -1,120 +1,122 @@
 body {
-    background-color: $body;
+    background-color: $fourth_color;
     margin: 0;
 
     .main {
         .home__block {
             &-header {
                 background: rgba(220, 220, 250, 0.5);
-
-                .home__content {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-
-                    &-image {
-                        width: 100%;
-                        position: relative;
-
-                        &-gradient {
-                            position: absolute;
-                            top: 0px;
-                            left: 0px;
-                            background: linear-gradient(180deg, rgba(39, 35, 225, .6) 5.91%, rgba(220, 220, 250, .18) 100%);
-                            mix-blend-mode: screen;
-                            height: 100%;
+                .container {
+                    @include container;
+                    .home__content {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+    
+                        &-image {
                             width: 100%;
-                        }
-
-                        &-home__image {
-                            background-image: url('../../img/header-mobile.jpg');
-                            width: 100%;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-
-                            &::after {
-                                content: "";
-                                display: block;
-                                padding-bottom: 100%;
+                            position: relative;
+    
+                            &-gradient {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                background: linear-gradient(180deg, rgba(39, 35, 225, .6) 5.91%, rgba(220, 220, 250, .18) 100%);
+                                mix-blend-mode: screen;
+                                height: 100%;
+                                width: 100%;
                             }
-                        }
-                    }
-
-                    &-block {
-                        width: 100%;
-                        text-align: center;
-
-                        .main__title {
-                            @include montserrat;
-                            font-weight: $fw-smaller;
-                            font-size: 2.000em;
-                            line-height: 108%;
-                            text-align: center;
-                            color: $text__color;
-                            margin: 25px 22px 7.5px 18px;
-                        }
-
-                        .main_intro {
-                            display: block;
-                            margin: 16px 24px 15px;
-                            @include lora;
-                            font-weight: $fw-normal;
-                            font-size: 16px;
-                            line-height: 140%;
-                            text-align: center;
-                            color: $black_text__color;
-                        }
-
-                        .set_level {
-                            @include lora;
-                            font-weight: $fw-bold_1;
-                            font-size: 1.0989em;
-                            line-height: 150%;
-                            color: $text__color;
-                            margin: 7.5px 20px 20px;
-                        }
-
-                        .questioner__button {
-                            margin: 27px 0 19px;
-
-                            .btn {
-                                @include montserrat;
-                                font-weight: $fw-bold_1;
-                                font-size: 1.189em;
-                                line-height: 20px;
-                                text-align: center;
-                                color: #FFFFFF;
-                                padding: 13px 30px;
-                                width: 200px;
-                                background: #2723E1;
-                                border-radius: 88px;
-                            }
-                        }
-
-                        .certificate {
-                            padding-bottom: 51.53px;
-
-                            &-icon {
-                                width: 40px;
-                                height: 45.64px;
-                                background-image: url('../../img/certificate-home.svg');
+    
+                            &-home__image {
+                                background-image: url('../../img/header-mobile.jpg');
+                                width: 100%;
                                 background-repeat: no-repeat;
                                 background-size: cover;
-                                display: inline-block;
-                                vertical-align: bottom;
+    
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    padding-bottom: 100%;
+                                }
                             }
-
-                            &-text {
+                        }
+    
+                        &-block {
+                            width: 100%;
+                            text-align: center;
+    
+                            .main__title {
+                                @include montserrat;
+                                font-weight: $fw-smaller;
+                                font-size: 2.000em;
+                                line-height: 108%;
+                                text-align: center;
+                                color: $text__color;
+                                margin: 25px 22px 7.5px 18px;
+                            }
+    
+                            .main_intro {
+                                display: block;
+                                margin: 16px 24px 15px;
+                                @include lora;
+                                font-weight: $fw-normal;
+                                font-size: 16px;
+                                line-height: 140%;
+                                text-align: center;
+                                color: $black_text__color;
+                            }
+    
+                            .set_level {
                                 @include lora;
                                 font-weight: $fw-bold_1;
-                                font-size: 15px;
-                                line-height: 120%;
+                                font-size: 1.0989em;
+                                line-height: 150%;
                                 color: $text__color;
-                                margin-left: 21px;
-                                width: 98px;
-                                display: inline-block;
-                                text-align: left;
-                                vertical-align: middle;
+                                margin: 7.5px 20px 20px;
+                            }
+    
+                            .questioner__button {
+                                margin: 27px 0 19px;
+    
+                                .btn {
+                                    @include montserrat;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 1.189em;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: $fifth_color;
+                                    padding: 13px 30px;
+                                    width: 200px;
+                                    background: #2723E1;
+                                    border-radius: 88px;
+                                }
+                            }
+    
+                            .certificate {
+                                padding-bottom: 51.53px;
+    
+                                &-icon {
+                                    width: 40px;
+                                    height: 45.64px;
+                                    background-image: url('../../img/certificate-home.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    display: inline-block;
+                                    vertical-align: bottom;
+                                }
+    
+                                &-text {
+                                    @include lora;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 15px;
+                                    line-height: 120%;
+                                    color: $text__color;
+                                    margin-left: 21px;
+                                    width: 98px;
+                                    display: inline-block;
+                                    text-align: left;
+                                    vertical-align: middle;
+                                }
                             }
                         }
                     }
@@ -147,7 +149,7 @@ body {
                                     .swiper-slide {
                                         width: 261px !important;
                                         margin-right: 18px;
-                                        border: 1px solid $nav__btn;
+                                        border: 1px solid $main_color;
                                         filter: drop-shadow(0px 7.34667px 33.06px rgba(39, 35, 225, 0.25));
                                         border-radius: 20px;
 
@@ -172,7 +174,7 @@ body {
                                                 text-overflow: ellipsis;
                                                 margin-bottom: -3px;
                                                 margin-left: -1px;
-                                                color: $nav__btn;
+                                                color: $main_color;
                                             }
 
                                             &-subtitle {
@@ -209,7 +211,7 @@ body {
                                                 gap: 3px;
                                                 margin-top: 1px;
                                                 cursor: pointer;
-                                                color: $nav__btn;
+                                                color: $main_color;
 
                                                 img {
                                                     vertical-align: middle;
@@ -224,14 +226,14 @@ body {
                                             top: 0px;
                                             right: 0px;
                                             padding: 9px 14px;
-                                            background: $nav__btn;
+                                            background: $main_color;
                                             border-radius: 20px;
                                             text-align: center;
                                             @include montserrat;
                                             font-weight: $fw-bold_1;
                                             font-size: 12.4px;
                                             line-height: 15px;
-                                            color: #FFFFFF;
+                                            color: $fifth_color;
 
                                             img {
                                                 vertical-align: middle;
@@ -287,8 +289,8 @@ body {
                                 font-weight: $fw-bold_1;
                                 font-size: 18px;
                                 line-height: 22px;
-                                color: #FFFFFF;
-                                background: $nav__btn;
+                                color: $fifth_color;
+                                background: $main_color;
                                 border-radius: 88px;
                                 padding: 12px 25px;
                             }
@@ -321,7 +323,7 @@ body {
                                             font-size: 14px;
                                             line-height: 150%;
                                             text-transform: uppercase;
-                                            color: $nav__btn;
+                                            color: $main_color;
                                         }
 
                                         &-block__subtitle {
@@ -361,7 +363,7 @@ body {
                                 font-weight: $fw-bold_1;
                                 font-size: 16.5px;
                                 line-height: 20px;
-                                color: #FFFFFF;
+                                color: $fifth_color;
                                 background: #2723E1;
                                 border-radius: 88px;
                                 padding: 13px 30px;
@@ -526,7 +528,7 @@ body {
                                                             font-size: 10px;
                                                             line-height: 150%;
                                                             text-transform: uppercase;
-                                                            color: $nav__btn;
+                                                            color: $main_color;
                                                         }
 
                                                         &-position {
@@ -632,7 +634,7 @@ body {
                                         .border {
                                             width: 134px;
                                             display: inline-block;
-                                            border: 1px solid $nav__btn;
+                                            border: 1px solid $main_color;
                                         }
 
                                         &:last-child {
@@ -661,13 +663,13 @@ body {
 
                                 &-courses__btn {
                                     @include montserrat;
-                                    background: $nav__btn;
+                                    background: $main_color;
                                     border-radius: 88px;
                                     font-weight: $fw-bold_1;
                                     font-size: 16px;
                                     line-height: 20px;
                                     text-align: center;
-                                    color: #FFFFFF;
+                                    color: $fifth_color;
                                     padding: 10px 26px;
                                 }
                             }
@@ -697,7 +699,7 @@ body {
 
                             &-faq__block {
                                 width: 100%;
-                                border-top: 1px solid $nav__btn;
+                                border-top: 1px solid $main_color;
                                 padding: 36.5px 0;
                                 cursor: pointer;
 
@@ -741,7 +743,7 @@ body {
                                 }
 
                                 &:last-child {
-                                    border-bottom: 1px solid $nav__btn;
+                                    border-bottom: 1px solid $main_color;
                                 }
                             }
                         }
@@ -794,7 +796,7 @@ body {
                                 font-weight: $fw-bold_1;
                                 font-size: 16px;
                                 line-height: 20px;
-                                color: #FFFFFF;
+                                color: $fifth_color;
                                 background: #2723E1;
                                 border: 0.661957px solid #2723E1;
                                 border-radius: 58.2522px;
@@ -811,74 +813,76 @@ body {
         .main {
             .home__block {
                 &-header {
-                    .home__content {
-                        flex-direction: row;
-
-                        &-block {
-                            order: 1;
-                            flex: 0 0 50%;
-                            text-align: left;
-                            margin: 0;
-                            padding: 103px 140px 0px 98px;
-                            box-sizing: border-box;
-                        }
-
-                        &-image {
-                            order: 2;
-                            flex: 0 50%;
-
-                            &-gradient {}
-
-                            &-home__image {
-                                background-image: url('../../img/header-pc.jpg');
-                                width: 100%;
-                                background-repeat: no-repeat;
-                                background-size: cover;
-
-                                &::after {
-                                    content: "";
-                                    display: block;
-                                    padding-bottom: 100%;
+                    .container {
+                        .home__content {
+                            flex-direction: row;
+    
+                            &-block {
+                                order: 1;
+                                flex: 0 0 50%;
+                                text-align: left;
+                                margin: 0;
+                                padding: 103px 140px 0px 98px;
+                                box-sizing: border-box;
+                            }
+    
+                            &-image {
+                                order: 2;
+                                flex: 0 50%;
+    
+                                &-gradient {}
+    
+                                &-home__image {
+                                    background-image: url('../../img/header-pc.jpg');
+                                    width: 100%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+    
+                                    &::after {
+                                        content: "";
+                                        display: block;
+                                        padding-bottom: 100%;
+                                    }
                                 }
                             }
-                        }
-
-                        .main__title {
-                            font-size: 3.429em;
-                            margin: 0 0 25px;
-                            text-align: left;
-                            line-height: 110%;
-                        }
-
-                        .main_intro {
-                            margin: 0 2px 27px;
-                            font-size: 18px;
-                            text-align: left;
-                            word-spacing: 1px;
-                        }
-
-                        .set_level {
-                            font-size: 19px;
-                            margin: 0 0 20px;
-                        }
-
-                        .questioner__button {
-                            margin: 0 0 21px;
-                            padding: 13px 7px;
-
-                            .btn {
-                                font-size: 20px;
-                                line-height: 22px;
-                                padding: 12px 30px;
+    
+                            .main__title {
+                                font-size: 3.429em;
+                                margin: 0 0 25px;
+                                text-align: left;
+                                line-height: 110%;
                             }
-                        }
-
-                        .certificate {
-                            text-align: left;
-
-                            &-text {
-                                margin-left: 24px;
-                                line-height: 144%;
+    
+                            .main_intro {
+                                margin: 0 2px 27px;
+                                font-size: 18px;
+                                text-align: left;
+                                word-spacing: 1px;
+                            }
+    
+                            .set_level {
+                                font-size: 19px;
+                                margin: 0 0 20px;
+                            }
+    
+                            .questioner__button {
+                                margin: 0 0 21px;
+                                padding: 13px 7px;
+    
+                                .btn {
+                                    font-size: 20px;
+                                    line-height: 22px;
+                                    padding: 12px 30px;
+                                }
+                            }
+    
+                            .certificate {
+                                text-align: left;
+    
+                                &-text {
+                                    margin-left: 24px;
+                                    line-height: 144%;
+                                }
                             }
                         }
                     }
@@ -966,7 +970,7 @@ body {
                                             font-size: 22px;
                                             line-height: 22px;
                                             font-weight: 600;
-                                            color: #FFFFFF;
+                                            color: $fifth_color;
                                             border: 1px solid #2723E1;
                                             background: #2723E1;
                                             border-radius: 88px;

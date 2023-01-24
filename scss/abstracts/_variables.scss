@@ -1,9 +1,16 @@
-$body: #F8F8FF;
-$nav__background: #FFFFFF;
 $mobile-nav__background: #DCDCDC;
-$nav__btn: #2723E1;
+$main_color: #2723E1;
+$main_hover_color: #4946e5;
 $text__color: #39228A;
+$text_hover_color: #6a68e6;
 $black_text__color: #000000;
+$fourth_color: #F8F8FF;
+$fifth_color: #ffffff;
+$sixth_color: #29216B;
+$seventh_color: #d70f5d;
+$eight_color: #EAEAFC;
+$ninth_color: #e9e9fc;
+$opacity_hover: 0.7;
 $fw-smaller: 300;
 $fw-normal: 500;
 $fw-bold_1: 600;
@@ -13,18 +20,3 @@ $container: 1440px;
 $breakpoint-mobile: 480px;
 $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
-
-:root {
-    --main-color: #2723E1;
-    --main-hover-color: #4946e5;
-    --secondary-color: #39228A;
-    --secondary-hover-color: #6a68e6;
-    --third-color: #000000;
-    --fourth-color: #f8f8ff;
-    --fifth-color: #ffffff;
-    --sixth-color: #29216B;
-    --seventh-color: #d70f5d;
-    --eight-color: #EAEAFC;
-    --ninth-color: #e9e9fc;
-    --opacity-hover: 0.7;
-}

@@ -9,7 +9,7 @@
 }
 
 @mixin default__btn {
-    background: $nav__btn;
+    background: $main_color;
     padding: 20px 40px;
     gap: 20px;
 
@@ -25,4 +25,86 @@
 @mixin container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@mixin radio {
+
+    input[type="radio"]+label,
+    input[type="checkbox"]+label {
+        background: $fifth_color;
+        border: 1px solid rgba(220, 220, 250, 0.8);
+        border-radius: 73.0909px;
+        padding: 18px 10px 13px 54px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        position: relative;
+        text-align: left;
+
+        @include lora;
+        font-weight: $fw-normal;
+        font-size: 14px;
+        line-height: 110%;
+        color: $black_text__color;
+        margin-bottom: 12px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="radio"]+label:before,
+    input[type="checkbox"]+label:before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: $fifth_color;
+        border: 0.75px solid rgba(220, 220, 250, 0.8);
+        display: block;
+        margin-left: -36px;
+        margin-top: -13px;
+        top: 60%;
+        bottom: 50%;
+        position: absolute;
+    }
+
+    input[type="radio"]:checked+label:before,
+    input[type="checkbox"]:checked+label:before {
+        border: 0.75px solid $main_color;
+        box-sizing: border-box;
+        content: '\25CF';
+        font-size: 15px;
+        padding-left: 3.5px;
+        padding-top: 0;
+    }
+
+    input[type="radio"]:checked+label,
+    input[type="checkbox"]:checked+label {
+        border: 1px solid $main_color;
+        color: $main_color;
+    }
+}
+
+@mixin input-default {
+    background: $fifth_color;
+    border: 0.75px solid $main_color;
+    border-radius: 33.0049px;
+    height: calc(47.2px + 0.601796px + 0.601796px);
+    width: 100%;
+    padding: 0px 19px;
+    outline: none;
+    margin-bottom: 14px;
+
+
+    &::placeholder {
+        @include lora;
+        font-weight: $fw-normal;
+        font-size: 12px;
+        line-height: 15px;
+        vertical-align: middle;
+
+        color: $black_text__color;
+    }
 }

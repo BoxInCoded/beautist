@@ -1,0 +1,393 @@
+.questionnaire_result {
+    .result__block {
+        .container {
+            @include container;
+
+            .result__block-content {
+                padding: 50px 20px 90px;
+
+                &-title {
+                    @include montserrat;
+                    font-weight: $fw-smaller;
+                    font-size: 31.3547px;
+                    line-height: 108%;
+                    text-align: center;
+                    color: $text__color;
+                }
+
+                .recommended__course {
+                    margin: 50px 0 84px;
+                    border: 1px solid $main_color;
+                    filter: drop-shadow(0px 10px 45px rgba(41, 33, 107, 0.25));
+                    border-radius: 20px;
+
+                    &-content {
+                        padding: 14px 18px 30px;
+
+                        .title {
+                            @include lora;
+                            font-weight: $fw-bold_1;
+                            font-size: 18px;
+                            line-height: 150%;
+                            color: $main_color;
+                        }
+
+                        .author {
+                            @include lora;
+                            font-weight: $fw-bold_1;
+                            font-size: 10px;
+                            line-height: 150%;
+                            color: $text__color;
+                        }
+
+                        .description {
+                            @include lora;
+                            font-weight: $fw-normal;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $black_text__color;
+                            margin: 15px 0;
+                        }
+
+                        .info {
+                            display: flex;
+                            align-items: center;
+                            gap: 24px;
+                            margin-bottom: 28px;
+
+                            &-level,
+                            &-duration,
+                            &-certificate {
+                                display: flex;
+                                align-items: center;
+                                gap: 13px;
+
+                                .icon {
+                                    width: 14px;
+                                    height: 14px;
+                                }
+
+                                .name {
+                                    @include lora;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 14px;
+                                    line-height: 150%;
+                                    color: $text__color;
+                                }
+                            }
+                        }
+
+                        .courses__btn {
+                            @include montserrat;
+                            font-weight: $fw-bold_1;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-align: center;
+
+                            padding: 10px 28px;
+                            background: $main_color;
+                            border-radius: 88px;
+
+                            color: $fifth_color;
+
+                            img {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                &-title-2 {
+                    @include montserrat;
+                    font-weight: $fw-smaller;
+                    font-size: 31.3547px;
+                    line-height: 108%;
+                    text-align: center;
+                    color: $text__color;
+                }
+
+                .suggestion__block {
+                    margin: 50px 0;
+
+                    &-slider {
+                        .swiper {
+                            overflow: hidden;
+
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    width: 261px;
+                                    margin-right: 18px;
+                                    border: 1px solid $main_color;
+                                    border-radius: 20px;
+
+                                    .swiper-image {
+                                        width: 100%;
+                                        height: 173.84px;
+                                        border-radius: 20px;
+                                    }
+
+                                    &-content__block {
+                                        padding: 17px 20px 16px 20px;
+
+                                        &-title {
+                                            @include lora;
+                                            font-weight: $fw-bold_1;
+                                            font-size: 15px;
+                                            line-height: 150%;
+                                            display: flex;
+                                            align-items: center;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            margin-bottom: -3px;
+                                            margin-left: -1px;
+                                            color: $main_color;
+                                        }
+
+                                        &-subtitle {
+                                            @include lora;
+                                            font-weight: $fw-bold_1;
+                                            font-size: 9.5px;
+                                            line-height: 150%;
+                                            color: $text__color;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            margin-left: -1px;
+                                        }
+
+                                        &-main__block {
+                                            @include lora;
+                                            font-weight: $fw-normal;
+                                            font-size: 12px;
+                                            line-height: 150%;
+                                            display: flex;
+                                            align-items: center;
+                                            color: $black_text__color;
+                                            height: 73px;
+                                            overflow: hidden;
+                                        }
+
+                                        &-btn__more {
+                                            @include montserrat;
+                                            font-weight: $fw-bold_1;
+                                            font-size: 12px;
+                                            line-height: 15px;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 3px;
+                                            margin-top: 1px;
+                                            cursor: pointer;
+                                            color: $main_color;
+
+                                            img {
+                                                vertical-align: middle;
+                                                margin-left: 9px;
+                                                width: 25px;
+                                            }
+                                        }
+                                    }
+
+                                    &-content__certificated {
+                                        position: absolute;
+                                        top: 0px;
+                                        right: 0px;
+                                        padding: 9px 14px;
+                                        background: $main_color;
+                                        border-radius: 20px;
+                                        text-align: center;
+                                        @include montserrat;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 12.4px;
+                                        line-height: 15px;
+                                        color: $fifth_color;
+
+                                        img {
+                                            vertical-align: middle;
+                                            margin-right: 8px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &-navigation__block {
+                                margin-top: 50px;
+                                position: relative;
+
+                                &-view_all_courses_btn {
+                                    @include montserrat;
+                                    padding: 12px 25px;
+                                    font-size: 22px;
+                                    line-height: 22px;
+                                    font-weight: 600;
+                                    color: $fifth_color;
+                                    border: 1px solid $main_color;
+                                    background: $main_color;
+                                    border-radius: 88px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .result__block {
+
+            .container {
+
+                .result__block-content {
+                    padding: 100px 100px 55px;
+
+                    &-title {
+                        font-size: 38px;
+                        padding: 0 318px;
+                    }
+
+                    .recommended__course {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        gap: 59px;
+
+                        margin: 104px 0 97px;
+
+                        &-image {
+                            order: 2;
+                        }
+
+                        &-content {
+                            order: 1;
+                            flex: 0 0 53%;
+                            padding: 38px 55px 30px;
+
+                            .title {
+                                font-size: 24px;
+                            }
+
+                            .author {
+                                font-size: 12px;
+                            }
+
+                            .description {
+                                font-size: 16px;
+                                margin: 22px 0 17px;
+                            }
+
+                            .info {
+                                gap: 55px;
+                                margin-bottom: 47px;
+
+                                &-level,
+                                &-duration,
+                                &-certificate {
+
+                                    .icon {
+                                        width: 18px;
+                                        height: 18px;
+                                    }
+
+                                    .name {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+
+                            .courses__btn {
+                                padding: 12px 35px;
+                                font-size: 18px;
+                                line-height: 22px;
+
+                                img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    &-title-2 {
+                        text-align: left;
+                        font-size: 36px;
+                    }
+
+                    .suggestion__block {
+                        margin: 33px 0;
+
+                        &-slider {
+                            .swiper {
+
+                                .swiper-wrapper {
+                                    .swiper-slide {
+                                        width: 365px;
+                                        margin-right: 73px;
+
+                                        .swiper-image {
+                                            height: 245px;
+                                        }
+
+                                        &-content__block {
+                                            padding: 20px 35px 27px 21px;
+
+                                            &-title {
+                                                font-size: 18px;
+                                            }
+
+                                            &-subtitle {
+                                                font-size: 10px;
+                                            }
+
+                                            &-main__block {
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                margin: 15px 0 12px;
+                                            }
+
+                                            &-btn__more {
+                                                font-size: 14px;
+
+                                                img {
+                                                    width: 30px;
+                                                    height: 30px;
+                                                    margin-left: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &-navigation__block {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-top: 45px;
+
+                                    &-view_all_courses_btn {
+                                        border: 1px solid $main_color;
+                                        border-radius: 88px;
+                                        padding: 12px 24px;
+                                        font-size: 18px;
+                                        background: transparent;
+                                        color: $main_color;
+                                    }
+
+                                    .swiper1-button-next {
+                                        display: none;
+                                    }
+
+                                    .swiper1-button-prev {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

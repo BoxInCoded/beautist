@@ -1,5 +1,5 @@
 header {
-    background-color: $nav__background;
+    background-color: $fifth_color;
     z-index: 100;
 
     .mobile__header {
@@ -142,7 +142,7 @@ header {
                         font-weight: $fw-bold;
                         font-size: 1.2em;
                         line-height: 23px;
-                        color: $nav__background;
+                        color: $fifth_color;
                     }
                 }
             }
@@ -171,7 +171,7 @@ header {
             .main__header {
                 display: flex;
                 flex-direction: column;
-                background-color: $nav__background;
+                background-color: $fifth_color;
                 color: #fff;
                 padding: 1em;
 
