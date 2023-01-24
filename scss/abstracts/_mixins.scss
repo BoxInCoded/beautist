@@ -108,3 +108,65 @@
         color: $black_text__color;
     }
 }
+
+@mixin checkbox {
+    input {
+        position: absolute;
+        opacity: 0;
+
+        &+label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        &+label:before {
+            content: '';
+            margin-right: 7px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 16.5px;
+            height: 16.5px;
+            background: $fifth_color;
+            border: 0.601796px solid $main_color;
+            border-radius: 1.37521px;
+        }
+
+        &:hover+label:before {
+            background: $fifth_color;
+        }
+
+        &:checked+label:before {
+            background: $fifth_color;
+        }
+
+        &:disabled+label {
+            color: $fifth_color;
+            cursor: auto;
+        }
+
+        &:disabled+label:before {
+            box-shadow: none;
+            background: $fifth_color;
+        }
+
+        &:checked+label:after {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 7px;
+            background: $main_color;
+            width: 2px;
+            height: 2px;
+            box-shadow:
+                2px 0 0 $main_color,
+                4px 0 0 $main_color,
+                4px -2px 0 $main_color,
+                4px -4px 0 $main_color,
+                4px -6px 0 $main_color,
+                4px -8px 0 $main_color;
+            transform: rotate(45deg);
+        }
+
+    }
+}

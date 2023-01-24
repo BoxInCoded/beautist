@@ -1,0 +1,158 @@
+.main__register {
+    .container {
+        @include container;
+
+        .register__content {
+            &-main__block {
+                &-inner {
+                    width: 100%;
+                    max-width: 335px;
+                    margin: auto;
+
+                    .register__title {
+                        @include montserrat;
+                        font-weight: $fw-smaller;
+                        font-size: 28px;
+                        line-height: 108%;
+                        color: $text__color;
+                        margin-top: 73px;
+                    }
+
+                    .register__paragraph {
+                        @include lora;
+                        font-weight: $fw-normal;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: $black_text__color;
+                        margin: 24px 0 22px;
+
+                        a {
+                            text-decoration: underline;
+                            color: $main_color;
+                        }
+                    }
+
+                    form {
+                        .form__inputs {
+                            @include input-default;
+                            margin-bottom: 8px;
+                            padding: 0px 16px;
+                        }
+
+                        .register__btn {
+                            width: 100%;
+                            padding: 12px;
+                            background: $main_color;
+                            box-shadow: 0px 3.30049px 24.7537px rgba(9, 47, 99, 0.2);
+                            border-radius: 79.2118px;
+                            margin: 33px 0 42px;
+
+                            @include montserrat;
+                            font-weight: $fw-bold_1;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-align: center;
+                            color: $fifth_color;
+                        }
+                    }
+
+                    &-social__login {
+                        a {
+                            &:nth-child(2) {
+                                img {
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            .register__content {
+                display: flex;
+
+                &-main__block {
+                    width: 100%;
+                    order: 1;
+                    flex: 0 0 50%;
+
+                    &-inner {
+                        max-width: 406px;
+
+                        .register__title {
+                            font-size: 38px;
+                            margin-top: 76px;
+                        }
+
+                        .register__paragraph {
+                            margin: 28px 0;
+
+                            a {}
+                        }
+
+                        form {
+
+                            .form__inputs {
+                                height: 59px;
+                                padding: 0 19px;
+
+                                &::placeholder {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                            }
+
+                            .register__btn {
+                                padding: 18px;
+                                margin: 45px 0 50px;
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                        }
+
+                        &-social__login {
+
+                            a {
+                                &:nth-child(2) {
+                                    img {
+                                        margin-top: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-side__block {
+                    width: 100%;
+                    order: 2;
+                    flex: 0 0 50%;
+                    position: relative;
+
+                    &-gradient {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(180deg, rgba(39, 35, 225, 0.7) 5.91%, rgba(220, 220, 250, 0.21) 100%);
+                        mix-blend-mode: screen;
+                    }
+
+                    &-image {
+                        width: 100%;
+                        height: calc(100vh - 70px);
+                        background-image: url('../../img/registerBg.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: 0% 100%;
+                    }
+                }
+            }
+        }
+    }
+}
