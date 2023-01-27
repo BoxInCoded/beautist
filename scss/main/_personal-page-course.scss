@@ -1,0 +1,466 @@
+.main__personal {
+    .personal__content-course {
+        background-position: 50% calc(100% + 270px);
+        background-image: url('../../img/background-7.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 50px 20px 100px;
+
+        .container {
+            @include container;
+
+            .personal__content-filter {
+                .swiper {
+                    border-top: 2px solid rgba(220, 220, 250, 0.8);
+                    border-bottom: 2px solid rgba(220, 220, 250, 0.8);
+                    width: 100%;
+
+                    .swiper-wrapper {
+
+                        display: flex;
+                        align-items: center;
+
+                        .swiper-slide {
+                            width: fit-content;
+                            margin-right: 27px;
+                            padding: 16px 0;
+
+                            @include lora;
+                            font-weight: $fw-normal;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: $text__color;
+
+                            &.filter-slide.active {
+                                font-weight: $fw-bold_1;
+                                border-bottom: 4px solid $main_color;
+                                margin-bottom: -3px;
+
+                            }
+                            &.filter-slide a {
+                                font-weight: $fw-bold_1;
+                                color: $text__color;
+                            }
+                        }
+                    }
+
+                }
+
+                .content {
+                    &-slide {
+                        &-personal__page-course__content {
+                            .breadcrumb {
+
+                                .personal__page-course__content__title {
+                                    margin-top: 51px;
+
+                                    @include montserrat;
+                                    font-weight: $fw-normal;
+                                    font-size: 20px;
+                                    line-height: 108%;
+                                    color: $text__color;
+                                }
+
+                                .breadcrumb-arrow {
+                                    width: 8px;
+                                    height: 18px;
+                                    background-image: url('../../img/arrow-down-icon.svg');
+                                    background-repeat: no-repeat;
+                                    margin: 10px 58px 10px;
+                                }
+
+                                .personal__page-course__content__subtitle {
+                                    @include montserrat;
+                                    font-weight: $fw-normal;
+                                    font-size: 20px;
+                                    line-height: 108%;
+                                    display: flex;
+                                    align-items: center;
+                                    color: #39228A;
+                                }
+                            }
+
+                            &-inner {
+                                &-video {
+                                    margin-top: 50px;
+
+                                    .play-button {
+                                        position: absolute;
+                                        background-image: url('../../img/play_button-mobile.svg');
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        top: 50%;
+                                        left: 51%;
+                                        transform: translate(-51%, -49%);
+                                        width: 15%;
+                                        height: 6%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &-level {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 25px;
+                                    margin: 18px 0 21px;
+
+                                    .level,
+                                    .duration,
+                                    .certificate {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 11px;
+
+                                        .icon {
+                                            width: 14px;
+                                            height: 14px;
+                                        }
+
+                                        .name {
+                                            @include lora;
+                                            font-weight: $fw-bold_1;
+                                            font-size: 14px;
+                                            line-height: 150%;
+                                            color: $text__color;
+                                        }
+                                    }
+                                }
+
+                                &-video__content {
+                                    h3 {
+                                        @include montserrat;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 18px;
+                                        line-height: 150%;
+                                        color: $main_color;
+                                        margin-bottom: 18px;
+                                    }
+
+                                    .lesson__duration__block {
+                                        width: 100%;
+                                        position: relative;
+
+                                        &-inner {
+                                            .lesson__duration-single {
+                                                cursor: pointer;
+                                                position: relative;
+                                                width: 100%;
+                                                border-top: 0.75px solid $main_color;
+                                                padding: 12.2px 0;
+
+                                                &:last-of-type {
+                                                    border-bottom: 0.75px solid $main_color;
+                                                }
+
+                                                &:first-child {
+                                                    .duration-display {
+                                                        width: 100%;
+                                                    }
+                                                }
+
+                                                .duration-display {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    height: 100%;
+                                                    background: rgba(220, 220, 250, 0.5);
+                                                }
+
+
+                                                &:nth-child(2) {
+                                                    .duration-display {
+                                                        width: 20%;
+                                                    }
+                                                }
+
+                                                .content {
+                                                    position: relative;
+                                                    z-index: 1;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    gap: 2px;
+
+                                                    .icon {
+                                                        background-image: url('/img/duration_play_btn-mobile.svg');
+                                                        background-repeat: no-repeat;
+                                                        width: 23px;
+                                                        height: 23px;
+                                                        flex: 0 0 12%;
+                                                    }
+
+                                                    .number {
+                                                        @include lora;
+                                                        font-weight: $fw-bold_1;
+                                                        font-size: 18px;
+                                                        line-height: 23px;
+                                                        color: $text__color;
+                                                        flex: 0 0 7%;
+                                                    }
+
+                                                    .name {
+                                                        @include lora;
+                                                        font-weight: $fw-bold_1;
+                                                        font-size: 18px;
+                                                        line-height: 23px;
+                                                        color: $text__color;
+                                                        flex: 0 0 66%;
+                                                    }
+
+                                                    .duration {
+                                                        @include lora;
+                                                        font-weight: $fw-bold_1;
+                                                        font-size: 18px;
+                                                        line-height: 23px;
+                                                        color: $text__color;
+                                                        width: 100%;
+                                                        display: flex;
+                                                        align-items: flex-start;
+                                                        justify-content: flex-end;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &-description {
+                                    margin: 40px 0;
+
+                                    p {
+                                        @include lora;
+                                        font-weight: $fw-normal;
+                                        font-size: 14px;
+                                        line-height: 150%;
+                                        color: $black_text__color;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+
+                                &-instructor__card {
+                                    flex: 0 0 100%;
+                                    order: 5;
+                                    background: #F8F8FF;
+                                    border: 1px solid $main_color;
+                                    border-radius: 10px;
+                                    padding: 20px;
+                                    height: 275px;
+
+
+                                    h5 {
+                                        @include montserrat;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 19px;
+                                        line-height: 28px;
+                                        color: $main_color;
+                                    }
+
+                                    .instructor {
+                                        display: flex;
+                                        align-items: center;
+                                        margin: 15px 0;
+                                        gap: 20px;
+
+                                        &-gravitar {}
+
+                                        &-details {
+                                            .name {
+                                                @include lora;
+                                                font-weight: $fw-normal;
+                                                font-size: 17px;
+                                                line-height: 150%;
+
+                                                color: $text__color;
+                                            }
+
+                                            .position {
+                                                @include lora;
+                                                font-weight: $fw-bold;
+                                                font-size: 16px;
+                                                line-height: 150%;
+
+                                                color: $text__color;
+                                            }
+                                        }
+                                    }
+
+                                    .about__instructor {
+                                        @include lora;
+                                        font-weight: $fw-normal;
+                                        font-size: 14px;
+                                        line-height: 158%;
+                                        color: $black_text__color;
+                                    }
+                                }
+
+                                &-discusion__block {
+                                    .discusion__block-content {
+                                        .title {
+                                            margin: 60px 0 35px;
+                                            display: flex;
+                                            align-items: flex-start;
+                                            gap: 12px;
+
+                                            .icon {
+                                                background-image: url('../../img/comment-icon.svg');
+                                                background-repeat: no-repeat;
+                                                width: 35px;
+                                                height: 35px;
+                                            }
+
+                                            h5 {
+                                                @include montserrat;
+                                                font-weight: $fw-normal;
+                                                font-size: 20px;
+                                                line-height: 108%;
+                                                color: $text__color;
+                                            }
+                                        }
+
+                                        form {
+                                            .input-container {
+                                                position: relative;
+                                                display: flex;
+                                                align-items: center;
+
+                                                .icon {
+                                                    position: absolute;
+                                                    top: 10%;
+                                                    left: 3%;
+                                                    border-radius: 50%;
+                                                    width: 36px;
+                                                    height: 36px;
+                                                    background-image: url('../../img/discusion-gravatar.jpg');
+                                                    background-repeat: no-repeat;
+                                                }
+
+                                                .comment_input {
+                                                    flex-grow: 1;
+                                                    @include input-default;
+                                                    padding: 0 53px;
+
+                                                    &::placeholder {
+                                                        top: calc(50% - 48px/2 + 48.52px);
+
+                                                        font-size: 14px;
+                                                        line-height: 18px;
+                                                        display: flex;
+                                                        align-items: center;
+
+                                                    }
+                                                }
+
+                                                .comment__btn {
+                                                    position: absolute;
+                                                    left: 75%;
+                                                    top: 10%;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    align-items: flex-start;
+                                                    padding: 10.5px 25px;
+                                                    gap: 10px;
+                                                    background: #3b38de;
+                                                    border-radius: 88px;
+
+                                                    @include montserrat;
+                                                    font-weight: 600;
+                                                    font-size: 12px;
+                                                    line-height: 15px;
+                                                    display: flex;
+                                                    align-items: flex-end;
+                                                    text-align: center;
+
+                                                    color: #FFFFFF;
+
+
+
+
+                                                    &:hover {
+                                                        background-color: $main_hover_color;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .comments__block {
+                                            .counter {
+                                                margin: 24px 0 40px;
+
+                                                .count {
+                                                    @include montserrat;
+                                                    font-weight: $fw-bold_1;
+                                                    font-size: 14px;
+                                                    line-height: 150%;
+                                                    color: $text__color;
+                                                }
+
+                                                .name {
+                                                    @extend .count;
+                                                }
+                                            }
+
+                                            &-inner {
+                                                &-content {
+                                                    border-top: 1px solid rgba(220, 220, 250, 0.8);
+                                                    padding: 22px 0;
+
+                                                    &:last-child {
+                                                        border-bottom: 1px solid rgba(220, 220, 250, 0.8);
+                                                    }
+
+                                                    .user {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        gap: 20px;
+
+                                                        .avatar {
+                                                            width: 39px;
+                                                            height: 39px
+                                                        }
+
+                                                        .name {
+                                                            @include montserrat;
+                                                            font-weight: 600;
+                                                            font-size: 14px;
+                                                            line-height: 150%;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            color: $text__color;
+
+                                                        }
+
+                                                        .badge {
+                                                            @include lora;
+                                                            font-weight: 400;
+                                                            font-size: 14px;
+                                                            line-height: 150%;
+                                                            display: flex;
+                                                            align-items: center;
+
+                                                            color: rgba(57, 34, 138, 0.5);
+                                                        }
+                                                    }
+
+                                                    .comment {
+                                                        @include lora;
+                                                        font-weight: 400;
+                                                        font-size: 14px;
+                                                        line-height: 150%;
+                                                        color: $black_text__color;
+                                                        padding: 7px 0 0 58px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,670 @@
+.main__personal {
+    .personal__content {
+        background-position: 50% calc(100% + 270px);
+        background-image: url('../../img/background-7.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 50px 20px;
+
+        .container {
+            @include container;
+
+            .personal__content-filter {
+                .filter {
+                    border-top: 2px solid rgba(220, 220, 250, 0.8);
+                    border-bottom: 2px solid rgba(220, 220, 250, 0.8);
+                    width: 100%;
+
+                    .swiper {
+                        overflow: unset;
+
+                        .swiper-wrapper {
+
+                            display: flex;
+                            align-items: center;
+
+                            .swiper-slide {
+                                width: fit-content;
+                                margin-right: 27px;
+                                padding: 16px 0;
+
+                                @include lora;
+                                font-weight: $fw-normal;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: $text__color;
+
+                                &.filter-slide.active {
+                                    font-weight: $fw-bold_1;
+                                    border-bottom: 4px solid $main_color;
+                                    margin-bottom: -3px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .content {
+                    &-slide {
+                        display: none;
+                    }
+
+                    &-slide-personal__page__content-courses {
+                        .personal__page__content__title {
+                            margin-top: 51px;
+
+                            @include montserrat;
+                            font-weight: $fw-normal;
+                            font-size: 20px;
+                            line-height: 108%;
+                            color: $text__color;
+                        }
+
+                        &-inner {
+                            margin-top: 50px;
+                            border: 1px solid $main_color;
+                            filter: drop-shadow(0px 10px 45px rgba(41, 33, 107, 0.25));
+                            border-radius: 20px;
+
+                            &.locked {
+                                .content-slide-personal__page__content-inner-content {
+                                    .personal__page__btn {
+                                        pointer-events: none;
+                                        cursor: default;
+                                    }
+                                }
+                            }
+
+                            .lock__course {
+                                position: relative;
+                                display: none;
+                            }
+
+
+                            .lock__course.active {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;
+
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(255, 255, 255, 0.5);
+                                border-radius: 20px;
+
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+
+                                .buy__course__btn {
+                                    margin-top: 53px;
+                                    padding: 11px 26px;
+                                    background: $main_color;
+                                    border: 1px solid $main_color;
+                                    border-radius: 88px;
+
+                                    @include montserrat;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-align: center;
+
+                                    color: $fifth_color;
+                                }
+                            }
+
+
+                            &-content {
+                                padding: 14px 19px 20px;
+
+                                .title {
+                                    @include lora;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 18px;
+                                    line-height: 150%;
+                                    color: $main_color;
+                                }
+
+                                .author {
+                                    @include lora;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 10px;
+                                    line-height: 150%;
+                                    color: $text__color;
+                                }
+
+                                .description {
+                                    @include lora;
+                                    font-weight: $fw-normal;
+                                    font-size: 14px;
+                                    line-height: 150%;
+                                    color: $black_text__color;
+                                    margin: 15px 0;
+                                }
+
+                                .info {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 25px;
+                                    margin-bottom: 17px;
+
+                                    &-level,
+                                    &-duration,
+                                    &-certificate {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 11px;
+
+                                        .icon {
+                                            width: 14px;
+                                            height: 14px;
+                                        }
+
+                                        .name {
+                                            @include lora;
+                                            font-weight: $fw-bold_1;
+                                            font-size: 14px;
+                                            line-height: 150%;
+                                            color: $text__color;
+                                        }
+                                    }
+                                }
+
+                                .personal__page__btn {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 10px 25px;
+                                    gap: 10px;
+                                    width: 53%;
+
+                                    background: $main_color;
+                                    border-radius: 88px;
+
+                                    @include montserrat;
+                                    font-weight: $fw-bold_1;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: $fifth_color;
+
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &-slide-personal__page__content-certificate {
+                        .personal__page__content__title {
+                            margin-top: 51px;
+                            @include montserrat;
+                            font-weight: $fw-normal;
+                            font-size: 20px;
+                            line-height: 108%;
+                            color: $text__color;
+                        }
+
+                        .no-certificate {
+                            display: none;
+                            margin-top: 46px;
+                            margin-bottom: 17px;
+                            text-align: center;
+                            padding: 0px 10px;
+
+                            &.active {
+                                display: block;
+                            }
+
+                            .icon {
+                                width: 210px;
+                            }
+
+                            .label {
+                                margin-top: 46px;
+                                margin-bottom: 20px;
+                                @include montserrat;
+                                font-weight: $fw-smaller;
+                                font-size: 28px;
+                                line-height: 108%;
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                color: $text__color;
+                            }
+                        }
+
+                        .certificate {
+                            display: none;
+
+                            &.active {
+                                display: block;
+                            }
+
+                            &-inner {
+                                margin-top: 47px;
+                                border: 1px solid $main_color;
+                                filter: drop-shadow(0px 10px 45px rgba(41, 33, 107, 0.25));
+                                border-radius: 20px;
+
+                                &-image {
+                                    padding: 45px 74px 15px;
+                                }
+
+                                &-content {
+                                    padding: 14px 19px 30px;
+
+                                    .title {
+                                        @include lora;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 18px;
+                                        line-height: 150%;
+                                        color: $main_color;
+                                    }
+
+                                    .author {
+                                        @include lora;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 10px;
+                                        line-height: 150%;
+                                        color: $text__color;
+                                    }
+
+                                    .info {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 25px;
+                                        margin: 25px 0 30px;
+
+                                        &-level,
+                                        &-duration,
+                                        &-date {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 11px;
+
+                                            .icon {
+                                                width: 14px;
+                                                height: 14px;
+                                            }
+
+                                            .name {
+                                                @include lora;
+                                                font-weight: $fw-bold_1;
+                                                font-size: 14px;
+                                                line-height: 150%;
+                                                color: $text__color;
+                                            }
+
+                                            .date {
+                                                @extend .name;
+                                            }
+                                        }
+                                    }
+
+                                    .personal__page__btn {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        padding: 10px 27px;
+                                        gap: 10px;
+                                        width: 46%;
+
+                                        background: $main_color;
+                                        border-radius: 88px;
+
+                                        @include montserrat;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        color: $fifth_color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &-slide-personal__page__content-messages {
+                        .personal__page__content__title {
+                            margin-top: 51px;
+                            @include montserrat;
+                            font-weight: $fw-normal;
+                            font-size: 20px;
+                            line-height: 108%;
+                            color: $text__color;
+                        }
+
+                        &-wrapper {
+                            margin-top: 40px;
+
+                            .message__date__block {
+                                margin: 0px 118px 0;
+                                padding: 5px 15px;
+                                border: 1px solid $text__color;
+                                border-radius: 88px;
+
+                                @include lora;
+                                font-weight: $fw-bold_1;
+                                font-size: 12px;
+                                line-height: 15px;
+                                text-align: center;
+
+                                color: $text__color;
+                            }
+
+                            .messages {
+                                margin-top: 38px;
+
+                                .outgoing__messages {
+                                    margin-bottom: 6px;
+                                    background: $main_color;
+                                    border-radius: 6px;
+                                    padding: 5px 24px 3px 11px;
+                                    position: relative;
+                                    font-weight: $fw-normal;
+                                    color: $fifth_color;
+                                    width: calc(100% - 44px);
+                                    margin-left: 44px;
+                                    box-sizing: border-box;
+                                    min-width: 200px;
+
+                                    &::before {
+                                        content: "\A";
+                                        position: absolute;
+                                        top: 0px;
+                                        right: -8px;
+                                        width: 15px;
+                                        height: 0;
+                                        border-style: solid;
+                                        border-width: 11px 9px 0 0;
+                                        border-color: $main_color transparent transparent transparent;
+                                    }
+
+                                    .message {
+                                        @include lora;
+                                        font-weight: $fw-normal;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        display: flex;
+                                        align-items: center;
+
+                                        color: $fifth_color;
+                                    }
+
+                                    .time {
+                                        @include lora;
+                                        font-weight: $fw-normal;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        color: $fifth_color;
+                                    }
+                                }
+
+                                .ingoing__messages {
+                                    margin-bottom: 15px;
+                                    background: rgba(220, 220, 250, 0.5);
+                                    border-radius: 0px 6px 6px 6px;
+                                    padding: 5px 7px 3px 12px;
+                                    position: relative;
+                                    font-weight: 400;
+                                    color: $text__color;
+                                    width: calc(100% - 44px);
+                                    box-sizing: border-box;
+                                    margin-left: 44px;
+                                    margin-top: 17px;
+                                    min-width: 200px;
+
+                                    &::before {
+                                        content: "\A";
+                                        position: absolute;
+                                        top: 0px;
+                                        left: -9px;
+                                        width: 0;
+                                        height: 0;
+                                        border-style: solid;
+                                        border-width: 0px 9px 11px 0px;
+                                        border-color: transparent rgba(220, 220, 250, 0.5) transparent transparent;
+                                    }
+
+                                    .avatar {
+                                        width: 32px;
+                                        height: 32px;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: cover;
+                                        position: absolute;
+                                        top: 0px;
+                                        left: -44px;
+                                        border-radius: 50%;
+                                    }
+
+                                    .name {
+                                        @include montserrat;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        display: flex;
+                                        align-items: center;
+                                        color: $text__color;
+                                    }
+
+                                    .message {
+                                        @include lora;
+                                        font-weight: $fw-normal;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        display: flex;
+                                        align-items: center;
+
+                                        color: $black_text__color;
+                                    }
+
+                                    .time {
+                                        @include lora;
+                                        font-weight: $fw-normal;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        margin-top: 8px;
+                                        color: $black_text__color;
+                                    }
+                                }
+                            }
+
+                            form {
+                                margin: 58px 0 0;
+
+                                .input-container {
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+
+                                    .icon {
+                                        position: absolute;
+                                        top: 10%;
+                                        left: 3%;
+                                        border-radius: 50%;
+                                        width: 36px;
+                                        height: 36px;
+                                        background-image: url('../../img/discusion-gravatar.jpg');
+                                        background-repeat: no-repeat;
+                                    }
+
+                                    .message_input {
+                                        flex-grow: 1;
+                                        @include input-default;
+                                        padding: 0 53px;
+                                        margin-bottom: 0px;
+
+                                        &::placeholder {
+                                            top: calc(50% - 48px/2 + 48.52px);
+
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            display: flex;
+                                            align-items: center;
+
+                                        }
+                                    }
+
+                                    .message__btn {
+                                        position: absolute;
+                                        left: 75%;
+                                        top: 10%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: flex-start;
+                                        padding: 10.5px 25px;
+                                        background: #3b38de;
+                                        border-radius: 88px;
+
+                                        @include montserrat;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        text-align: center;
+
+                                        color: #FFFFFF;
+
+                                        &:hover {
+                                            background-color: $main_hover_color;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    &-slide-personal__page__content-profile {
+                        .personal__page__content__title {
+                            margin-top: 51px;
+                            @include montserrat;
+                            font-weight: $fw-normal;
+                            font-size: 20px;
+                            line-height: 108%;
+                            color: $text__color;
+                        }
+
+                        .my__data__block {
+                            text-align: center;
+                            margin-top: 48px;
+
+                            &-info {
+                                form {
+                                    margin-bottom: 50px;
+                                    width: 100%;
+
+                                    .avatar {
+                                        width: 165px;
+                                        height: 165px;
+                                        background-image: url('../../img/profile.jpg');
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: cover;
+                                        border-radius: 50%;
+                                        margin: auto;
+                                    }
+
+                                    .label-avatar {
+                                        margin: 25px 0 0;
+                                        @include lora;
+                                        font-weight: $fw-normal;
+                                        font-size: 14px;
+                                        line-height: 110%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        color: $black_text__color;
+                                    }
+
+                                    .profile-form {
+                                        margin: 40px 0;
+
+                                        .form-group {
+                                            display: flex;
+                                            padding: 22px 0 15px;
+                                            border-bottom: 1px solid rgba(220, 220, 250, 0.8);
+
+                                            &:last-child {
+                                                border: none;
+                                            }
+
+                                            .profile__label {
+                                                flex: 1;
+                                                text-align: right;
+                                                padding-right: 66px;
+                                                @include lora;
+                                                font-weight: $fw-bold_1;
+                                                font-size: 14px;
+                                                line-height: 110%;
+                                                display: flex;
+                                                align-items: center;
+                                                color: $text__color;
+                                            }
+
+                                            .profile__input {
+                                                flex: 2;
+                                                @include lora;
+                                                font-weight: $fw-normal;
+                                                font-size: 14px;
+                                                line-height: 110%;
+                                                display: flex;
+                                                align-items: center;
+                                                color: $black_text__color;
+                                                outline: none;
+                                                background: transparent;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .button-container {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 18px;
+
+                                    .change-psw {
+                                        width: 200px;
+                                        padding: 14px 30px;
+                                        background: transparent;
+                                        border: 1px solid $main_color;
+                                        border-radius: 88px;
+
+                                        @include montserrat;
+                                        font-weight: $fw-bold_1;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        text-align: center;
+                                        color: $main_color;
+
+                                    }
+
+                                    .delete-profile {
+                                        @extend .change-psw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &-slide.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

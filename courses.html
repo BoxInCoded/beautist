@@ -599,13 +599,11 @@
       const $tabsFilterItems = $(".tabs-filter__item");
       const $allTab = $tabsFilterNav.filter('[data-filter="all"]');
 
-      $allTab.trigger("click"); // trigger click event on the "All" tab element when the page loads.
+      $allTab.trigger("click");
 
       $tabsFilterNav.on("click", function () {
         const filter = $(this).data("filter");
-        // remove "active" class from other tabs
         $tabsFilterNav.not(this).removeClass("active");
-        // add "active" class to clicked tab
         $(this).addClass("active");
 
         if (filter === "all") {

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./dist/css/app.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="main__header">
+                <nav class="main__nav">
+                    <a href="./index.html" class="logo">
+                        <img src="..../../img/logo.png" alt="beautist" />
+                    </a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a href="./index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./courses.html" class="nav__link">Courses</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./questionnaire.html" class="nav__link">Test</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./contact.html" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="cart__login">
+                        <div class="cart">
+                            <img src="..../../img/add-to-cart.svg" alt="cart" />
+                        </div>
+                        <div class="login">
+                            <a href="./login.html" class="login__button">Sign in</a>
+                        </div>
+                        <div class="register">
+                            <a href="./register.html" class="register__button">Register</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile__header">
+            <a href="./index.html" class="logo-mobile">
+                <img src="..../../img/logo.png" alt="beautist" />
+            </a>
+            <nav class="mobile__nav">
+                <div class="header__mobile__nav">
+                    <ul class="nav__list-mobile">
+                        <li class="nav__list-item">
+                            <a href="./login.html" class="default__btn signin__button">Sign in</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./courses.html" class="nav__link">Courses</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./questionnaire.html" class="nav__link">Test</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./contact.html" class="nav__link">Contacts</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="./register.html" class="nav__link">Register</a>
+                        </li>
+                        <div class="social__button">
+                            <a href="#" class="nav__link"><img src="..../../img/fb.svg" alt="facebook" /></a>
+                            <a href="#" class="nav__link"><img src="..../../img/insta.svg" alt="instagram" /></a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mobile__cart">
+                <img src="..../../img/add-to-cart.svg" alt="cart" />
+            </div>
+            <div class="mobile__menu-icon">
+                <div id="hamburger" onclick="toggleMenu()">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__personal">
+        <div class="personal__content-course">
+            <div class="container">
+                <div class="personal__content-filter">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide filter-slide active" data-filter="courses">
+                                Mano kursai
+                            </div>
+                            <div class="swiper-slide filter-slide" data-filter="certificate">
+                                <a href="./personal-page.html#certificate">Mano sertifikatai</a>
+                            </div>
+                            <div class="swiper-slide filter-slide" data-filter="messages">
+                                <a href="./personal-page.html#messages">Žinutės</a>
+                            </div>
+                            <div class="swiper-slide filter-slide" data-filter="profile">
+                                <a href="./personal-page.html#profile">Mano duomenys</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content-slide active" data-tab="courses">
+                            <div class="content-slide-personal__page-course__content">
+                                <div class="breadcrumb">
+                                    <h2 class="personal__page-course__content__title">Mano kursai</h2>
+                                    <div class="breadcrumb-arrow"></div>
+                                    <h2 class="personal__page-course__content__subtitle">Vestuvinis makiažas</h2>
+                                </div>
+
+                                <div class="content-slide-personal__page-course__content-inner">
+                                    <div class="content-slide-personal__page-course__content-inner-video">
+                                        <div class="video__block">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" srcset=".../../img/videoBg.png">
+                                                <img src=".../../img/videoBg-mobile.png" alt="Video Background">
+                                            </picture>
+                                            <div class="play-button"></div>
+                                        </div>
+                                    </div>
+                                    <div class="content-slide-personal__page-course__content-inner-level">
+                                        <div class="level">
+                                            <img src=".../../img/level_star.svg" alt="" class="icon">
+                                            <div class="name">PRO</div>
+                                        </div>
+                                        <div class="duration">
+                                            <img src=".../../img/duration.svg" alt="" class="icon">
+                                            <div class="name">20 videos (8 a.v.)</div>
+                                        </div>
+                                        <div class="certificate">
+                                            <img src=".../../img/product_certificate.svg" alt="" class="icon">
+                                            <div class="name">Sertifikatas</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-slide-personal__page-course__content-inner-video__content">
+                                        <h3>Pamokos kurse</h3>
+                                        <div class="lesson__duration__block">
+                                            <div class="lesson__duration__block-inner">
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">1.</div>
+                                                        <div class="name">Introduction</div>
+                                                        <div class="duration">0:58</div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">2.</div>
+                                                        <div class="name">Makiažas</div>
+                                                        <div class="duration">4:37</div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">3.</div>
+                                                        <div class="name">Part 03</div>
+                                                        <div class="duration">6:44</div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">4.</div>
+                                                        <div class="name">Part 04</div>
+                                                        <div class="duration">8:11</div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">5.</div>
+                                                        <div class="name">Part 05</div>
+                                                        <div class="duration">10:32</div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">6.</div>
+                                                        <div class="name">Šešėliai</div>
+                                                        <div class="duration">12:46</div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">7.</div>
+                                                        <div class="name">Part 07</div>
+                                                        <div class="duration">14:06</div>
+                                                    </div>
+                                                </div>
+                                                <div class="lesson__duration-single">
+                                                    <div class="duration-display"></div>
+                                                    <div class="content">
+                                                        <div class="icon"></div>
+                                                        <div class="number">8.</div>
+                                                        <div class="name">Conclusions</div>
+                                                        <div class="duration">16:58</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-slide-personal__page-course__content-inner-description">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio non
+                                            pellentesque augue et. Tempor eget sem posuere pharetra gravida elit.
+                                            Senectus semper quis fusce felis dignissim tristique mauris non. Sed vitae
+                                            urna, lectus condimentum. Vulputate tellus feugiat at lobortis risus neque
+                                            sed sit. Laoreet quam leo tincidunt laoreet vulputate in. Quisque
+                                            sollicitudin consectetur sit et tincidunt vel id. Vitae duis in mattis fames
+                                            proin nisl fusce. Maecenas phasellus sit velit diam sit. Commodo ultrices
+                                            varius aliquet sollicitudin mi mauris sapien viverra. In pellentesque vitae
+                                            ac ultricies sed. Eu sodales a egestas a, semper habitasse. Orci sapien
+                                            rhoncus, odio a. Odio lectus vitae, ornare metus.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio non
+                                            pellentesque augue et. Tempor eget sem posuere pharetra gravida elit.
+                                            Senectus semper quis fusce felis dignissim tristique mauris non. Sed vitae
+                                            urna, lectus condimentum. Vulputate tellus feugiat at lobortis risus neque
+                                            sed sit. Laoreet quam leo tincidunt laoreet vulputate in. Quisque
+                                            sollicitudin consectetur sit et tincidunt vel id. Vitae duis in mattis fames
+                                            proin nisl fusce.
+                                        </p>
+                                        <p>
+                                            Maecenas phasellus sit velit diam sit. Commodo ultrices varius aliquet
+                                            sollicitudin mi mauris sapien viverra. In pellentesque vitae ac ultricies
+                                            sed. Eu sodales a egestas a, semper habitasse. Orci sapien rhoncus, odio a.
+                                            Odio lectus vitae, ornare metus.
+
+                                        </p>
+                                    </div>
+                                    <div class="content-slide-personal__page-course__content-inner-instructor__card">
+                                        <h5>Instructor</h5>
+                                        <div class="instructor">
+                                            <img src=".../../img/instructor.svg" alt="gravitar"
+                                                class="instructor-gravitar">
+                                            <div class="instructor-details">
+                                                <div class="name">Jack Johnson</div>
+                                                <div class="position">Teaches Make-up 101</div>
+                                            </div>
+                                        </div>
+                                        <p class="about__instructor">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis elit
+                                            lectus diam egestas diam. Turpis id egestas lacus, vitae diam accumsan.
+                                        </p>
+                                    </div>
+                                    <div class="content-slide-personal__page-course__content-inner-discusion__block">
+                                        <div class="discusion__block-content">
+                                            <div class="title">
+                                                <div class="icon"></div>
+                                                <h5>Diskusijos</h5>
+                                            </div>
+
+                                            <form>
+                                                <div class="input-container">
+                                                    <div class="icon"></div>
+                                                    <input type="text" class="comment_input"
+                                                        placeholder="Leave a comment">
+                                                    <button class="comment__btn">Post</button>
+                                                </div>
+
+                                            </form>
+
+                                            <div class="comments__block">
+                                                <div class="counter">
+                                                    <span class="count">8</span>
+                                                    <span class="name">comments</span>
+                                                </div>
+
+                                                <div class="comments__block-inner">
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Sophie Surnamovic</h6>
+                                                            <span class="badge">6 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Best course ever!
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Jack Johnson</h6>
+                                                            <span class="badge">7 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Johnny Doe</h6>
+                                                            <span class="badge">6 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                                            esse cillum dolore eu fugiat nulla pariatur.
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Maria Ipsum</h6>
+                                                            <span class="badge">8 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                                            voluptatem accusantium doloremque laudantium, totam rem
+                                                            aperiam,
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Sophie Surnamovic</h6>
+                                                            <span class="badge">6 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Best course ever!
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Mark Markevic</h6>
+                                                            <span class="badge">7 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Mike Mikelevic</h6>
+                                                            <span class="badge">8 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                                            esse cillum dolore eu fugiat nulla pariatur.
+                                                        </div>
+                                                    </div>
+                                                    <div class="comments__block-inner-content">
+                                                        <div class="user">
+                                                            <div class="avatar">
+                                                                <img src=".../../img/discusion-gravatar.jpg"
+                                                                    alt="avatar">
+                                                            </div>
+                                                            <h6 class="name">Sophie Surnamovic</h6>
+                                                            <span class="badge">8 days ago</span>
+                                                        </div>
+                                                        <div class="comment">
+                                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                                            voluptatem accusantium doloremque laudantium, totam rem
+                                                            aperiam,
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content-nav__block">
+                    <div class="footer__content-nav__block-title">Menu</div>
+                    <div class="footer__content-nav__block-nav">
+                        <ul class="footer__content-nav__block-nav-footer__nav">
+                            <li class="footer__content-nav__block-nav-footer__nav-list">
+                                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer__content-nav__block-nav-footer__nav-list">
+                                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./courses.html">
+                                    Courses
+                                </a>
+                            </li>
+                            <li class="footer__content-nav__block-nav-footer__nav-list">
+                                <a class="footer__content-nav__block-nav-footer__nav-list-link"
+                                    href="./questionnaire.html">
+                                    Test
+                                </a>
+                            </li>
+                            <li class="footer__content-nav__block-nav-footer__nav-list">
+                                <a class="footer__content-nav__block-nav-footer__nav-list-link" href="./contact.html">
+                                    Contacts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content-socials__block">
+                    <div class="footer__content-socials__block-title">Socials</div>
+                    <div class="footer__content-socials__block-links">
+                        <a href="#" class="social-fb" target="_blank">
+                            <img src=".../../img/fb.svg" alt="fb" />
+                        </a>
+                        <a href="#" class="social-insta" target="_blank">
+                            <img src=".../../img/insta.svg" alt="instagram" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__content-funds__block">
+                    <img src=".../../img/union_logo.png" alt="funds" class="funds__logo" />
+                </div>
+                <div class="footer__content-terms__block">
+                    <div class="footer__content-terms__block-inner">
+                        <div class="footer__content-terms__block-inner-logo">
+                            <img src=".../../img/logo.png" alt="logo" class="footer__logo" />
+                        </div>
+                        <div class="footer__content-terms__block-inner-terms__nav">
+                            <div class="footer__content-terms__block-inner-terms__nav-copyright">
+                                © Beautist
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                            </div>
+
+                            <div class="footer__content-terms__block-inner-terms__nav-main__nav">
+                                <ul class="footer__content-terms__block-inner-terms__nav-main__nav-nav">
+                                    <li class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list">
+                                        <a href="#"
+                                            class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links">
+                                            Terms and Conditions
+                                        </a>
+                                    </li>
+                                    <li class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list">
+                                        <a href="#"
+                                            class="footer__content-terms__block-inner-terms__nav-main__nav-nav-nav__list-nav__links">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="module">
+        import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            grabCursor: true,
+        });
+    </script>
+</body>
+
+</html>
