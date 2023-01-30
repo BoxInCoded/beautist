@@ -32,15 +32,25 @@
                             <a href="./contact.html" class="nav__link">Contact Us</a>
                         </li>
                     </ul>
-                    <div class="cart__login">
+                    <div class="cart__login" id="logged">
                         <div class="cart">
-                            <img src="..../../img/add-to-cart.svg" alt="cart" />
+                            <img src=".../../img/add-to-cart.svg" alt="cart" />
                         </div>
-                        <div class="login">
-                            <a href="./login.html" class="login__button">Sign in</a>
+                        <div class="login__user" onclick="toggleDropdown()">
+                            <img src=".../../img/user.jpg" alt="user icon" width="40" height="40"
+                                class="login__user-icon">
+                            <img src=".../../img/dropdown.svg" alt="Dropdown" class="login__user-arrow" width="7"
+                                height="5">
                         </div>
-                        <div class="register">
-                            <a href="./register.html" class="register__button">Register</a>
+
+                        <div id="dropdown__nav" class="dropdown__nav">
+                            <div class="nav">
+                                <a href="./personal-page.html#courses" class="nav-link">Mano kursai</a>
+                                <a href="./personal-page.html#certificate" class="nav-link active">Mano sertifikatai</a>
+                                <a href="./personal-page.html#messages" class="nav-link">Žinutės</a>
+                                <a href="./personal-page.html#profile" class="nav-link">Mano duomenys</a>
+                                <a href="#" class="nav-link">Log Out</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -52,30 +62,37 @@
             </a>
             <nav class="mobile__nav">
                 <div class="header__mobile__nav">
-                    <ul class="nav__list-mobile">
-                        <li class="nav__list-item">
-                            <a href="./login.html" class="default__btn signin__button">Sign in</a>
-                        </li>
-                        <li class="nav__list-item">
+                    <div class="nav__list-mobile">
+
+                        <div class="login__user" onclick="mobileDropdown()">
+                            <img src=".../../img/user.jpg" alt="user icon" width="40" height="40"
+                                class="login__user-icon">
+                            <div class="label">My profile</div>
+                        </div>
+
+                        <div id="mobile_dropdown__nav" class="mobile_dropdown__nav">
+                            <div class="nav">
+                                <a href="./personal-page.html#courses" class="nav-link">Mano kursai</a>
+                                <a href="./personal-page.html#certificate" class="nav-link active">Mano sertifikatai</a>
+                                <a href="./personal-page.html#messages" class="nav-link">Žinutės</a>
+                                <a href="./personal-page.html#profile" class="nav-link">Mano duomenys</a>
+                                <a href="#" class="nav-link">Log Out</a>
+                            </div>
+                        </div>
+
+                        <div class="navigation">
                             <a href="./index.html" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__list-item">
                             <a href="./courses.html" class="nav__link">Courses</a>
-                        </li>
-                        <li class="nav__list-item">
                             <a href="./questionnaire.html" class="nav__link">Test</a>
-                        </li>
-                        <li class="nav__list-item">
                             <a href="./contact.html" class="nav__link">Contacts</a>
-                        </li>
-                        <li class="nav__list-item">
                             <a href="./register.html" class="nav__link">Register</a>
-                        </li>
+                        </div>
+
                         <div class="social__button">
                             <a href="#" class="nav__link"><img src="..../../img/fb.svg" alt="facebook" /></a>
                             <a href="#" class="nav__link"><img src="..../../img/insta.svg" alt="instagram" /></a>
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </nav>
             <div class="mobile__cart">
@@ -96,8 +113,8 @@
     </header>
 
     <main class="main__personal">
-        <div class="personal__content">
-            <div class="container">
+        <div class="container">
+            <div class="personal__content">
                 <div class="personal__content-filter">
                     <div class="filter">
                         <div class="swiper">
@@ -126,8 +143,10 @@
                                         <img src=".../../img/lock.svg" alt="" class="lock__icon" />
                                         <a href="./product.html" class="buy__course__btn">Įsigyti šį kursą</a>
                                     </div>
-                                    <img src=".../../img/courses1.png" alt=""
-                                        class="content-slide-personal__page__content-courses-inner-image" />
+                                    <picture class="content-slide-personal__page__content-courses-inner-image">
+                                        <source media="(min-width: 1200px)" srcset=".../../img/courses1-pc.png" />
+                                        <img src=".../../img/courses1.png" alt="" />
+                                    </picture>
                                     <div class="content-slide-personal__page__content-courses-inner-content">
                                         <h5 class="title">Vestuvinio makiažo profesionali</h5>
                                         <h6 class="author">by Johnny Johnson</h6>
@@ -159,8 +178,10 @@
                                         <img src=".../../img/lock.svg" alt="" class="lock__icon" />
                                         <a href="./product.html" class="buy__course__btn">Įsigyti šį kursą</a>
                                     </div>
-                                    <img src=".../../img/courses2.png" alt=""
-                                        class="content-slide-personal__page__content-courses-inner-image" />
+                                    <picture class="content-slide-personal__page__content-courses-inner-image">
+                                        <source media="(min-width: 1200px)" srcset=".../../img/courses2-pc.png" />
+                                        <img src=".../../img/courses2.png" alt="" />
+                                    </picture>
                                     <div class="content-slide-personal__page__content-courses-inner-content">
                                         <h5 class="title">Vestuvinio makiažo profesionali</h5>
                                         <h6 class="author">by Johnny Johnson</h6>
@@ -188,8 +209,10 @@
                                     </div>
                                 </div>
                                 <div class="content-slide-personal__page__content-courses-inner locked">
-                                    <img src=".../../img/courses3.png" alt=""
-                                        class="content-slide-personal__page__content-courses-inner-image" />
+                                    <picture class="content-slide-personal__page__content-courses-inner-image">
+                                        <source media="(min-width: 1200px)" srcset=".../../img/courses3-pc.png" />
+                                        <img src=".../../img/courses3.png" alt="" />
+                                    </picture>
                                     <div class="lock__course active">
                                         <img src=".../../img/lock.svg" alt="" class="lock__icon" />
                                         <a href="./product.html" class="buy__course__btn">Įsigyti šį kursą</a>
@@ -227,37 +250,13 @@
                                 <h2 class="personal__page__content__title">
                                     Mano sertifikatai
                                 </h2>
-                                <div class="no-certificate">
+                                <div class="no-certificate ">
                                     <img class="icon" src=".../../img/sad_icon.svg" />
                                     <div class="label">
                                         Jūs dar neturite išduotų sertifikatų
                                     </div>
                                 </div>
                                 <div class="certificate active">
-                                    <div class="certificate-inner">
-                                        <img src=".../../img/my_certificate.svg" alt="My Certificate"
-                                            class="certificate-inner-image" />
-                                        <div class="certificate-inner-content">
-                                            <h5 class="title">Vestuvinio makiažo profesionali</h5>
-                                            <h6 class="author">by Johnny Johnson</h6>
-                                            <div class="info">
-                                                <div class="info-level">
-                                                    <img src=".../../img/level_star.svg" alt="Level Star"
-                                                        class="icon" />
-                                                    <div class="name">PRO</div>
-                                                </div>
-                                                <div class="info-duration">
-                                                    <img src=".../../img/duration.svg" alt="Duration" class="icon" />
-                                                    <div class="name">8 a.v.</div>
-                                                </div>
-                                                <div class="info-date">
-                                                    <img src=".../../img/calendar.svg" alt="Calendar" class="icon" />
-                                                    <div class="date">31th July 2022</div>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="personal__page__btn">Parsisiųsti</a>
-                                        </div>
-                                    </div>
                                     <div class="certificate-inner">
                                         <img src=".../../img/my_certificate.svg" alt="My Certificate"
                                             class="certificate-inner-image" />
@@ -417,27 +416,28 @@
                                         <form>
                                             <div class="avatar" id="avatar"></div>
                                             <label for="avatar" class="label-avatar">Edit photo</label>
-                                            
+
                                             <div class="profile-form">
                                                 <div class="form-group">
                                                     <label for="input1" class="profile__label">Vardas</label>
-                                                    <input type="text" id="input1" class="profile__input" value="Sophie" autocomplete="on"
-                                                        placeholder="Vardas">
+                                                    <input type="text" id="input1" class="profile__input" value="Sophie"
+                                                        autocomplete="on" placeholder="Vardas">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="input2" class="profile__label">Pavardė</label>
-                                                    <input type="text" id="input2" class="profile__input" value="Surnamovic" autocomplete="on"
-                                                        placeholder="Pavardė">
+                                                    <input type="text" id="input2" class="profile__input"
+                                                        value="Surnamovic" autocomplete="on" placeholder="Pavardė">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="input3" class="profile__label">El.paštas</label>
-                                                    <input type="email" id="input3" class="profile__input" value="sophiesurname@gmail.com"
-                                                        autocomplete="on" placeholder="El.paštas">
+                                                    <input type="email" id="input3" class="profile__input"
+                                                        value="sophiesurname@gmail.com" autocomplete="on"
+                                                        placeholder="El.paštas">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="input4" class="profile__label">Tel.nr</label>
-                                                    <input type="tel" id="input4"  class="profile__input" value="+370 12345678"
-                                                        autocomplete="on" placeholder="Tel.nr">
+                                                    <input type="tel" id="input4" class="profile__input"
+                                                        value="+370 12345678" autocomplete="on" placeholder="Tel.nr">
                                                 </div>
                                             </div>
                                         </form>
@@ -553,6 +553,16 @@
             $(".content-slide[data-tab=" + tabId.substring(1) + "]").addClass(
                 "active"
             );
+        }
+
+        function toggleDropdown() {
+            const dropdown = document.querySelector("#dropdown__nav");
+            dropdown.classList.toggle("show");
+        }
+
+        function mobileDropdown() {
+            const dropdown = document.querySelector("#mobile_dropdown__nav");
+            dropdown.classList.toggle("show");
         }
 
         var filterSlides = document.querySelectorAll(".filter-slide");

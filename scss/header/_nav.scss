@@ -12,8 +12,8 @@ header {
             z-index: 100;
 
             img {
-                width: 28vw; 
-                padding-left: 6px;
+                // width: 28vw;
+                // padding-left: 6px;
             }
         }
 
@@ -24,7 +24,7 @@ header {
             position: relative;
             width: 42px;
             height: 38px;
-            border: 1px solid #2723E1;
+            border: 1px solid $main_color;
             border-radius: 50%;
             margin-right: 5px;
             cursor: pointer;
@@ -42,7 +42,7 @@ header {
 
                 .line {
                     fill: none;
-                    stroke: #2723E1;
+                    stroke: $main_color;
                     stroke-width: 6;
                     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
                         stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -90,14 +90,17 @@ header {
             .nav__list {
                 &-mobile {
                     position: fixed;
+                    overflow-x: scroll;
                     top: 0;
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    padding-top: 14rem;
+                    max-width: 375px;
+                    padding-top: 135px;
+                    margin: auto;
                     opacity: 0;
                     transform: translateY(-100%);
-                    background-color: $mobile-nav__background;
+                    background-color: $fifth_color;
                     color: #fff;
                     transition: 0.4s;
 
@@ -114,36 +117,105 @@ header {
                             cursor: pointer;
                         }
                     }
+
+                    .login__user {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+
+
+                        &-icon {
+                            width: 63px;
+                            height: 63px;
+                            border-radius: 100%;
+                            background: rgba(220, 220, 250, 0.8);
+                        }
+
+                        .label {
+                            @include montserrat;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 150%;
+                            color: $text__color;
+                        }
+
+                    }
+
+                    .mobile_dropdown__nav {
+                        display: none;
+
+                        &.show {
+                            display: block;
+                            z-index: 100;
+                        }
+
+                        .nav {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            width: 100%;
+                            margin-top: 40.74px;
+                            border-bottom: 1px solid rgba(220, 220, 250, 0.8);
+
+                            &-link {
+                                @include montserrat;
+                                font-weight: $fw-normal;
+                                font-size: 20px;
+                                line-height: 110%;
+                                text-align: center;
+                                margin-bottom: 40px;
+
+                                color: $text__color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .login {
+                margin-bottom: 76px;
+                padding-bottom: 50px;
+
+                .default__btn {
+                    @include default__btn;
+                    text-align: center;
                 }
 
-                &-item {
+                .signin__button {
+                    @include montserrat;
+                    font-weight: $fw-bold;
+                    font-size: 21px;
+                    line-height: 23px;
+                    color: $fifth_color;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .navigation {
+                margin-top: 59px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
+
+                .nav__link {
                     text-decoration: none;
                     color: $text__color;
-                    padding: 1.23em 0 1em 0px;
                     text-align: center;
                     font-size: 1.25rem;
                     transition: 0.4s;
 
-                    .nav__link {
-                        @include montserrat;
-                        font-weight: $fw-normal;
-                        font-size: 1.25em;
-                        line-height: 110%;
-                        text-align: center;
-                        color: $text__color;
-                    }
-
-                    .default__btn {
-                        @include default__btn;
-                    }
-
-                    .signin__button {
-                        @include montserrat;
-                        font-weight: $fw-bold;
-                        font-size: 1.2em;
-                        line-height: 23px;
-                        color: $fifth_color;
-                    }
+                    @include montserrat;
+                    font-weight: $fw-normal;
+                    font-size: 1.25em;
+                    line-height: 110%;
+                    text-align: center;
+                    color: $text__color;
+                    margin-bottom: 40px;
                 }
             }
 
@@ -162,18 +234,20 @@ header {
     .main__header {
         display: none;
     }
+}
 
-    @media (min-width: 1200px) {
+@media (min-width: 1200px) {
+    header {
+        background-color: $fifth_color;
+        box-shadow: 0px 5px 30px rgba(39, 35, 225, 0.2);
+
         .container {
-            max-width: 1440px;
-            margin: auto;
+            @include container;
 
             .main__header {
                 display: flex;
                 flex-direction: column;
-                background-color: $fifth_color;
-                color: #fff;
-                padding: 1em;
+                color: $fifth_color;
 
                 .main__nav {
                     display: flex;
@@ -182,10 +256,11 @@ header {
                     font-size: 1.125em;
 
                     .logo {
-                        img {
-                            width: 15vw;
-                            padding-left: 5.6em;
-                        }
+                        margin-top: 21px;
+                        margin-bottom: 20px;
+                        margin-left: 100px;
+
+                        img {}
                     }
 
                     .nav__list {
@@ -206,9 +281,79 @@ header {
                     }
 
                     .cart__login {
+                        position: relative;
                         display: flex;
                         align-items: center;
                         gap: 20px;
+
+                        &#logged {
+                            gap: 37px;
+                            margin: auto 0 auto 138px;
+                        }
+
+                        .login__user {
+                            &-icon {}
+
+                            &-arrow {
+                                position: absolute;
+                                top: 37px;
+                                right: 41px;
+                            }
+                        }
+
+                        .dropdown__nav {
+                            position: absolute;
+                            padding-top: 17px;
+                            overflow: hidden;
+                            transition: height 0.5s ease-out;
+                            display: none;
+                            height: 0;
+                            width: 131px;
+                            top: 49px;
+                            left: 49px;
+
+                            &.show {
+                                display: block;
+                                height: auto;
+                                z-index: 100;
+                            }
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 10px;
+                                width: 0;
+                                height: 0;
+                                margin-left: 14px;
+                                border-style: solid;
+                                border-width: 0 9px 9px 9px;
+                                border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $fifth_color rgba(0, 0, 0, 0);
+                            }
+
+
+                            .nav {
+                                background: $fifth_color;
+                                border-radius: 5px;
+                                padding: 15px 11px 1px 16px;
+                                box-shadow: 0 5px 45px #29216b40;
+
+                                &-link {
+                                    display: flex;
+                                    flex-direction: column;
+                                    // width: 100%;
+                                    @include montserrat;
+                                    font-weight: $fw-normal;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    color: $text__color;
+                                    margin-bottom: 12px;
+
+                                    &.active {
+                                        font-weight: $fw-bold_1;
+                                    }
+                                }
+                            }
+                        }
 
                         .login {
                             @include montserrat;
@@ -221,7 +366,7 @@ header {
                         }
 
                         .register {
-                            border: 1px solid #2723E1;
+                            border: 1px solid $main_color;
                             border-radius: 35px;
                             padding: 12.5px 30px;
 

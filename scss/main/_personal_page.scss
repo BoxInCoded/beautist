@@ -1,13 +1,13 @@
 .main__personal {
-    .personal__content {
-        background-position: 50% calc(100% + 270px);
-        background-image: url('../../img/background-7.png');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        padding: 50px 20px;
-
-        .container {
-            @include container;
+    background-position: 50% calc(100% + 270px);
+    background-image: url('../../img/background-7.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .container {
+        @include container;
+        
+        .personal__content {
+            padding: 50px 20px;
 
             .personal__content-filter {
                 .filter {
@@ -667,4 +667,402 @@
             }
         }
     }
-}
+
+    @media (min-width: 1200px) {
+        background-position: 50% calc(100% + 290px);
+        background-image: url('../../img/background-7-pc.png');
+        .container {
+            .personal__content {
+                padding: 96px 100px 85px;
+
+                .personal__content-filter {
+                    .filter {
+
+                        .swiper {
+
+                            .swiper-wrapper {
+
+                                .swiper-slide {
+                                    font-size: 18px;
+                                    margin-right: 92px;
+                                    line-height: 23px;
+
+                                    &.filter-slide.active {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .content {
+                        &-slide {}
+
+                        &-slide-personal__page__content-courses {
+                            .personal__page__content__title {
+                                margin-top: 96px;
+                                font-size: 24px;
+                            }
+
+                            &-inner {
+                                margin-top: 95px;
+                                display: flex;
+                                align-items: center;
+
+                                &.locked {
+                                    .content-slide-personal__page__content-inner-content {
+                                        .personal__page__btn {}
+                                    }
+                                }
+
+                                .lock__course {}
+
+
+                                .lock__course.active {
+                                    .lock__icon {
+                                        width: 92.61px;
+                                        height: 123.74px;
+                                    }
+
+                                    .buy__course__btn {
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        padding: 10px 25px;
+                                    }
+                                }
+
+                                &-image {
+                                    order: 2;
+                                }
+
+
+                                &-content {
+                                    order: 1;
+                                    flex: 0 0 57.7%;
+                                    padding: 38px 122px 40px 50px;
+
+                                    .title {
+                                        font-size: 24px;
+                                    }
+
+                                    .author {
+                                        font-size: 12px;
+                                    }
+
+                                    .description {
+                                        font-size: 16px;
+                                        margin: 15px 0 25px;
+                                    }
+
+                                    .info {
+                                        gap: 56px;
+                                        margin-bottom: 38px;
+
+                                        &-level,
+                                        &-duration,
+                                        &-certificate {
+
+                                            .icon {
+                                                width: 18px;
+                                                height: 18px;
+                                            }
+
+                                            .name {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+
+                                    .personal__page__btn {
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        width: 185px;
+                                        padding: 10px 35px;
+
+                                        img {}
+                                    }
+                                }
+                            }
+                        }
+
+                        &-slide-personal__page__content-certificate {
+                            .personal__page__content__title {
+                                margin-top: 96px;
+                                font-size: 24px;
+                            }
+
+                            .no-certificate {
+                                margin-top: 93px;
+                                padding: 0 231px 40px;
+
+                                &.active {
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                .icon {
+                                    width: 276px;
+                                }
+
+                                .label {
+                                    width: calc(100% - 315px);
+                                    text-align: left;
+                                    font-size: 38px;
+                                    padding-left: 83px;
+                                    margin-top: 21px;
+                                }
+                            }
+
+                            .certificate {
+                                margin-top: 95px;
+
+                                &.active {}
+
+                                &-inner {
+                                    margin: auto auto 98px;
+                                    max-width: 1040px;
+                                    padding: 64px 104px 76px 100px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    flex-direction: row;
+
+                                    &-image {
+                                        order: 1;
+                                        flex: 0 0 227px;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+
+                                    &-content {
+                                        order: 1;
+                                        flex: 0 0 calc(100% - 250px);
+                                        margin: 0;
+                                        padding: 15px 0 0 138px;
+
+                                        .title {
+                                            font-size: 24px;
+                                        }
+
+                                        .author {
+                                            font-size: 12px;
+                                        }
+
+                                        .info {
+                                            gap: 47px;
+                                            margin: 26px 0 37px;
+
+                                            &-level,
+                                            &-duration,
+                                            &-date {
+                                                gap: 18px;
+
+                                                .icon {
+                                                    width: 18px;
+                                                    height: 18px;
+                                                }
+
+                                                .name {
+                                                    font-size: 18px;
+                                                }
+
+                                                .date {
+                                                    font-size: 18px;
+                                                }
+                                            }
+                                        }
+
+                                        .personal__page__btn {
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                            padding: 15px 47px;
+                                            gap: 18px;
+                                            width: 184px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &-slide-personal__page__content-messages {
+                            .personal__page__content__title {
+                                margin-top: 96px;
+                                font-size: 24px;
+                            }
+
+                            &-wrapper {
+                                max-width: 1040px;
+                                margin: 100px auto auto;
+                                border: 1px solid $main_color;
+                                border-radius: 20px;
+                                padding: 37px 40px;
+                                background: $fifth_color;
+
+                                .message__date__block {
+                                    margin: 0px 425px 0;
+                                }
+
+                                .messages {
+
+                                    .outgoing__messages {
+                                        width: auto;
+                                        display: inline-block;
+                                        margin-left: 340px;
+                                        margin-bottom: 6px;
+                                        padding: 6px 23px 3px 11px;
+                                        text-align: right;
+
+                                        &::before {}
+
+                                        .message {
+                                            margin-right: 56px;
+                                        }
+
+                                        .time {
+                                            font-size: 12px;
+                                            line-height: 15px;
+                                            padding-right: 2px;
+                                            margin-top: -4px;
+                                        }
+                                    }
+
+                                    .ingoing__messages {
+                                        text-align: left;
+                                        margin-top: 9px;
+                                        width: auto;
+                                        display: inline-block;
+                                        margin-left: 33px;
+                                        margin-right: 52px;
+                                        margin-bottom: 17px;
+                                        padding: 5px 9px 3px 12px;
+
+                                        &::before {}
+
+                                        .avatar {}
+
+                                        .name {}
+
+                                        .message {
+                                            margin-right: 42px;
+                                            margin-top: 6px;
+                                        }
+
+                                        .time {
+                                            font-size: 12px;
+                                            line-height: 15px;
+                                            margin-top: -2px;
+                                        }
+                                    }
+                                }
+
+                                form {
+                                    margin: 5px 0 0;
+
+                                    .input-container {
+
+                                        .icon {
+                                            top: 20%;
+                                            left: 1%;
+                                            width: 39px;
+                                            height: 39px;
+                                        }
+
+                                        .message_input {
+                                            padding: 11px 66px;
+                                            width: calc(100% - 300px);
+                                            height: 59px;
+
+                                            &::placeholder {}
+                                        }
+
+                                        .message__btn {
+                                            left: 89%;
+                                            top: 14%;
+                                            font-size: 14px;
+                                            line-height: 17px;
+                                            padding: 10px 31px;
+                                            margin-top: 4px;
+                                            margin-right: 2px;
+
+                                            &:hover {}
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        &-slide-personal__page__content-profile {
+                            .personal__page__content__title {
+                                margin-top: 96px;
+                                font-size: 24px;
+                            }
+
+                            .my__data__block {
+                                margin: 100px auto auto;
+                                width: 100%;
+                                max-width: 1040px;
+
+                                &-info {
+
+                                    form {
+                                        border: 1px solid $main_color;
+                                        filter: drop-shadow(0px 10px 45px rgba(39, 35, 225, 0.25));
+                                        border-radius: 20px;
+                                        padding: 50px 136px 67px 135px;
+
+                                        .avatar {}
+
+                                        .label-avatar {
+                                            margin: 18px 0 50px;
+                                        }
+
+                                        .profile-form {
+
+                                            .form-group {
+                                                &:last-child {}
+
+                                                .profile__label {
+                                                    padding-right: 0;
+                                                    flex: 0 0 46%;
+                                                    font-size: 16px;
+                                                }
+
+                                                .profile__input {
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .button-container {
+                                        width: 100%;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-top: 100px;
+                                        gap: 42px;
+
+                                        .change-psw {
+                                            width: 230px;
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                        }
+
+                                        .delete-profile {
+                                            width: 230px;
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &-slide.active {}
+                    }
+                }
+            }
+        }
+    }
+} 

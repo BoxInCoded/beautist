@@ -35,11 +35,11 @@ body {
             }
         }
 
-        .products__list {
-            padding: 50px 20px 0px;
+        .container {
+            @include container;
 
-            .container {
-                @include container;
+            .products__list {
+                padding: 50px 20px 0px;
 
                 h2 {
                     @include montserrat;
@@ -209,7 +209,7 @@ body {
             box-sizing: border-box;
             text-align: center;
             background: rgba(220, 220, 250, .5);
-            background-image: url('.../../img/coursesBg-mobile.png');
+            background-image: url('../../img/coursesBg-mobile.png');
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: 50% -28%;
@@ -264,10 +264,10 @@ body {
                 }
             }
 
-            .products__list {
-                padding: 92px 100px 65px;
+            .container {
+                .products__list {
+                    padding: 92px 100px 65px;
 
-                .container {
                     h2 {
                         font-weight: $fw-smaller;
                         font-size: 48px;
@@ -429,7 +429,7 @@ body {
 
             .courses__help {
                 padding: 93px 421px 100px;
-                background-image: url('.../../img/coursesBg-pc.png');
+                background-image: url('../../img/coursesBg-pc.png');
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: 50% -3%;

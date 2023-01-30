@@ -58,7 +58,7 @@ body {
                             margin-bottom: 5px;
 
                             &-icon {
-                                background-image: url('.../../img/certificate-home.svg');
+                                background-image: url('../../img/certificate-home.svg');
                                 width: 26px;
                                 height: 26px;
                                 background-repeat: no-repeat;
@@ -484,11 +484,11 @@ body {
                                                     }
 
                                                     .btn__plus {
-                                                        background-image: url('.../../img/plus.svg');
+                                                        background-image: url('../../img/plus.svg');
                                                     }
 
                                                     .btn__minus {
-                                                        background-image: url('.../../img/minus.svg');
+                                                        background-image: url('../../img/minus.svg');
                                                     }
                                                 }
 
@@ -512,7 +512,7 @@ body {
                                             }
 
                                             .scroll__up {
-                                                display: block;
+                                                display: none;
                                                 position: absolute;
                                                 bottom: -9px;
                                                 right: -65px;
@@ -521,7 +521,7 @@ body {
                                             }
 
                                             .scroll__down {
-                                                display: block;
+                                                display: none;
                                                 position: absolute;
                                                 top: -6px;
                                                 right: -65px;
@@ -1059,11 +1059,11 @@ body {
                                         }
 
                                         .btn__plus {
-                                            background-image: url('.../../img/plus.svg');
+                                            background-image: url('../../img/plus.svg');
                                         }
 
                                         .btn__minus {
-                                            background-image: url('.../../img/minus.svg');
+                                            background-image: url('../../img/minus.svg');
                                         }
                                     }
 
@@ -1094,7 +1094,7 @@ body {
                 padding: 60px 20px;
                 text-align: center;
                 background: #F8F8FF;
-                background-image: url('.../../img/favoriteBg-mobile.png');
+                background-image: url('../../img/favoriteBg-mobile.png');
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: 100%;
@@ -1694,11 +1694,11 @@ body {
                                                         }
 
                                                         .btn__plus {
-                                                            background-image: url('.../../img/plus.svg');
+                                                            background-image: url('../../img/plus.svg');
                                                         }
 
                                                         .btn__minus {
-                                                            background-image: url('.../../img/minus.svg');
+                                                            background-image: url('../../img/minus.svg');
                                                         }
                                                     }
 
@@ -2247,7 +2247,7 @@ body {
                 }
 
                 &-favorite {
-                    background-image: url('.../../img/favoriteBg-pc.png');
+                    background-image: url('../../img/favoriteBg-pc.png');
                     padding: 100px 500px 109px;
                     background-position: 50% -160%;
 
